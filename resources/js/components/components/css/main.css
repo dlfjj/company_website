@@ -1,0 +1,170 @@
+.shop{
+    margin-bottom: 100px;
+}
+.product-title{
+    font-size:25px;
+    font-weight: 400;
+}
+
+
+.title-box{
+    text-align: center;
+    padding: 30px 0 40px;
+    text-transform: uppercase;
+}
+.title-box p{
+    margin-bottom: 0;
+}
+
+/*======================================================================
+##		Product Section
+=======================================================================*/
+.product .section-bg{
+	background-color: #fff;
+}
+.porduct-box{
+	margin-bottom: 30px;
+	position: relative;
+}
+.porduct-box img{
+	width: 100% !important;
+}
+/*.incline-div{*/
+     /*position: absolute;*/
+     /*top: 3px;*/
+     /*left: 0;*/
+     /*border-top: 60px solid #fabe12;*/
+     /*border-right: 60px solid transparent;*/
+     /*margin-left: -15px;*/
+     /*width: 250px;*/
+     /*z-index: 1;*/
+ /*}*/
+.outer-stiker{
+	display: inline-block;
+	color: #d0d0d0;
+}
+.stiker{
+	display: inline-block;
+}
+.inner-stiker{
+	color: #fff;
+	padding-right: 50px;
+}
+.outer-stiker, .inner-stiker{
+	font-weight: 300;
+	z-index: 2;
+	position: relative;
+}
+.product p{
+	color: #999;
+	font-size: 14px;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+.product p.p-large{
+	font-size: 16px;
+	font-weight: 400;
+}
+@media (min-width: 768px){
+	.boxed{
+		padding: 0 80px;
+	}
+}
+
+
+/*======================================================================
+##		Shop
+=======================================================================*/
+.img-full{
+	width: 100%;
+}
+/*Polywoven special effect*/
+/*.bag-box{*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.bag-box-hover{*/
+    /*position: absolute;*/
+    /*!*left: -95%;*!*/
+    /*top: -99.9%;*/
+    /*background-color: #9a9a9a;*/
+    /*opacity: 0.9;*/
+    /*width: 75%;*/
+    /*height: 100%;*/
+    /*transition: all 0.4s ease-in-out;*/
+/*}*/
+/*.bag-box:hover .bag-box-hover{*/
+    /*top: 0px;*/
+    /*left: 0;*/
+/*}*/
+
+
+/*Kraft airbag special effect*/
+/*.bag2-box{*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.bag2-box-hover{*/
+    /*position: absolute;*/
+    /*!*left: -95%;*!*/
+    /*top: -99.9%;*/
+    /*background-color: #d6951e;*/
+    /*opacity: 0.9;*/
+    /*margin-left:130px;*/
+    /*width: 65%;*/
+    /*height: 100%;*/
+    /*transition: all 0.4s ease-in-out;*/
+/*}*/
+/*.bag2-box:hover .bag2-box-hover{*/
+    /*top: 0px;*/
+    /*left: 0;*/
+/*}*/
+
+
+
+.shop-box{
+    position: relative;
+    overflow: hidden;
+}
+.shop-box-hover{
+	position: absolute;
+	/*left: -95%;*/
+	top: -99.9%;
+	background-color: #0f256d;
+    opacity: 0.9;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s ease-in-out;
+}
+.shop-box:hover .shop-box-hover{
+	top: 0px;
+	left: 0;
+}
+/*.shop-box-hover .c-cell a{*/
+	/*font-size: 25px;*/
+	/*color: #111;*/
+	/*transition: all 0.4s ease-in-out;*/
+	/*padding: 8px;*/
+/*}*/
+.shop-box-hover .c-cell a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.pager li>a, .pager li>span{
+	border-radius: 0;
+	color: #111;
+}
+.pager li>a:focus, .pager li>a:hover{
+	color: #fff;
+	border-color: #fabe12;
+	background-color: #fabe12;
+}
+
+
+
+
+.airbag-calculator{
+    padding: 0px 0px 130px 0px;
+	/*background-color: honeydew;*/
+}

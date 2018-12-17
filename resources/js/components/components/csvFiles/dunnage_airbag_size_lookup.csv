@@ -1,0 +1,145 @@
+Bag type,Bags Width,Gap height (mm),Contact surface area,Max fill. pressure,Burst presure standard
+PP SAVFER medium ,60,150,0.8,0.18,0.55
+PP SAVFER medium ,60,200,0.6,0.18,0.55
+PP SAVFER medium ,90,150,0.8,0.18,0.55
+PP SAVFER medium ,90,200,0.7,0.18,0.55
+PP SAVFER medium ,90,300,0.6,0.18,0.55
+PP SAVFER medium ,90,400,0.4,0.18,0.55
+PP SAVFER medium ,120,300,0.8,0.18,0.45
+PP SAVFER medium ,120,400,0.6,0.18,0.45
+PP SAVFER medium ,120,500,0.4,0.18,0.45
+PP SAVFER medium ,150,400,0.8,0.18,0.4
+PP SAVFER medium ,150,500,0.6,0.18,0.4
+PP SAVFER medium ,150,600,0.4,0.18,0.4
+PP90 Standard ,60,150,0.8,0.2,0.6
+PP90 Standard ,60,200,0.6,0.2,0.6
+PP90 Standard ,90,150,0.8,0.2,0.6
+PP90 Standard ,90,200,0.7,0.2,0.6
+PP90 Standard ,90,300,0.6,0.2,0.6
+PP90 Standard ,90,400,0.4,0.2,0.6
+PP90 Standard ,120,120,300,0.8,0.56
+PP90 Standard ,120,120,400,0.6,0.56
+PP90 Standard ,120,120,500,0.4,0.56
+PP90 Standard ,150,400,0.8,0.2,0.55
+PP90 Standard ,150,500,0.6,0.2,0.55
+PP90 Standard ,150,600,0.4,0.2,0.55
+PP150 Heavy Duty,60,150,0.8,0.4,0.8
+PP150 Heavy Duty,60,200,0.6,0.4,0.8
+PP150 Heavy Duty,90,150,0.8,0.4,0.8
+PP150 Heavy Duty,90,200,0.7,0.4,0.8
+PP150 Heavy Duty,90,300,0.6,0.4,0.8
+PP150 Heavy Duty,90,400,0.4,0.4,0.8
+PP150 Heavy Duty,120,300,0.8,0.4,0.7
+PP150 Heavy Duty,120,400,0.6,0.4,0.7
+PP150 Heavy Duty,120,500,0.4,0.4,0.7
+PP150 Heavy Duty,150,400,0.8,0.4,0.7
+PP150 Heavy Duty,150,500,0.6,0.4,0.7
+PP150 Heavy Duty,150,600,0.4,0.4,0.7
+PP200 Super Heavy,60,150,0.8,0.6,1.18
+PP200 Super Heavy,60,200,0.6,0.6,1.18
+PP200 Super Heavy,90,150,0.8,0.6,1.18
+PP200 Super Heavy,90,200,0.7,0.6,1.18
+PP200 Super Heavy,90,300,0.6,0.6,1.18
+PP200 Super Heavy,90,400,0.4,0.6,1.18
+PP200 Super Heavy,120,300,0.8,0.6,1.18
+PP200 Super Heavy,120,400,0.6,0.6,1.18
+PP200 Super Heavy,120,500,0.4,0.6,1.18
+PP200 Super Heavy,150,400,0.8,0.6,1.18
+PP200 Super Heavy,150,500,0.6,0.6,1.18
+PP200 Super Heavy,150,600,0.4,0.6,1.18
+PP 250 GSM,60,150,0.8,0.8,1.8
+PP 250 GSM,60,200,0.6,0.8,1.8
+PP 250 GSM,90,150,0.8,0.8,1.8
+PP 250 GSM,90,200,0.7,0.8,1.8
+PP 250 GSM,90,300,0.6,0.8,1.8
+PP 250 GSM,90,400,0.4,0.8,1.8
+PP 250 GSM,120,300,0.8,0.8,1.8
+PP 250 GSM,120,400,0.6,0.8,1.8
+PP 250 GSM,120,500,0.4,0.8,1.8
+PP 250 GSM,150,400,0.8,0.8,1.8
+PP 250 GSM,150,500,0.6,0.8,1.8
+PP 250 GSM,150,600,0.4,0.8,1.8
+PAPER 1 Ply SAVFER,60,150,0.8,0.13,0.33
+PAPER 1 Ply SAVFER,60,200,0.6,0.13,0.33
+PAPER 1 Ply SAVFER,90,150,0.8,0.13,0.33
+PAPER 1 Ply SAVFER,90,200,0.7,0.13,0.33
+PAPER 1 Ply SAVFER,90,300,0.6,0.13,0.33
+PAPER 1 Ply SAVFER,90,400,0.4,0.13,0.33
+PAPER 1 Ply SAVFER,120,300,0.8,0.13,0.33
+PAPER 1 Ply SAVFER,120,400,0.6,0.13,0.33
+PAPER 1 Ply SAVFER,120,500,0.4,0.13,0.33
+PAPER 1 Ply SAVFER,150,400,0.8,0.13,0.33
+PAPER 1 Ply SAVFER,150,500,0.6,0.13,0.33
+PAPER 1 Ply SAVFER,150,600,0.4,0.13,0.33
+Paper 2 Ply SAVFER,60,150,0.8,0.2,0.45
+Paper 2 Ply SAVFER,60,200,0.6,0.2,0.45
+Paper 2 Ply SAVFER,90,150,0.8,0.2,0.45
+Paper 2 Ply SAVFER,90,200,0.7,0.2,0.45
+Paper 2 Ply SAVFER,90,300,0.6,0.2,0.45
+Paper 2 Ply SAVFER,90,400,0.4,0.2,0.45
+Paper 2 Ply SAVFER,120,300,0.8,0.2,0.45
+Paper 2 Ply SAVFER,120,400,0.6,0.2,0.45
+Paper 2 Ply SAVFER,120,500,0.4,0.2,0.45
+Paper 2 Ply SAVFER,150,400,0.8,0.2,0.45
+Paper 2 Ply SAVFER,150,500,0.6,0.2,0.45
+Paper 2 Ply SAVFER,150,600,0.4,0.2,0.45
+Paper 1 Ply Standard,60,150,0.8,0.18,0.45
+Paper 1 Ply Standard,60,200,0.6,0.18,0.45
+Paper 1 Ply Standard,90,150,0.8,0.18,0.45
+Paper 1 Ply Standard,90,200,0.7,0.18,0.45
+Paper 1 Ply Standard,90,300,0.6,0.18,0.45
+Paper 1 Ply Standard,90,400,0.4,0.18,0.45
+Paper 1 Ply Standard,120,300,0.8,0.18,0.45
+Paper 1 Ply Standard,120,400,0.6,0.18,0.45
+Paper 1 Ply Standard,120,500,0.4,0.18,0.45
+Paper 1 Ply Standard,150,400,0.8,0.18,0.45
+Paper 1 Ply Standard,150,500,0.6,0.18,0.45
+Paper 1 Ply Standard,150,600,0.4,0.18,0.45
+Paper 2 Ply Standard,60,150,0.8,0.2,0.56
+Paper 2 Ply Standard,60,200,0.6,0.2,0.56
+Paper 2 Ply Standard,90,150,0.8,0.2,0.56
+Paper 2 Ply Standard,90,200,0.7,0.2,0.56
+Paper 2 Ply Standard,90,300,0.6,0.2,0.56
+Paper 2 Ply Standard,90,400,0.4,0.2,0.56
+Paper 2 Ply Standard,120,300,0.8,0.2,0.56
+Paper 2 Ply Standard,120,400,0.6,0.2,0.56
+Paper 2 Ply Standard,120,500,0.4,0.2,0.56
+Paper 2 Ply Standard,150,400,0.8,0.2,0.56
+Paper 2 Ply Standard,150,500,0.6,0.2,0.56
+Paper 2 Ply Standard,150,600,0.4,0.2,0.56
+Paper 4 Ply Heavy Duty,60,150,0.8,0.4,1.12
+Paper 4 Ply Heavy Duty,60,200,0.6,0.4,1.12
+Paper 4 Ply Heavy Duty,90,150,0.8,0.4,1.12
+Paper 4 Ply Heavy Duty,90,200,0.7,0.4,1.12
+Paper 4 Ply Heavy Duty,90,300,0.6,0.4,1.12
+Paper 4 Ply Heavy Duty,90,400,0.4,0.4,1.12
+Paper 4 Ply Heavy Duty,120,300,0.8,0.4,1.12
+Paper 4 Ply Heavy Duty,120,400,0.6,0.4,1.12
+Paper 4 Ply Heavy Duty,120,500,0.4,0.4,1.12
+Paper 4 Ply Heavy Duty,150,400,0.8,0.4,1.12
+Paper 4 Ply Heavy Duty,150,500,0.6,0.4,1.12
+Paper 4 Ply Heavy Duty,150,600,0.4,0.4,1.12
+Paper 6 Ply Super Heavy,60,150,0.8,0.6,1.68
+Paper 6 Ply Super Heavy,60,200,0.6,0.6,1.68
+Paper 6 Ply Super Heavy,90,150,0.8,0.6,1.68
+Paper 6 Ply Super Heavy,90,200,0.7,0.6,1.68
+Paper 6 Ply Super Heavy,90,300,0.6,0.6,1.68
+Paper 6 Ply Super Heavy,90,400,0.4,0.6,1.68
+Paper 6 Ply Super Heavy,120,300,0.8,0.6,1.68
+Paper 6 Ply Super Heavy,120,400,0.6,0.6,1.68
+Paper 6 Ply Super Heavy,120,500,0.4,0.6,1.68
+Paper 6 Ply Super Heavy,150,400,0.8,0.6,1.68
+Paper 6 Ply Super Heavy,150,500,0.6,0.6,1.68
+Paper 6 Ply Super Heavy,150,600,0.4,0.6,1.68
+Paper 8 Ply,60,150,0.8,0.8,1.8
+Paper 8 Ply,60,200,0.6,0.8,1.8
+Paper 8 Ply,90,150,0.8,0.8,1.8
+Paper 8 Ply,90,200,0.7,0.8,1.8
+Paper 8 Ply,90,300,0.6,0.8,1.8
+Paper 8 Ply,90,400,0.4,0.8,1.8
+Paper 8 Ply,120,300,0.8,0.8,1.8
+Paper 8 Ply,120,400,0.6,0.8,1.8
+Paper 8 Ply,120,500,0.4,0.8,1.8
+Paper 8 Ply,150,400,0.8,0.8,1.8
+Paper 8 Ply,150,500,0.6,0.8,1.8
+Paper 8 Ply,150,600,0.4,0.8,1.8

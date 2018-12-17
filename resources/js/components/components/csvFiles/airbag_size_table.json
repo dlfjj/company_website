@@ -1,0 +1,1154 @@
+[
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.55
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.55
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.55
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.55
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.55
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.55
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.4
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.4
+ },
+ {
+   "Bag type": "PP SAVFER medium ",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.4
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.6
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.6
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.6
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.6
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.6
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.6
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 120,
+   "Gap height (mm)": 120,
+   "Contact surface area": 0.3,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 120,
+   "Gap height (mm)": 120,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 120,
+   "Gap height (mm)": 120,
+   "Contact surface area": 0.5,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.55
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.55
+ },
+ {
+   "Bag type": "PP90 Standard ",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.55
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.8
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.8
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.8
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.8
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.8
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.8
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.7
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.7
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.7
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.7
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.7
+ },
+ {
+   "Bag type": "PP150 Heavy Duty",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 0.7
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP200 Super Heavy",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.18
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PP 250 GSM",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "PAPER 1 Ply SAVFER",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.13,
+   "Burst presure standard": 0.33
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply SAVFER",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 1 Ply Standard",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.18,
+   "Burst presure standard": 0.45
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 2 Ply Standard",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.2,
+   "Burst presure standard": 0.56
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 4 Ply Heavy Duty",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.4,
+   "Burst presure standard": 1.12
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 6 Ply Super Heavy",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.6,
+   "Burst presure standard": 1.68
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 60,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 60,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 90,
+   "Gap height (mm)": 150,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 90,
+   "Gap height (mm)": 200,
+   "Contact surface area": 0.7,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 90,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 90,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 120,
+   "Gap height (mm)": 300,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 120,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 120,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 150,
+   "Gap height (mm)": 400,
+   "Contact surface area": 0.8,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 150,
+   "Gap height (mm)": 500,
+   "Contact surface area": 0.6,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ },
+ {
+   "Bag type": "Paper 8 Ply",
+   "Bags Width": 150,
+   "Gap height (mm)": 600,
+   "Contact surface area": 0.4,
+   "Max fill. pressure": 0.8,
+   "Burst presure standard": 1.8
+ }
+]
