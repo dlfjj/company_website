@@ -207,10 +207,10 @@
                     <div class="col-lg-6 col-sm-11">
                         <h2 class="title text-center text-lg-left text-uppercase" data-aos="flip-up" data-aos-delay="100">Our Dunnage Airbags</h2>
                         <div class="row">
-                            <div class="col-lg-12" data-aos="zoom-in" data-aos-duration="1000" id="dunnage_description">
+                            <div class="col-lg-12" data-aos="zoom-in" datsa-aos-duration="1000" id="dunnage_description">
                                 <ul class="mt-4 font-weight-normal">
                                     <li v-for="airbagHighlight in airbagHighlights">
-                                        <span v-for="message in airbagHighlight">{{ message }}</span>
+                                        <span v-for="message in airbagHighlight" class="fa-li"><i class="fas fa-check-square pr-3"></i>{{ message }}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -438,8 +438,8 @@
     #dunnage_description li { margin-bottom:10px; }
     #dunnage_description li span { position: relative; left: 12px; }
     #dunnage_description li:before {
-        font-family: 'FontAwesome';
-        content: '\f10c';
+        /*font-family: 'FontAwesome';*/
+        /*content: '\f006';*/
         margin:0px 5px 2px -20px;
     }
     #dunnage_description{

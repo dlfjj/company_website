@@ -1,9 +1,8 @@
 <template>
     <footer class="site-footer">
-
-        <div class="d-flex justify-content-center">
-            <div class="row container" id="footer-container">
-                <div class="col-md-auto fbox">
+        <div class="d-flex justify-content-center pl-sm-4">
+            <div class="row" id="footer-container">
+                <div class="col-md-auto col-sm-6 col-xs-12 fbox">
                     <h6>Paper Dunnage Air Bags</h6>
                     <ul class="footer-nav">
                         <li v-for="link in paperdunnagelinks" v-html="link.level"></li>
@@ -125,6 +124,7 @@
 
 <style scoped>
     @import './css/style.css';
+    @import './css/mdb.css';
 
     /*#footer-container{*/
         /*margin-left: 10%;*/
