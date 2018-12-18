@@ -109,7 +109,7 @@
                     {page: '<a href="#/Career" title="Career Page link">Career</a>'},
                 ],
                 contactemail:'<a href="mailto:sales@americandunnage.com"><i class="far fa-envelope mr-2 pt-2"></i><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>sales@americandunnage.com</a>',
-                contactphone:'<a href="tel:+18772264112<"><i class="fas fa-phone mr-2"></i>+1 (877)-226-4112</a>',
+                contactphone:'<a href="tel:+17753996770<"><i class="fas fa-phone mr-2"></i>+1 (775)-399-6770</a>',
                 socialchannels:[
                     {socialmedia:'<a href="https://www.facebook.com/AmericanDunnageBagManufacturer/" target="_blank" alt="american dunnage facebook page"><span><i class="fab fa-facebook"></i></span></a>'},
                     {socialmedia:'<a href="https://www.youtube.com/channel/UCJwfPgzpPWE3OtJ6xbCQVyg" target="_blank" alt="OEMSERV youtube channel"><span><i class="fab fa-youtube"></i></span></a>'},

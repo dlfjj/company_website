@@ -20,6 +20,8 @@ import "vue-material-design-icons/styles.css"
 import VueAnalytics from 'vue-analytics'
 
 Vue.use(BootstrapVue);
+Vue.config.productionTip = false;
+Vue.config.silent = true;
 
 /**
  * The following block of code may be used to automatically register your

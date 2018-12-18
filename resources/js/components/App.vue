@@ -13,7 +13,6 @@
 </template>
 
 <script>
-
     import bottom from './components/Footer.vue';
     import top from './components/Header.vue';
 
@@ -26,10 +25,10 @@
 </script>
 
 <style scoped>
+
     #app {
         overflow-x: hidden;
     }
-
     .flyout {
         display:flex;
         flex-direction: column;

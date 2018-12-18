@@ -1,6 +1,6 @@
 <template>
-    <div class="site-main">
-        <seciton>
+    <div>
+        <section>
             <div>
                 <div class="view">
                     <b-carousel id="carousel1"
@@ -37,11 +37,6 @@
                             <div  class="rgba-blue-grey-strong container"  data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
                                 <p>You don’t like surpises opening <br>containers or truck doors ?</p>
                             </div>
-                            <!--<transition name='fade'>-->
-                            <!--<div  class="rgba-blue-grey-strong container" v-show="loaded">-->
-                            <!--<p>You don’t like surpises opening <br>containers or truck doors ?</p>-->
-                            <!--</div>-->
-                            <!--</transition>-->
                             <div class="container rgba-red-strong" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2000">
                                 <p >We don’t like it at all !</p>
                             </div>
@@ -52,7 +47,7 @@
                     </div>
                 </div>
             </div>
-        </seciton>
+        </section>
 
 
         <section class="home-area" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
@@ -72,7 +67,7 @@
                                             <img src="./images/manufacture_process.jpg" height="200" alt="factory inside overview" class="img-fluid ">
                                             <div class="caption">
                                                 <h3>Who we are</h3>
-                                                <p>{{ whoWeare }}</p>
+                                                <p>{{ identity }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -80,7 +75,6 @@
                                 <li class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="about-us">
                                         <div class="thumbnail">
-                                            <!--<img src="../components/products_detail_pages/images/dongguan_factory.jpg" class="img-fluid dongguan" alt="OEMSERV Chinese factory">-->
                                             <img src="./images/wovenmachine.jpg" class="img-fluid dongguan" alt="OEMSERV Chinese factory">
                                             <div class="caption">
                                                 <!--<h3>Qualification</h3>-->
@@ -210,13 +204,13 @@
                             <div class="col-lg-12" data-aos="zoom-in" datsa-aos-duration="1000" id="dunnage_description">
                                 <ul class="mt-4 font-weight-normal">
                                     <li v-for="airbagHighlight in airbagHighlights">
-                                        <span v-for="message in airbagHighlight" class="fa-li"><i class="fas fa-check-square pr-3"></i>{{ message }}</span>
+                                        <span v-for="message in airbagHighlight"><i class="fas fa-check-square pr-3"></i>{{ message }}</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="mt-lg-8 pt-lg-5 mt-sm-1 mr-lg-5">
-                            <a v-bind:href="productlink"><button class="btn btn-primary btn-lg btn-block waves-effect" data-aos="fade-left"><span>More Product Information</span></button></a>
+                            <a v-bind:href="productLink"><button class="btn btn-primary btn-lg btn-block waves-effect" data-aos="fade-left"><span>More Product Information</span></button></a>
                         </div>
                     </div>
                     <div class="col-lg-6 mt-lg-0">
@@ -231,13 +225,14 @@
                 <table class="table table-bordered text-center shadow-sm">
                     <thead class="thead-light text-uppercase" >
                     <tr>
-                        <th colspan="6" style="font-size: larger; font-weight: 600; color: #112133">Airbag Calculator</th>
+                        <th colspan="7" style="font-size: larger; font-weight: 600; color: #112133">Airbag Calculator</th>
                     </tr>
                     <tr>
-                        <th colspan="2">Bag size</th>
                         <th rowspan="2" style="width: 17%;">Gap between pallets</th>
+                        <th rowspan="2" style="width: 14%;">Pallet Height(PH)</th>
+                        <th colspan="2" style="width: 20%">Bag size</th>
                         <th scope="col" rowspan="2" style="width: 17%;">Airbag Types</th>
-                        <th scope="col" rowspan="2" style="width: 17%;">Surface contact</th>
+                        <th scope="col" rowspan="2" style="width: 10%;">Surface contact</th>
                         <th scope="col" rowspan="2" style="width: 17%;">Force by Max filling pressure </th>
                     </tr>
                     <!--<tr>-->
@@ -247,50 +242,49 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <th scope="row">
-                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                           v-model="selectedBagWidth"
-                                           :options="bagWidth"
-                                           id="bagWidthSelect"
-                                           @change="getSurfaceContactIndex"
-                            >
-                                <!--<option slot="first" :value="null">Choose...</option>-->
-                            </b-form-select>
-                            <!--<div>Selected: <strong>{{ selectedBagWidth }}</strong></div>-->
-                        </th>
-                        <td>
-                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                           v-model="selectedBagHeight"
-                                           :options="bagHeight"
-                                           id="bagWidthSelect"
-                                           @change="getSurfaceContactIndex"
-                            >
-                            </b-form-select>
-                            <!--<div>Selected: <strong>{{ selectedBagHeight }}</strong></div>-->
-                        </td>
                         <td>
                             <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
                                            v-model="selectedGap"
                                            :options="gap"
                                            id="bagWidthSelect"
-                                           @change="getSurfaceContactIndex"
                             >
                             </b-form-select>
-                            <!--<div>Selected: <strong>{{ selectedGap }}</strong></div>-->
+                        </td>
+                        <td>
+                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
+                                           v-model="selectedPalletHeight"
+                                           :options="palletHeight"
+                                           id="bagWidthSelect"
+                            >
+                            </b-form-select>
+                        </td>
+                        <td>
+                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
+                                           v-model="selectedBagWidth"
+                                           :options="bagWidth"
+                                           id="bagWidthSelect"
+                            >
+                            </b-form-select>
+                            <!--<div>Selected: <strong>{{ selectedBagWidth }}</strong></div>-->
+                        </td>
+                        <td>
+                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
+                                           v-model="selectedBagHeight"
+                                           :options="bagHeight"
+                                           id="bagWidthSelect"
+                            >
+                            </b-form-select>
                         </td>
                         <td>
                             <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
                                            v-model="selectedBagType"
                                            :options="bagType"
                                            id="bagWidthSelect"
-                                           @change="getMaxFillingPressure"
                             >
                             </b-form-select>
-                            <!--<div>Selected: <strong>{{ selectedBagType }}</strong></div>-->
-
                         </td>
-                        <td><span style="font-size: 2.2vw;">{{ surface_contact }}</span></td>
-                        <td><span>{{ forceByFillingPressure() }}</span></td>
+                        <td><span class="airtableFont">{{ surface_contact }}</span></td>
+                        <td><span v-bind:class="{ 'airtableFont': isActive == true }">{{ forceByFillingPressure() }}</span></td>
                     </tr>
                     </tbody>
                 </table>
@@ -328,20 +322,20 @@
                 // carousel section
                 slide: 0,
                 carouselTime: 0,
-                // isHomepage: false,
+                attachFontSize: false,
                 loaded: false,
 
 
 
                 // about us section
-                whoWeare:'American Dunnage Inc. is the newest branch of OEMSERV, a world leading manufacturer of dunnage air bags and other transport safety equipment.',
+                identity:'American Dunnage Inc. is the newest branch of OEMSERV, a world leading manufacturer of dunnage air bags and other transport safety equipment.',
                 // qualification: 'OEMSERV has been developing products and solutions for transportation safety since 2003, and nobody else offers a wider range of cargo securing equipment produced in-house.',
                 qualification: 'OEMSERV has been developing and manufacturing products and solutions for transportation safety since 2003, and nobody else offers a wider range of cargo securing equipment produced in-house.',
                 professional: 'Our German engineering and management team always strive for the highest in quality standards to make our products to the most reliable and competitive available.',
                 continuity: 'American Dunnage Inc. manufactures dunnage air bags, made in Reno, NV, with the same quality standard, reliability and competitive pricing.',
 
                 // dunnage bag section
-                productlink: '#/Product',
+                productLink: '#/Product',
                 airbagHighlights: [
                     { message: 'Kraft Paper Air Bags' },
                     { message: 'PP-Polywoven Air Bags' },
@@ -361,29 +355,46 @@
                 forceByMaxFillingPressure: 0,
                 selectedBagWidth: 0,
                 selectedBagHeight: 0,
-                selectedGap: 0,
+                selectedGap: 150,
                 selectedBagType: '',
-                bagWidth:[{ value: 0, text: 'Select Width' },{text:'60',value:60},{text:'90',value: 90}, {text:'120', value:120},{text:'150',value:150}],
-                bagHeight:[{ value: 0, text: 'Select Height' },{value:60, text:'60'},{value:90,text:'90'},{value:120,text:'120'},{value:150,text:'150'},{value:180,text:'180'},{value:210,text:'210'},{value:225,text:'225'},{value:240,text:'240'},{value:260,text:'260'},{value:270,text:'270'}],
-                gap: [{ value: 0, text: 'Select Gap By MM' },{value:150, text:'150'},{value:200, text:'200'},{value:300,text:'300'},{value:400, text:'400'},{value:500, text:'500'},{value:600, text:'600'}],
+                selectedPalletHeight: 60,
+                palletHeight:[{text:'PH > 60',value:60},{text:'PH > 90',value: 90}, {text:'PH > 120', value:120},{text:'PH > 150',value:150}],
+                bagWidth:[{ value: 0, text: 'Width' },{text:'60',value:60},{text:'90',value: 90}, {text:'120', value:120},{text:'150',value:150}],
+                bagHeight:[{ value: 0, text: 'Height' },{value:60, text:'60'},{value:90,text:'90'},{value:120,text:'120'},{value:150,text:'150'},{value:180,text:'180'},{value:210,text:'210'},{value:225,text:'225'},{value:240,text:'240'},{value:260,text:'260'},{value:270,text:'270'}],
+                gap: [{value:150, text:'150'},{value:200, text:'200'},{value:300,text:'300'},{value:400, text:'400'},{value:500, text:'500'},{value:600, text:'600'}],
                 bagType:[{ value: '', text: 'Select Bag Type'},{value:'PAPER 1 Ply SAVFER',text:'PAPER 1 Ply SAVFER'},{value:'Paper 2 Ply SAVFER',text:'Paper 2 Ply SAVFER'},
                     {value:'Paper 1 Ply Standard',text:'Paper 1 Ply Standard'},{value:'Paper 2 Ply Standard', text:'Paper 2 Ply Standard'},
                     {value:'Paper 4 Ply Heavy Duty',text:'Paper 4 Ply Heavy Duty'},{value:'Paper 6 Ply Super Heavy',text:'Paper 6 Ply Super Heavy'},
                     {value:'Paper 8 Ply',text:'Paper 8 Ply'},{value:'PP SAVFER medium',text:'PP SAVFER medium'},{value:'PP90 Standard',text:'PP90 Standard'},
                     {value:'PP150 Heavy Duty',text:'PP150 Heavy Duty'},{value:'PP200 Super Heavy',text:'PP200 Super Heavy'},{value:'PP 250 GSM',text:'PP 250 GSM'}],
                 airbagTable : json,
+                isActive: false
+                //airbag calculator table
+            }
+        },
+        //watch vale change within the table
+        watch:{
+            'selectedBagWidth': function(){
+                this.getSurfaceContactIndex;
+            },
+            'selectedBagHeight': function(){
+                this.getSurfaceContactIndex;
+            },
+            'selectedGap': function(){
+                this.getSurfaceContactIndex;
+            },
+            'selectedBagType': function(){
+                this.getSurfaceContactIndex;
             }
         },
         methods:{
-            onLoaded(){
-                this.loaded = true
-            },
             forceByFillingPressure(){
                 let f = 0;
                 f = this.selectedBagWidth * this.selectedBagHeight * this.surface_contact * this.getMaxFillingPressure * 2 / 10;
                 if (isNaN(f)){
                     return "Please Choose Another Value"
                 }else {
+                    this.isActive = true;
                     return (this.forceByMaxFillingPressure = Math.round(f * 10) / 10).toString() + " kg" ;
                 }
             }
@@ -420,11 +431,14 @@
                        return MFP = this.airbagTable[i]['Max fill. pressure'] * 10;
                     }
                 }
-            }
-        },
-        mounted: function () {
-            var that =  this;
-            this.loaded = window.addEventListener('load', function(){that.onLoaded()}) // This is the key part: it is basically vanilla JS
+            },
+            // getTableFontSize: function(){
+                // let r = this.forceByFillingPressure();
+                // console.log(r.includes('Please'));
+                // if(this.forceByFillingPressure ){
+                //     console.log('fuck yeah');
+                // }
+            // }
         }
     }
 </script>
@@ -440,6 +454,7 @@
     #dunnage_description li:before {
         /*font-family: 'FontAwesome';*/
         /*content: '\f006';*/
+        /*color: red;*/
         margin:0px 5px 2px -20px;
     }
     #dunnage_description{
@@ -487,6 +502,11 @@
         color: #FFFFFF;
         transition: all 0.5s;
     }
+
+    .airtableFont{
+        font-size: 1.9vw;
+    }
+
     .carousel-caption{
         position: relative;
         /*background-color: black;*/
@@ -513,6 +533,7 @@
         transition: opacity 1s;
         opacity:0;
     }
+
 
 
 </style>

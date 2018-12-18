@@ -106,7 +106,7 @@
                 message: "445 Coney Island Drive",
                 message2: "Sparks, 89431, USA",
                 title2: "  Call Us",
-                items:[{message2:"Call (877)-226-4112"}, {message2:"Main (775)-399-6770"},
+                items:[{message2:"Call (775)-399-6770"}, {message2:"Main (775)-399-6770"},
                     {message2:"Accounting (775)-399-6773"}, {message2:"Fax (775)-399-6776"}],
                 title3: "Business Hours",
                 hours:[{text:"Monday to Saturday"},{text:" 8:30 am - 6:00 pm PST"}],

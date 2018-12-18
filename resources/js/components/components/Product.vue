@@ -3,7 +3,7 @@
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
         <div class="col-md-auto p-lg-5 mx-auto" >
             <h1 class="display-5 font-weight-normal text-uppercase pl-2" id="prodcut_title">
-                 <a class="paper-bag-text-color" v-bind:href="kraftpaperlink" id="kraft"> Kraft Paper</a> | <a class="paper-bag-text-color" v-bind:href="polywovenlink" id="polywoven">Polywoven</a>
+                 <a class="paper-bag-text-color" v-bind:href="kraftPaperLink" id="kraft"> Kraft Paper</a> | <a class="paper-bag-text-color" v-bind:href="polyWovenLink" id="polywoven">Polywoven</a>
             </h1>
             <ul class="lead font-weight-light list-unstyled">
                 <li class="text-uppercase font-weight-bold mr-4">Dunnage Airbag</li>
@@ -11,7 +11,7 @@
             </ul>
         </div>
 
-        <a v-bind:href="polywovenlink">
+        <a v-bind:href="polyWovenLink">
             <div class="d-none d-md-block">
                 <div class="product-device ">
                     <div class="view zoom pt-lg-3 pb-lg-3" data-aos="flip-up" data-aos-duration="5000">
@@ -23,7 +23,7 @@
             </div>
         </a>
 
-        <a v-bind:href="kraftpaperlink">
+        <a v-bind:href="kraftPaperLink">
             <div class="d-none d-md-block">
                 <div class="product-device-2">
                     <div class="view zoom pt-lg-3 pb-lg-3" data-aos="flip-up" data-aos-duration="5000">
@@ -52,7 +52,7 @@
             <!--<div class="boxed">-->
             <div class="col-lg-3 col-sm-6" >
                 <div class="view overlay zoom mb-4">
-                    <a v-bind:href="lashinglink">
+                    <a v-bind:href="lashingLink">
                         <img class="img-fluid" src="./images/containerlashing5.jpg" alt="containerlashing">
                         <div class="mask flex-center rgba-indigo-strong">
                             <p class="white-text product-title">Container Lashing</p>
@@ -63,7 +63,7 @@
             </div>
             <div class="col-lg-3 col-sm-6 mb-4">
                 <div class="view overlay zoom">
-                    <a v-bind:href="seallink">
+                    <a v-bind:href="sealLink">
                         <img class="img-fluid" src="./images/SEALSWEB.jpg" alt="seal">
                         <div class="mask flex-center rgba-indigo-strong">
                             <p class="white-text product-title">Seals</p>
@@ -73,7 +73,7 @@
             </div>
             <div class="col-lg-3 col-sm-6 mb-4">
                 <div class="view overlay zoom">
-                    <a v-bind:href="barrellink">
+                    <a v-bind:href="barrelLink">
                         <img class="img-fluid" src="./images/Barrelcover3.jpg" alt="barrel cover">
                         <div class="mask flex-center rgba-indigo-strong">
                             <p class="white-text product-title">Barrel Securing</p>
@@ -83,7 +83,7 @@
             </div>
             <div class="col-lg-3 col-sm-6 mb-4">
                 <div class="view overlay zoom">
-                    <a v-bind:href="desiccantslink">
+                    <a v-bind:href="desiccantsLink">
                     <img class="img-fluid" src="./images/Desiccant.jpg" alt="desiccant">
                     <div class="mask flex-center rgba-indigo-strong">
                         <p class="white-text product-title">Desiccants</p>
@@ -120,12 +120,12 @@
                 // seallink:'/boltseal',
                 // barrellink: '/Product/barrelsecuring',
                 // desiccantslink: '/Product/desiccants',
-                kraftpaperlink: '#/Product/kraftbag',
-                polywovenlink: '#/Product/ppairbag',
-                lashinglink: '#/Product/containerlashing',
-                seallink:'#/Product/boltseal',
-                barrellink: '#/Product/barrelsecuring',
-                desiccantslink: '#/Product/desiccants',
+                kraftPaperLink: '#/Product/kraftbag',
+                polyWovenLink: '#/Product/ppairbag',
+                lashingLink: '#/Product/containerlashing',
+                sealLink:'#/Product/boltseal',
+                barrelLink: '#/Product/barrelsecuring',
+                desiccantsLink: '#/Product/desiccants',
             }
         },
         metaInfo: {
