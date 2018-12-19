@@ -80,11 +80,28 @@
             <div class="title-box">
                 <h4 class="mt-0">{{ popupboxMessage }}</h4>
             </div>
-            <div class="container">
-                <a  @click="popupWindows">
-                    <button type="button" class="btn btn-primary btn-lg btn-block"><span>Send Your Info</span></button>
-                </a>
+            <div class="container shadow-sm border">
+                <!--<a  @click="popupWindows">-->
+                    <!--<button type="button" class="btn btn-primary btn-lg btn-block"><span>Send Your Info</span></button>-->
+                <!--</a>-->
+                <form class="p-4">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" />
+                    </div>
 
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" name="email" id="email" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary"><i class="material-icons">send</i></button>
+                </form>
             </div>
         </section>
 

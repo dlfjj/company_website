@@ -20,12 +20,10 @@
                             <img slot="img" class="d-block img-fluid w-100 pb-1"
                                  src="./images/Banner4.jpg" alt="Polywoven Bag">
                         </b-carousel-slide>
-
                         <b-carousel-slide >
                             <img slot="img" class="d-block img-fluid w-100 pb-1"
                                  src="./images/Banner2.jpg" alt="Paperbag dunnage bag ">
                         </b-carousel-slide>
-
                         <b-carousel-slide>
                             <img slot="img" class="d-block img-fluid w-100 pb-1"
                                  src="./images/Banner3.jpg" alt="airbag usage">
@@ -229,61 +227,87 @@
                     </tr>
                     <tr>
                         <th rowspan="2" style="width: 17%;">Gap between pallets</th>
-                        <th rowspan="2" style="width: 14%;">Pallet Height(PH)</th>
+                        <th rowspan="2" style="width: 14%;">Pallet Height</th>
                         <th colspan="2" style="width: 20%">Bag size</th>
                         <th scope="col" rowspan="2" style="width: 17%;">Airbag Types</th>
                         <th scope="col" rowspan="2" style="width: 10%;">Surface contact</th>
                         <th scope="col" rowspan="2" style="width: 17%;">Force by Max filling pressure </th>
                     </tr>
-                    <!--<tr>-->
-                        <!--<th>Width (cm)</th>-->
-                        <!--<th>Length (cm)</th>-->
-                    <!--</tr>-->
+                    <tr>
+                        <th>Width (cm)</th>
+                        <th>Length (cm)</th>
+                    </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td>
-                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                           v-model="selectedGap"
-                                           :options="gap"
-                                           id="bagWidthSelect"
-                            >
-                            </b-form-select>
+                            <b-form-input type="number" v-model="inputGap" placeholder="Enter Gap Width"></b-form-input>
+                            <!--<b-form-input type="text" v-model="animal_name"></b-form-input>-->
+
+
+                            <!--<p>Value: {{ selectedGap }}</p>-->
+
+                            <!--<b-form-select class="mb-2 mr-sm-2 mb-sm-0"-->
+                                           <!--v-model="selectedGap"-->
+                                           <!--:options="gap"-->
+                                           <!--id="bagWidthSelect"-->
+                            <!--&gt;-->
+                            <!--</b-form-select>-->
                         </td>
                         <td>
-                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                           v-model="selectedPalletHeight"
-                                           :options="palletHeight"
-                                           id="bagWidthSelect"
-                            >
-                            </b-form-select>
+                            <!--<b-form-select class="mb-2 mr-sm-2 mb-sm-0"-->
+                                           <!--v-model="selectedPalletHeight"-->
+                                           <!--:options="filterUserSelectOptions"-->
+                                           <!--id="bagWidthSelect"-->
+                             <!--&gt;-->
+                            <!--</b-form-select>-->
+                            <!--<b-form-select class="mb-2 mr-sm-2 mb-sm-0"-->
+                                           <!--v-model="selectedAnimalType"-->
+                                           <!--:options="animalType"-->
+                            <!--&gt;-->
+                            <!--</b-form-select>-->
+                            <b-form-input type="number" v-model="inputGapHeight" placeholder="Enter Your Pallet Height"></b-form-input>
+
                         </td>
                         <td>
-                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                           v-model="selectedBagWidth"
-                                           :options="bagWidth"
-                                           id="bagWidthSelect"
-                            >
-                            </b-form-select>
+                            <transition name="fade" mode="out-in" duration="1000">
+                                <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
+                                               v-model="selectedBagWidth"
+                                               :options="filterUserSelectOptions"
+                                               id="bagWidthSelect"
+                                               v-if="showWidthOptions"
+                                >
+                                </b-form-select>
+                            </transition>
                             <!--<div>Selected: <strong>{{ selectedBagWidth }}</strong></div>-->
                         </td>
                         <td>
+                            <transition name="fade" mode="out-in" duration="1000">
                             <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
                                            v-model="selectedBagHeight"
-                                           :options="bagHeight"
+                                           :options="filterUserBagLengthOptions"
                                            id="bagWidthSelect"
+                                           v-if="showLengthOptions"
                             >
                             </b-form-select>
+                            </transition>
+                            <!--<div>Selected: <strong>{{ selectedBagHeight }}</strong></div>-->
+
                         </td>
                         <td>
+                            <transition name="fade" mode="out-in" duration="1000">
                             <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
                                            v-model="selectedBagType"
                                            :options="bagType"
                                            id="bagWidthSelect"
+                                           v-if="showAirbagType"
                             >
                             </b-form-select>
+                            </transition>
                         </td>
-                        <td><span class="airtableFont">{{ surface_contact }}</span></td>
+                        <!--<td><span class="airtableFont">{{ surface_contact }} </span></td>-->
+                        <td><span class="airtableFont">{{ surfaceContactAnimated }}</span></td>
+                        <!--binding style with condition-->
                         <td><span v-bind:class="{ 'airtableFont': isActive == true }">{{ forceByFillingPressure() }}</span></td>
                     </tr>
                     </tbody>
@@ -303,6 +327,7 @@
 
 <script>
     import json from './csvFiles/airbag_size_table.json'
+    import { TweenLite } from 'gsap'
     export default {
         name: "Homepage",
         metaInfo: {
@@ -318,6 +343,13 @@
         // props:['loaded'],
         data(){
             return{
+
+                //transition for airtable
+                showWidthOptions:false,
+                showLengthOptions:false,
+                showAirbagType:false,
+                animateSurfaceContact:0,
+                animateForceNumber: 0,
 
                 // carousel section
                 slide: 0,
@@ -351,16 +383,24 @@
 
                 //airbag calculator table
                 //user selected value
+                // animal_name: '',
+                // selectedAnimalType:0,
+                // animalType:[{text:'Bass',value:60},{text:'Catfish',value: 90}, {text:'Jersey cattle', value:120, disabled: true},{text:'Guernsey cattle',value:150}],
+
+
                 surface_contact: 0,
-                forceByMaxFillingPressure: 0,
+                forceByMaxFillingPressure: '',
                 selectedBagWidth: 0,
                 selectedBagHeight: 0,
-                selectedGap: 150,
+                inputGap: 0,
+                selectedGap:0,
+                inputGapHeight: 0,
+                givenGap:0,
                 selectedBagType: '',
-                selectedPalletHeight: 60,
-                palletHeight:[{text:'PH > 60',value:60},{text:'PH > 90',value: 90}, {text:'PH > 120', value:120},{text:'PH > 150',value:150}],
-                bagWidth:[{ value: 0, text: 'Width' },{text:'60',value:60},{text:'90',value: 90}, {text:'120', value:120},{text:'150',value:150}],
-                bagHeight:[{ value: 0, text: 'Height' },{value:60, text:'60'},{value:90,text:'90'},{value:120,text:'120'},{value:150,text:'150'},{value:180,text:'180'},{value:210,text:'210'},{value:225,text:'225'},{value:240,text:'240'},{value:260,text:'260'},{value:270,text:'270'}],
+                selectedPalletHeight: 150,
+                // palletHeight:[{text:'PH > 60',value:60},{text:'PH > 90',value: 90}, {text:'PH > 120', value:120},{text:'PH > 150',value:150}],
+                bagWidth:[{text:'60',value:60},{text:'90',value: 90}, {text:'120', value:120},{text:'150',value:150}],
+                bagHeight:[{value:60, text:'60'},{value:90,text:'90'},{value:120,text:'120'},{value:150,text:'150'},{value:180,text:'180'},{value:210,text:'210'},{value:225,text:'225'},{value:240,text:'240'},{value:260,text:'260'},{value:270,text:'270'}],
                 gap: [{value:150, text:'150'},{value:200, text:'200'},{value:300,text:'300'},{value:400, text:'400'},{value:500, text:'500'},{value:600, text:'600'}],
                 bagType:[{ value: '', text: 'Select Bag Type'},{value:'PAPER 1 Ply SAVFER',text:'PAPER 1 Ply SAVFER'},{value:'Paper 2 Ply SAVFER',text:'Paper 2 Ply SAVFER'},
                     {value:'Paper 1 Ply Standard',text:'Paper 1 Ply Standard'},{value:'Paper 2 Ply Standard', text:'Paper 2 Ply Standard'},
@@ -377,14 +417,41 @@
             'selectedBagWidth': function(){
                 this.getSurfaceContactIndex;
             },
-            'selectedBagHeight': function(){
-                this.getSurfaceContactIndex;
-            },
             'selectedGap': function(){
                 this.getSurfaceContactIndex;
             },
-            'selectedBagType': function(){
+            'selectedBagType': function(newValue){
+                // this.getSurfaceContactIndex;
+            },
+            'inputGap':function(){
+                if(this.inputGap>30){
+                    this.showWidthOptions=true;
+                }else{
+                    this.showWidthOptions=false;
+                }
+            },
+            'inputGapHeight':function(){
+                if(this.inputGapHeight>20){
+                    this.showLengthOptions = true;
+                }else{
+                    this.showLengthOptions = false;
+                }
+            },
+            // 'selectedBagHeight': function(){
+            //     this.getSurfaceContactIndex;
+            // },
+            'selectedBagHeight':function(){
                 this.getSurfaceContactIndex;
+                if(this.selectedBagHeight){
+                    this.showAirbagType = true;
+                }else{
+                    this.showAirbagType = false;
+                }
+            },
+            'surface_contact':function(newValue){
+
+                //animated number presentation when it change value
+                TweenLite.to(this.$data, 0.5, { animateSurfaceContact: newValue });
             }
         },
         methods:{
@@ -392,12 +459,15 @@
                 let f = 0;
                 f = this.selectedBagWidth * this.selectedBagHeight * this.surface_contact * this.getMaxFillingPressure * 2 / 10;
                 if (isNaN(f)){
-                    return "Please Choose Another Value"
+                    this.isActive = false;
+                    return "Please Choose Another Value";
                 }else {
                     this.isActive = true;
+                    //animated number presentation when it change value
+                    // return TweenLite.to(this.$data, 0.5, { animateForceNumber: newValue });
                     return (this.forceByMaxFillingPressure = Math.round(f * 10) / 10).toString() + " kg" ;
                 }
-            }
+            },
         },
         computed:{
             sliderPacechange: function(){
@@ -432,13 +502,63 @@
                     }
                 }
             },
-            // getTableFontSize: function(){
-                // let r = this.forceByFillingPressure();
-                // console.log(r.includes('Please'));
-                // if(this.forceByFillingPressure ){
-                //     console.log('fuck yeah');
-                // }
-            // }
+
+            //change bag width options based on gap width
+            filterUserSelectOptions (){
+                if (this.inputGap){
+                    let gapTohWidth = 0;
+                    if(0<=this.inputGap && this.inputGap<=300){
+                        gapTohWidth=60;
+                        this.selectedGap = 300;
+                    }else if(301<=this.inputGap && this.inputGap<=400){
+                        gapTohWidth=90;
+                        this.selectedGap = 400;
+                    }else if(401<=this.inputGap && this.inputGap<=500){
+                        gapTohWidth=120;
+                        this.selectedGap = 500;
+                    }else if(501<=this.inputGap && this.inputGap<=600){
+                        gapTohWidth=150;
+                        this.selectedGap = 600;
+                    }
+
+                    return this.bagWidth.filter(t => t.value >= gapTohWidth);
+                }else {
+                    return this.bagWidth
+                }
+            },
+            filterUserBagLengthOptions (){
+                if (this.inputGapHeight){
+                    let selectableBagHeight = 0;
+                    if(0<=this.inputGapHeight && this.inputGapHeight<=89){
+                        selectableBagHeight=60;
+                    }else if(90<=this.inputGapHeight && this.inputGapHeight<=119){
+                        selectableBagHeight=90;
+                    }else if(120<=this.inputGapHeight && this.inputGapHeight<=149){
+                        selectableBagHeight=120;
+                    }else if(150<=this.inputGapHeight && this.inputGapHeight<=179){
+                        selectableBagHeight=150;
+                    }else if(180<=this.inputGapHeight && this.inputGapHeight<=219){
+                        selectableBagHeight=180;
+                    }else if(210<=this.inputGapHeight && this.inputGapHeight<=224){
+                        selectableBagHeight=210;
+                    }else if(225<=this.inputGapHeight && this.inputGapHeight<=239){
+                        selectableBagHeight=225;
+                    }else if(240<=this.inputGapHeight && this.inputGapHeight<=259){
+                        selectableBagHeight=240;
+                    }else if(260<=this.inputGapHeight && this.inputGapHeight<=269){
+                        selectableBagHeight=260;
+                    }else if(this.inputGapHeight>=270){
+                        selectableBagHeight=270;
+                    }
+
+                    return this.bagHeight.filter(t => t.value <= selectableBagHeight);
+                }else {
+                    return this.bagHeight
+                }
+            },
+            surfaceContactAnimated: function() {
+                return this.animateSurfaceContact.toFixed(1);
+            }
         }
     }
 </script>
@@ -518,20 +638,12 @@
         margin-top:6%;
     }
 
-    /*vuejs experiment*/
-    .fade-enter {
+    /*vuejs animation for fade in and fade out*/
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
         opacity: 0;
-    }
-    .fade-enter-active{
-        transition-delay: 1000ms;
-        /*transition: opacity 10s ease-in-out;*/
-    }
-    .fade-leave{
-        /*opacity default is 1 */
-    }
-    .fade-leave-active{
-        transition: opacity 1s;
-        opacity:0;
     }
 
 
