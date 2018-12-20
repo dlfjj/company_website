@@ -71417,6 +71417,13 @@ exports.push([module.i, "\n.container2[data-v-4234e812]{\n    width: 60%;\n    m
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_FormMixin__ = __webpack_require__(416);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -71530,8 +71537,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'Contact',
+    mixins: [__WEBPACK_IMPORTED_MODULE_0__js_FormMixin__["a" /* default */]],
+
     data: function data() {
         return {
             linkedinlink: 'https://www.linkedin.com/company/american-dunnage-inc/',
@@ -71549,7 +71560,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             buttonSize: '',
             msg: 'Hello World! This is a Event listener test.',
             windowWidth: 0,
-            windowHeight: 0
+            windowHeight: 0,
+
+            'action': '/submit'
         };
     },
 
@@ -71748,14 +71761,133 @@ var render = function() {
       _vm._v(" "),
       _c("hr"),
       _vm._v(" "),
-      _c("section", { staticClass: "mr-lg-4 pt-3" }, [
+      _c("section", { staticClass: "mr-lg-4" }, [
         _c("div", { staticClass: "title-box" }, [
           _c("h4", { staticClass: "mt-0" }, [
             _vm._v(_vm._s(_vm.popupboxMessage))
           ])
         ]),
         _vm._v(" "),
-        _vm._m(5)
+        _c("div", { staticClass: "container shadow-sm border p-4" }, [
+          _c(
+            "form",
+            {
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.submit($event)
+                }
+              }
+            },
+            [
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { attrs: { for: "name" } }, [_vm._v("Name")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.fields.name,
+                      expression: "fields.name"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "name", id: "name" },
+                  domProps: { value: _vm.fields.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.fields, "name", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors && _vm.errors.name
+                  ? _c("div", { staticClass: "text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.name[0]))
+                    ])
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { attrs: { for: "email" } }, [_vm._v("E-mail")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.fields.email,
+                      expression: "fields.email"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "email", name: "email", id: "email" },
+                  domProps: { value: _vm.fields.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.fields, "email", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors && _vm.errors.email
+                  ? _c("div", { staticClass: "text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.email[0]))
+                    ])
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { attrs: { for: "message" } }, [_vm._v("Message")]),
+                _vm._v(" "),
+                _c("textarea", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.fields.message,
+                      expression: "fields.message"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { id: "message", name: "message", rows: "5" },
+                  domProps: { value: _vm.fields.message },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.fields, "message", $event.target.value)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.errors && _vm.errors.message
+                  ? _c("div", { staticClass: "text-danger" }, [
+                      _vm._v(_vm._s(_vm.errors.message[0]))
+                    ])
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _vm._m(5),
+              _vm._v(" "),
+              _vm.success
+                ? _c("div", { staticClass: "alert alert-success mt-3" }, [
+                    _vm._v(
+                      "\n                    Message sent!\n                "
+                    )
+                  ])
+                : _vm._e()
+            ]
+          )
+        ])
       ])
     ]
   )
@@ -71864,42 +71996,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container shadow-sm border" }, [
-      _c("form", { staticClass: "p-4" }, [
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "name" } }, [_vm._v("Name")]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "text", name: "name", id: "name" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "email" } }, [_vm._v("E-mail")]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "email", name: "email", id: "email" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("label", { attrs: { for: "message" } }, [_vm._v("Message")]),
-          _vm._v(" "),
-          _c("textarea", {
-            staticClass: "form-control",
-            attrs: { name: "message", id: "message", rows: "5" }
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_c("i", { staticClass: "material-icons" }, [_vm._v("send")])]
-        )
-      ])
-    ])
+    return _c(
+      "button",
+      { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+      [_c("i", { staticClass: "material-icons" }, [_vm._v("send")])]
+    )
   }
 ]
 render._withStripped = true
@@ -78204,6 +78305,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         bottom: __WEBPACK_IMPORTED_MODULE_0__components_Footer_vue___default.a,
         appHeader: __WEBPACK_IMPORTED_MODULE_1__components_Header_vue___default.a
+    },
+    mounted: function mounted() {
+        console.log('Component mounted.');
     }
 });
 
@@ -87419,6 +87523,46 @@ var TweenMaxBase = TweenMax;
 
 
 
+
+/***/ }),
+/* 416 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+    data: function data() {
+        return {
+            fields: {},
+            errors: {},
+            success: false,
+            loaded: true,
+            action: ''
+        };
+    },
+
+
+    methods: {
+        submit: function submit() {
+            var _this = this;
+
+            if (this.loaded) {
+                this.loaded = false;
+                this.success = false;
+                this.errors = {};
+                axios.post(this.action, this.fields).then(function (response) {
+                    _this.fields = {}; //Clear input fields.
+                    _this.loaded = true;
+                    _this.success = true;
+                }).catch(function (error) {
+                    _this.loaded = true;
+                    if (error.response.status === 422) {
+                        _this.errors = error.response.data.errors || {};
+                    }
+                });
+            }
+        }
+    }
+});
 
 /***/ })
 /******/ ]);

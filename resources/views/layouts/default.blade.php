@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>American Dunnage</title>
-    <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
     <meta name="csrf-token" value="{{ csrf_token() }}" />
+    <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
 </head>
 <body>
     {{--integrate vuejs as frontend--}}

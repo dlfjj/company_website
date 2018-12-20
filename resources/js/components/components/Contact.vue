@@ -76,31 +76,37 @@
             </div>
         <hr>
 
-        <section class="mr-lg-4 pt-3">
+        <section class="mr-lg-4">
             <div class="title-box">
                 <h4 class="mt-0">{{ popupboxMessage }}</h4>
             </div>
-            <div class="container shadow-sm border">
+            <div class="container shadow-sm border p-4">
                 <!--<a  @click="popupWindows">-->
                     <!--<button type="button" class="btn btn-primary btn-lg btn-block"><span>Send Your Info</span></button>-->
                 <!--</a>-->
-                <form class="p-4">
+                <form @submit.prevent="submit">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" name="name" id="name" />
+                        <input type="text" class="form-control" name="name" id="name" v-model="fields.name" />
+                        <div v-if="errors && errors.name" class="text-danger">{{ errors.name[0] }}</div>
                     </div>
 
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" class="form-control" name="email" id="email" />
+                        <input type="email" class="form-control" name="email" id="email" v-model="fields.email" />
+                        <div v-if="errors && errors.email" class="text-danger">{{ errors.email[0] }}</div>
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" v-model="fields.message"></textarea>
+                        <div v-if="errors && errors.message" class="text-danger">{{ errors.message[0] }}</div>
                     </div>
 
                     <button type="submit" class="btn btn-primary"><i class="material-icons">send</i></button>
+                    <div v-if="success" class="alert alert-success mt-3">
+                        Message sent!
+                    </div>
                 </form>
             </div>
         </section>
@@ -111,8 +117,12 @@
 </template>
 
 <script>
+    import FormMixin from './js/FormMixin';
+
     export default {
         name: 'Contact',
+        mixins: [ FormMixin ],
+
         data(){
             return{
                 linkedinlink: 'https://www.linkedin.com/company/american-dunnage-inc/',
@@ -132,6 +142,8 @@
                 msg: 'Hello World! This is a Event listener test.',
                 windowWidth: 0,
                 windowHeight: 0,
+
+                'action': '/submit',
             }
         },
         metaInfo: {

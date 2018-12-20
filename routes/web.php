@@ -17,4 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//Route::get('testmail','ContactFormController@testmail');
+
+
 //Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/submit', 'ContactFormController@submit');
+

@@ -20,7 +20,10 @@
         components: {
             bottom,
             appHeader: top,
-        }
+        },
+        mounted() {
+            console.log('Component mounted.')
+        },
     }
 </script>
 
