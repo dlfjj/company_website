@@ -33,14 +33,20 @@
                         <div class="row text-center">
                             <div class="col-md-4">
                                 <div class="icon">
-                                    <i class="fas fa-map-marked-alt fa-2x border border-light shadow-sm"></i>
+                                    <!--<i class="fas fa-map-marked-alt fa-2x border border-light shadow-sm"></i>-->
+                                    <i class="material-icons">
+                                        location_on
+                                    </i>
                                 </div>
                                 <p class="pt-4">{{message}}</p>
                                 <p>{{message2}}</p>
                             </div>
                             <div class="col-md-4">
                                 <a class="icon">
-                                    <i class="fas fa-phone fa-2x border border-light"></i>
+                                    <!--<i class="fas fa-phone fa-2x border border-light"></i>-->
+                                    <i class="material-icons">
+                                        phone
+                                    </i>
                                     <!--<i class="fas fa-phone fa-2x border border-light shadow-sm"></i>-->
                                 </a>
                                 <div class="pt-4">
@@ -48,8 +54,11 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <a class="icon2">
-                                    <i class="fas fa-door-open fa-sm border border-light shadow-sm"></i>
+                                <a class="icon">
+                                    <!--<i class="fas fa-door-open fa-sm border border-light shadow-sm"></i>-->
+                                    <i class="material-icons">
+                                        access_time
+                                    </i>
                                 </a>
                                 <div class="pt-4">
                                     <p v-for="text in hours">{{ text.text }}</p>
@@ -96,18 +105,39 @@
                         <input type="email" class="form-control" name="email" id="email" v-model="fields.email" />
                         <div v-if="errors && errors.email" class="text-danger">{{ errors.email[0] }}</div>
                     </div>
-
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" class="form-control" id="company"  name="company" v-model="fields.company">
+                        <div v-if="errors && errors.company" class="text-danger">{{ errors.company[0] }}</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="state" class="control-label">State</label>
+                        <v-select v-model="fields.state" :options="state" id="state" name="state">
+                        </v-select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode" class="col-form-label">Zip Code</label>
+                        <input type="text" class="form-control" id="zipCode" name="zipCode" v-model="fields.zipCode">
+                    </div>
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="5" v-model="fields.message"></textarea>
                         <div v-if="errors && errors.message" class="text-danger">{{ errors.message[0] }}</div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary"><i class="material-icons">send</i></button>
-                    <div v-if="success" class="alert alert-success mt-3">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <button type="submit" class="btn btn-primary" id="start-progress-bar"><i class="material-icons">send</i></button>
+                        </div>
+                        <div class="col-lg-10 mt-4">
+                            <b-progress :value="progressBarValue" class="w-100" variant="warning"></b-progress>
+                        </div>
+                    </div>
+                    <div v-if="progressBarValue === 100" class="alert alert-success mt-3">
                         Message sent!
                     </div>
                 </form>
+
             </div>
         </section>
 
@@ -118,11 +148,14 @@
 
 <script>
     import FormMixin from './js/FormMixin';
+    import { HalfCircleSpinner } from 'epic-spinners';
 
     export default {
         name: 'Contact',
         mixins: [ FormMixin ],
-
+        components: {
+            HalfCircleSpinner
+        },
         data(){
             return{
                 linkedinlink: 'https://www.linkedin.com/company/american-dunnage-inc/',
@@ -144,6 +177,8 @@
                 windowHeight: 0,
 
                 'action': '/submit',
+                progressBarValue:0,
+                state:['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming']
             }
         },
         metaInfo: {
@@ -175,8 +210,7 @@
             this.$nextTick(function() {
                 window.addEventListener('resize', this.resizeButton);
                 this.resizeButton()
-            })
-
+            });
         },
 
     };
@@ -190,10 +224,6 @@
     @import './css/timeline.css';
 
 
-    .container2{
-        width: 60%;
-        margin-left: 28%;
-    }
     .container{
         width:68%;
         margin-left: 17.5%;
@@ -237,33 +267,22 @@
         .card{
             margin-bottom:50px;
             width: calc(100% - 200px);
-
         }
         .container{
             width:80%;
             margin-left: 10%;
         }
-
-
     }
     @media(max-width:720px){
         .card{
             margin-bottom:50px;
             width: calc(100% - 30px);
-
         }
         .container{
             width:100%;
             margin-left: 0%;
         }
-        .container2{
-            margin-left: 25%;
 
-        }
     }
-
-
-
-
 
 </style>

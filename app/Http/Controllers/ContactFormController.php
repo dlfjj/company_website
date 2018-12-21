@@ -12,8 +12,10 @@ class ContactFormController extends Controller
 {
     public function submit(Request $request) {
 
-//        Log::info('Showing your request: '.$request);
+        Log::info('Showing your request: '.$request);
 
+
+//        {"name":"jack","email":"dlfjj123@gmail.com","company":"pineapple","state":"Alaska","zipCode":"89509","message":"we love this fuck face"}
 
         $this->validate($request, [
             'name' => 'required|string',
@@ -21,12 +23,11 @@ class ContactFormController extends Controller
             'message' => 'required',
         ]);
 
-
         $mail_data = array(
             'from_name' => "Jiajie Fan,Shelly, Achim",
             'from_email' => "americandunnage@n55lwi.info",
             'subject' => "American Dunnage Inc. Contact Submit Form",
-            'mail_body' => $request->name.'  '.$request->email.' '.$request->message
+            'mail_body' => $request->name.'  '.$request->email.' '.$request->message.' '.$request->company.' '.$request->zipCode.' '.$request->state
         );
 //
         $message = new ContactFormMail($mail_data);
@@ -38,6 +39,9 @@ class ContactFormController extends Controller
 
         $newContact->name = $request->name;
         $newContact->email = $request->email;
+        $newContact->company = $request->company;
+        $newContact->state = $request->state;
+        $newContact->zipCode = $request->zipCode;
         $newContact->message = $request->message;
 
         $newContact->save();

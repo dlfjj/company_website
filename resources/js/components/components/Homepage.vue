@@ -220,14 +220,14 @@
 
         <section class="airbag-calculator">
             <div class="container">
-                <table class="table table-bordered text-center shadow-sm">
+                <table class="table table-bordered text-center shadow">
                     <thead class="thead-light text-uppercase" >
                     <tr>
                         <th colspan="7" style="font-size: larger; font-weight: 600; color: #112133">Airbag Calculator</th>
                     </tr>
                     <tr>
-                        <th rowspan="2" style="width: 15%; align:center;"><span style="vertical-align: center;margin-bottom: 20px;">Gap between pallets</span></th>
-                        <th rowspan="2" style="width: 15%;">Pallet Height</th>
+                        <th rowspan="2" style="width: 17%; align:center;"><span style="vertical-align: center;margin-bottom: 20px;">Gap between pallets</span></th>
+                        <th rowspan="2" style="width: 18%;">Pallet Height</th>
                         <!--<th colspan="2" style="width: 20%">Bag size</th>-->
                         <th>Width</th>
                         <th>Length</th>
@@ -243,10 +243,8 @@
                     <tbody>
                     <tr>
                         <td>
-                            <b-form-input type="text" v-model="inputGap" placeholder="Enter Gap Width"></b-form-input>
+                            <b-form-input type="number" v-model="inputGap" placeholder="Enter Gap Width"></b-form-input>
                             <!--<b-form-input type="text" v-model="animal_name"></b-form-input>-->
-
-                            <!--<p>Value: {{ selectedGap }}</p>-->
 
                             <!--<b-form-select class="mb-2 mr-sm-2 mb-sm-0"-->
                                            <!--v-model="selectedGap"-->
@@ -267,7 +265,7 @@
                                            <!--:options="animalType"-->
                             <!--&gt;-->
                             <!--</b-form-select>-->
-                            <b-form-input type="text" v-model="inputGapHeight" placeholder="Enter Pallet Height"></b-form-input>
+                            <b-form-input type="number" v-model="inputGapHeight" placeholder="Enter Pallet Height"></b-form-input>
 
                         </td>
                         <td>
@@ -329,6 +327,7 @@
 <script>
     import json from './csvFiles/airbag_size_table.json'
     import { TweenLite } from 'gsap'
+
     export default {
         name: "Homepage",
         metaInfo: {
@@ -397,9 +396,9 @@
                 test:0,
                 selectedBagWidth: 0,
                 selectedBagHeight: 0,
-                inputGap: '',
+                inputGap: null,
                 selectedGap:0,
-                inputGapHeight: '',
+                inputGapHeight: null,
                 givenGap:0,
                 selectedBagType: '',
                 selectedPalletHeight: 150,
@@ -413,10 +412,12 @@
                     {value:'Paper 8 Ply',text:'Paper 8 Ply'},{value:'PP SAVFER medium',text:'PP SAVFER medium'},{value:'PP90 Standard',text:'PP90 Standard'},
                     {value:'PP150 Heavy Duty',text:'PP150 Heavy Duty'},{value:'PP200 Super Heavy',text:'PP200 Super Heavy'},{value:'PP 250 GSM',text:'PP 250 GSM'}],
                 airbagTable : json,
-                isActive: false
-                //airbag calculator table
+                isActive: false,
+
+
             }
         },
+
         //watch vale change within the table
         watch:{
             'selectedBagWidth': function(){
@@ -430,22 +431,20 @@
                 this.filterBagTypesOptions;
             },
             'inputGap':function(){
-
                 if(this.inputGap * this.inchToCmFactor>30){
                     this.showWidthOptions=true;
                 }else{
                     this.showWidthOptions=false;
-                    this.showAirbagType = false;
+                    // this.showAirbagType = false;
                 }
 
             },
             'inputGapHeight':function(){
-
                 if(this.inputGapHeight * this.inchToCmFactor>20){
                     this.showLengthOptions = true;
                 }else{
                     this.showLengthOptions = false;
-                    this.showAirbagType = false;
+                    // this.showAirbagType = false;
                 }
 
             },
@@ -483,6 +482,7 @@
                     return (this.forceByMaxFillingPressure = Math.round(f * 10) / 10).toString() + " lbs" ;
                 }
             },
+
         },
         computed:{
             sliderPacechange: function(){
@@ -594,7 +594,7 @@
             surfaceContactAnimated: function() {
                 return this.animateSurfaceContact.toFixed(1);
             }
-        }
+        },
     }
 </script>
 
@@ -661,6 +661,15 @@
     .airtableFont{
         font-size: 1.9vw;
     }
+
+    /*select > option {*/
+        /*background-color: #cc0000;*/
+        /*font-weight: bold;*/
+        /*font-size: 12px;*/
+        /*color: white;*/
+
+    /*}*/
+
 
     .carousel-caption{
         position: relative;

@@ -17,12 +17,17 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import router from './router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import "vue-material-design-icons/styles.css"
-import VueAnalytics from 'vue-analytics'
+import "vue-material-design-icons/styles.css";
+import VueAnalytics from 'vue-analytics';
+import vSelect from 'vue-select';
+
+
 
 Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
 Vue.config.silent = true;
+Vue.component('v-select', vSelect);
+
 
 /**
  * The following block of code may be used to automatically register your
