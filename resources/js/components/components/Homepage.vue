@@ -33,7 +33,7 @@
                     <div class="mask" v-if="slide === 0">
                         <div class="carousel-caption">
                             <div  class="rgba-blue-grey-strong container"  data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
-                                <p>You don’t like surpises opening <br>containers or truck doors ?</p>
+                                <p>You don’t like surprises opening <br>containers or truck doors ?</p>
                             </div>
                             <div class="container rgba-red-strong" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2000">
                                 <p >We don’t like it at all !</p>
@@ -46,7 +46,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="home-area" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
 
@@ -221,7 +220,7 @@
         <section class="airbag-calculator">
             <div class="container">
                 <table class="table table-bordered text-center shadow">
-                    <thead class="thead-light text-uppercase" >
+                    <thead class="thead-light text-uppercase">
                     <tr>
                         <th colspan="7" style="font-size: larger; font-weight: 600; color: #112133">Airbag Calculator</th>
                     </tr>
@@ -233,7 +232,7 @@
                         <th>Length</th>
                         <th scope="col" rowspan="2" style="width: 17%;">Airbag Types</th>
                         <th scope="col" rowspan="2" style="width: 11%;">Surface contact</th>
-                        <th scope="col" rowspan="2" style="width: 17%;">Force by Max filling pressure </th>
+                        <th scope="col" rowspan="2" style="width: 17%;">Force by Max filling pressure</th>
                     </tr>
                     <!--<tr>-->
                         <!--<th>Width (cm)</th>-->
@@ -245,7 +244,6 @@
                         <td>
                             <b-form-input type="number" v-model="inputGap" placeholder="Enter Gap Width"></b-form-input>
                             <!--<b-form-input type="text" v-model="animal_name"></b-form-input>-->
-
                             <!--<b-form-select class="mb-2 mr-sm-2 mb-sm-0"-->
                                            <!--v-model="selectedGap"-->
                                            <!--:options="gap"-->
@@ -266,7 +264,6 @@
                             <!--&gt;-->
                             <!--</b-form-select>-->
                             <b-form-input type="number" v-model="inputGapHeight" placeholder="Enter Pallet Height"></b-form-input>
-
                         </td>
                         <td>
                             <transition name="fade" mode="out-in" duration="1000">
@@ -291,7 +288,6 @@
                             </b-form-select>
                             </transition>
                             <!--<div>Selected: <strong>{{ selectedBagHeight }}</strong></div>-->
-
                         </td>
                         <td>
                             <transition name="fade" mode="out-in" duration="1000">
@@ -352,7 +348,6 @@
                 animateForceNumber: 0,
                 kgToPoundFactor: 2.20462442018,
                 inchToCmFactor: 2.54,
-
 
                 // carousel section
                 slide: 0,

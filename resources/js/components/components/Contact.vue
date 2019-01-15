@@ -130,12 +130,13 @@
                             <button type="submit" class="btn btn-primary" id="start-progress-bar"><i class="material-icons">send</i></button>
                         </div>
                         <div class="col-lg-10 mt-4">
-                            <b-progress :value="progressBarValue" class="w-100" variant="warning"></b-progress>
+                            <b-progress :value="progressBarValue" class="w-100" variant="warning" height="2px" v-show="progressBarActive"></b-progress>
                         </div>
                     </div>
                     <div v-if="progressBarValue === 100" class="alert alert-success mt-3">
                         Message sent!
                     </div>
+
                 </form>
 
             </div>

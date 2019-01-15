@@ -22,12 +22,10 @@ import VueAnalytics from 'vue-analytics';
 import vSelect from 'vue-select';
 
 
-
 Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
 Vue.config.silent = true;
 Vue.component('v-select', vSelect);
-
 
 /**
  * The following block of code may be used to automatically register your

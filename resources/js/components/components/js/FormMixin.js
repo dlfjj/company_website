@@ -6,10 +6,10 @@ export default {
             success: false,
             loaded: true,
             action: '',
-            progressBarActive: false
+            progressBarActive: false,
+            showProgressBar: false
         }
     },
-
     methods: {
         submit() {
             if (this.loaded) {
@@ -34,10 +34,11 @@ export default {
         this.timer = setInterval(() => {
             if(this.success === true ){
                 this.progressBarValue = 100;
+                this.progressBarActive = false;
                 clearInterval(timer);
             }
             if(this.progressBarActive){
-                this.progressBarValue +=30;
+                this.progressBarValue +=50;
             }
         }, 2000)
     }
