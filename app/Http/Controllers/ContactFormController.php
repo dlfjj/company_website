@@ -31,7 +31,7 @@ class ContactFormController extends Controller
         );
 //
         $message = new ContactFormMail($mail_data);
-        Mail::to('jacky@americandunnage.com')->send($message);
+        Mail::to('info@americandunnage.com')->send($message);
 //        Mail::to('dlfjj123@gmail.com')->send($message);
 
 
