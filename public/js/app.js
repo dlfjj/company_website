@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 108);
+/******/ 	return __webpack_require__(__webpack_require__.s = 110);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -249,7 +249,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(265)
+var listToStyles = __webpack_require__(267)
 
 /*
 type StyleObject = {
@@ -1110,7 +1110,7 @@ var eventOff = function eventOff(el, evtName, handler) {
 
 
 var bind = __webpack_require__(50);
-var isBuffer = __webpack_require__(123);
+var isBuffer = __webpack_require__(125);
 
 /*global toString:true*/
 
@@ -3718,7 +3718,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(119);
+var	fixUrls = __webpack_require__(121);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -7041,7 +7041,7 @@ function copyProps(props) {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(9);
-var normalizeHeaderName = __webpack_require__(125);
+var normalizeHeaderName = __webpack_require__(127);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -18232,7 +18232,7 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(140).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(142).setImmediate))
 
 /***/ }),
 /* 29 */
@@ -18670,11 +18670,11 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_plugins__ = __webpack_require__(2);
 
 
@@ -32150,12 +32150,12 @@ process.umask = function() { return 0; };
 
 
 var utils = __webpack_require__(9);
-var settle = __webpack_require__(126);
-var buildURL = __webpack_require__(128);
-var parseHeaders = __webpack_require__(129);
-var isURLSameOrigin = __webpack_require__(130);
+var settle = __webpack_require__(128);
+var buildURL = __webpack_require__(130);
+var parseHeaders = __webpack_require__(131);
+var isURLSameOrigin = __webpack_require__(132);
 var createError = __webpack_require__(53);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(131);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(133);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -32252,7 +32252,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(132);
+      var cookies = __webpack_require__(134);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -32336,7 +32336,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(127);
+var enhanceError = __webpack_require__(129);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -32817,7 +32817,7 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_toggle__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
@@ -32844,7 +32844,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -32928,7 +32928,7 @@ var unbindTargets = function unbindTargets(vnode, binding, listenTypes) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clickout__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clickout__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listen_on_root__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_array__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_object__ = __webpack_require__(5);
@@ -33999,7 +33999,7 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -34023,11 +34023,11 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_item__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_text__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_form__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_item__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_text__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_form__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_plugins__ = __webpack_require__(2);
 
@@ -34065,7 +34065,7 @@ Object(__WEBPACK_IMPORTED_MODULE_6__utils_plugins__["c" /* vueUse */])(VuePlugin
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_range__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_range__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_key_codes__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_dom__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_link_link__ = __webpack_require__(12);
@@ -34660,7 +34660,7 @@ var PopOver = function (_ToolTip) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_array__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_object__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_dom__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_ssr__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_ssr__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_observe_dom__ = __webpack_require__(21);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -35117,6 +35117,83 @@ exports.push([module.i, ".center {\n    display: block;\n    margin-left: auto;\
 
 /***/ }),
 /* 87 */
+/***/ (function(module, exports) {
+
+module.exports = [{"Bag type":"PP SAVFER medium ","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"PP SAVFER medium ","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"PP SAVFER medium ","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"PP SAVFER medium ","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.4},{"Bag type":"PP SAVFER medium ","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.4},{"Bag type":"PP SAVFER medium ","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.4},{"Bag type":"PP90 Standard ","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":120,"Gap height (mm)":120,"Contact surface area":0.3,"Max fill. pressure":0.8,"Burst presure standard":0.56},{"Bag type":"PP90 Standard ","Bags Width":120,"Gap height (mm)":120,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":0.56},{"Bag type":"PP90 Standard ","Bags Width":120,"Gap height (mm)":120,"Contact surface area":0.5,"Max fill. pressure":0.4,"Burst presure standard":0.56},{"Bag type":"PP90 Standard ","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.55},{"Bag type":"PP90 Standard ","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.55},{"Bag type":"PP90 Standard ","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.55},{"Bag type":"PP150 Heavy Duty","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP200 Super Heavy","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP 250 GSM","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply Standard","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 8 Ply","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8}]
+
+/***/ }),
+/* 88 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TimelineLite_js__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TimelineMax_js__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__TweenMax_js__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__CSSPlugin_js__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__AttrPlugin_js__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RoundPropsPlugin_js__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__DirectionalRotationPlugin_js__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__BezierPlugin_js__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__EasePack_js__ = __webpack_require__(95);
+/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__["f"]; });
+/* unused harmony reexport TweenMax */
+/* unused harmony reexport TimelineLite */
+/* unused harmony reexport TimelineMax */
+/* unused harmony reexport CSSPlugin */
+/* unused harmony reexport AttrPlugin */
+/* unused harmony reexport BezierPlugin */
+/* unused harmony reexport RoundPropsPlugin */
+/* unused harmony reexport DirectionalRotationPlugin */
+/* unused harmony reexport TweenPlugin */
+/* unused harmony reexport Ease */
+/* unused harmony reexport Power0 */
+/* unused harmony reexport Power1 */
+/* unused harmony reexport Power2 */
+/* unused harmony reexport Power3 */
+/* unused harmony reexport Power4 */
+/* unused harmony reexport Linear */
+/* unused harmony reexport Back */
+/* unused harmony reexport Elastic */
+/* unused harmony reexport Bounce */
+/* unused harmony reexport RoughEase */
+/* unused harmony reexport SlowMo */
+/* unused harmony reexport SteppedEase */
+/* unused harmony reexport Circ */
+/* unused harmony reexport Expo */
+/* unused harmony reexport Sine */
+/* unused harmony reexport ExpoScaleEase */
+/* unused harmony reexport _gsScope */
+/*!
+ * VERSION: 2.0.2
+ * DATE: 2018-08-27
+ * UPDATES AND DOCS AT: http://greensock.com
+ *
+ * @license Copyright (c) 2008-2018, GreenSock. All rights reserved.
+ * This work is subject to the terms at http://greensock.com/standard-license or for
+ * Club GreenSock members, the software agreement that was issued with your membership.
+ *
+ * @author: Jack Doyle, jack@greensock.com
+ **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35651,7 +35728,7 @@ var TimelineMax = __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__["g" /* globals */]
 
 
 /***/ }),
-/* 88 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38567,7 +38644,7 @@ var CSSPlugin = __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__["g" /* globals */].C
 
 
 /***/ }),
-/* 89 */
+/* 91 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38619,7 +38696,7 @@ var AttrPlugin = __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__["e" /* _gsScope */]
 
 
 /***/ }),
-/* 90 */
+/* 92 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38730,7 +38807,7 @@ var RoundPropsPlugin = __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__["e" /* _gsSco
 
 
 /***/ }),
-/* 91 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38824,7 +38901,7 @@ DirectionalRotationPlugin._autoCSS = true;
 
 
 /***/ }),
-/* 92 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39436,7 +39513,7 @@ DirectionalRotationPlugin._autoCSS = true;
 
 
 /***/ }),
-/* 93 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39833,7 +39910,7 @@ var ExpoScaleEase = __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__["g" /* globals *
 
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var escape = __webpack_require__(48);
@@ -39848,116 +39925,116 @@ exports.push([module.i, "/*!\n * Material Design for Bootstrap 4\n * Version: MD
 
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/airflow2.png?44d9e53448002a9be2597883d6af9106";
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/inflater2.png?c86ea94f8d25a2f635201800fd4fe349";
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/inflater5.jpg?8b0c416fc04f3ab230bf2a4b6b558916";
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/inflater1.jpg?93e6d9f96f2aecadc37c6035d660a345";
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/cl1.png?a10bff2a85a0e33f6747b1a9ab778622";
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/drystrip_b.png?5740b8ae63715e113c948936918eef35";
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/barrelcover1.jpg?cda9cdbc6331a4413e5602b97dcf0010";
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/barrelcover2sm.jpg?ee567d561e8991a9a5901a2aa13e4f5c";
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/drumbracket01.jpg?34baad258c1df7df44a948f7a3e8a8bb";
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/boltseal_c.jpg?6f5fb279ca5fc25a3aafe5120971939e";
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/cableseal_c.jpg?97957fbd008d5f4cd2a9d243b20b8fea";
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/usa_flag_poster.png?a1e4c1f60568f3dd6342305d6653f2d6";
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/5starlogo_origin2.png?e110e73cecc5f15bcac936db0419f876";
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(109);
-module.exports = __webpack_require__(503);
+__webpack_require__(111);
+module.exports = __webpack_require__(508);
 
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_dist_css_bootstrap_css__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_dist_css_bootstrap_css__ = __webpack_require__(257);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_dist_css_bootstrap_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_bootstrap_dist_css_bootstrap_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_dist_bootstrap_vue_css__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_dist_bootstrap_vue_css__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_dist_bootstrap_vue_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_dist_bootstrap_vue_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__router__ = __webpack_require__(259);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_aos__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__router__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_aos__ = __webpack_require__(481);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_aos___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_aos__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_aos_dist_aos_css__ = __webpack_require__(477);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_aos_dist_aos_css__ = __webpack_require__(482);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_aos_dist_aos_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_aos_dist_aos_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue_material_design_icons_styles_css__ = __webpack_require__(479);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue_material_design_icons_styles_css__ = __webpack_require__(484);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue_material_design_icons_styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_vue_material_design_icons_styles_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_analytics__ = __webpack_require__(481);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_analytics__ = __webpack_require__(486);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_analytics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vue_analytics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vue_select__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vue_select__ = __webpack_require__(487);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_vue_select___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_vue_select__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_App_vue__ = __webpack_require__(483);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_App_vue__ = __webpack_require__(488);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_App_vue__);
 
 /**
@@ -39966,7 +40043,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(110);
+__webpack_require__(112);
 
 window.Vue = __webpack_require__(28);
 
@@ -40022,12 +40099,12 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 });
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-window._ = __webpack_require__(111);
 window._ = __webpack_require__(113);
+window._ = __webpack_require__(115);
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
@@ -40038,7 +40115,7 @@ try {
   window.Popper = __webpack_require__(18).default;
   window.$ = window.jQuery = __webpack_require__(49);
 
-  __webpack_require__(120);
+  __webpack_require__(122);
 } catch (e) {}
 
 /**
@@ -40047,7 +40124,7 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(121);
+window.axios = __webpack_require__(123);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -40083,7 +40160,7 @@ if (token) {
 // });
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -57195,10 +57272,10 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(112)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(114)(module)))
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -57226,13 +57303,13 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(114);
+var content = __webpack_require__(116);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -57257,7 +57334,7 @@ if(false) {
 }
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var escape = __webpack_require__(48);
@@ -57266,37 +57343,37 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: \"Material Icons\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + escape(__webpack_require__(115)) + ");\n  /* For IE6-8 */\n  src: local(\"Material Icons\"), local(\"MaterialIcons-Regular\"), url(" + escape(__webpack_require__(116)) + ") format(\"woff2\"), url(" + escape(__webpack_require__(117)) + ") format(\"woff\"), url(" + escape(__webpack_require__(118)) + ") format(\"truetype\");\n}\n\n.material-icons {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: 'liga';\n}\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"Material Icons\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + escape(__webpack_require__(117)) + ");\n  /* For IE6-8 */\n  src: local(\"Material Icons\"), local(\"MaterialIcons-Regular\"), url(" + escape(__webpack_require__(118)) + ") format(\"woff2\"), url(" + escape(__webpack_require__(119)) + ") format(\"woff\"), url(" + escape(__webpack_require__(120)) + ") format(\"truetype\");\n}\n\n.material-icons {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  display: inline-block;\n  line-height: 1;\n  text-transform: none;\n  letter-spacing: normal;\n  word-wrap: normal;\n  white-space: nowrap;\n  direction: ltr;\n  /* Support for all WebKit browsers. */\n  -webkit-font-smoothing: antialiased;\n  /* Support for Safari and Chrome. */\n  text-rendering: optimizeLegibility;\n  /* Support for Firefox. */\n  -moz-osx-font-smoothing: grayscale;\n  /* Support for IE. */\n  font-feature-settings: 'liga';\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports) {
 
 module.exports = "/fonts/vendor/material-icons/iconMaterialIcons-Regular.eot?e79bfd88537def476913f3ed52f4f4b3";
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports) {
 
 module.exports = "/fonts/vendor/material-icons/iconMaterialIcons-Regular.woff2?570eb83859dc23dd0eec423a49e147fe";
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports) {
 
 module.exports = "/fonts/vendor/material-icons/iconMaterialIcons-Regular.woff?012cf6a10129e2275d79d6adac7f3b02";
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports) {
 
 module.exports = "/fonts/vendor/material-icons/iconMaterialIcons-Regular.ttf?a37b0c01c0baf1888ca812cc0508f6e2";
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports) {
 
 
@@ -57391,7 +57468,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -61341,13 +61418,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(122);
+module.exports = __webpack_require__(124);
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61355,7 +61432,7 @@ module.exports = __webpack_require__(122);
 
 var utils = __webpack_require__(9);
 var bind = __webpack_require__(50);
-var Axios = __webpack_require__(124);
+var Axios = __webpack_require__(126);
 var defaults = __webpack_require__(27);
 
 /**
@@ -61390,14 +61467,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(55);
-axios.CancelToken = __webpack_require__(138);
+axios.CancelToken = __webpack_require__(140);
 axios.isCancel = __webpack_require__(54);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(139);
+axios.spread = __webpack_require__(141);
 
 module.exports = axios;
 
@@ -61406,7 +61483,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, exports) {
 
 /*!
@@ -61433,7 +61510,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61441,8 +61518,8 @@ function isSlowBuffer (obj) {
 
 var defaults = __webpack_require__(27);
 var utils = __webpack_require__(9);
-var InterceptorManager = __webpack_require__(133);
-var dispatchRequest = __webpack_require__(134);
+var InterceptorManager = __webpack_require__(135);
+var dispatchRequest = __webpack_require__(136);
 
 /**
  * Create a new instance of Axios
@@ -61519,7 +61596,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61538,7 +61615,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61571,7 +61648,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61599,7 +61676,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61672,7 +61749,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61732,7 +61809,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61807,7 +61884,7 @@ module.exports = (
 
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61850,7 +61927,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61910,7 +61987,7 @@ module.exports = (
 
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61969,18 +62046,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(9);
-var transformData = __webpack_require__(135);
+var transformData = __webpack_require__(137);
 var isCancel = __webpack_require__(54);
 var defaults = __webpack_require__(27);
-var isAbsoluteURL = __webpack_require__(136);
-var combineURLs = __webpack_require__(137);
+var isAbsoluteURL = __webpack_require__(138);
+var combineURLs = __webpack_require__(139);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -62062,7 +62139,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62089,7 +62166,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62110,7 +62187,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62131,7 +62208,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62195,7 +62272,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62229,7 +62306,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -62285,7 +62362,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(141);
+__webpack_require__(143);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -62299,7 +62376,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -62492,12 +62569,12 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(51)))
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(143);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
 
@@ -62528,47 +62605,47 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__badge__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_group__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_toolbar__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__input_group__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__badge__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_group__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_toolbar__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__input_group__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__collapse__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__embed__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__form__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__form_group__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__form_checkbox__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__form_radio__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__form_input__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__form_textarea__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_file__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__form_select__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__image__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__jumbotron__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__link__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__list_group__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__media__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__modal__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__embed__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__form__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__form_group__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__form_checkbox__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__form_radio__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__form_input__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__form_textarea__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_file__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__form_select__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__image__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__jumbotron__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__link__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__list_group__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__media__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__modal__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__nav__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__navbar__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pagination__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pagination_nav__ = __webpack_require__(228);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__popover__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__progress__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__table__ = __webpack_require__(235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__tabs__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__tooltip__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__navbar__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pagination__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pagination_nav__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__popover__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__progress__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__table__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__tabs__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__tooltip__ = __webpack_require__(247);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Alert", function() { return __WEBPACK_IMPORTED_MODULE_0__alert__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Badge", function() { return __WEBPACK_IMPORTED_MODULE_1__badge__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Breadcrumb", function() { return __WEBPACK_IMPORTED_MODULE_2__breadcrumb__["a"]; });
@@ -62645,11 +62722,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -62669,12 +62746,12 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_button_close__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_css__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_css__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__alert_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__alert_css__);
 
 
@@ -62799,13 +62876,13 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 });
 
 /***/ }),
-/* 146 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(147);
+var content = __webpack_require__(149);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -62830,7 +62907,7 @@ if(false) {
 }
 
 /***/ }),
-/* 147 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -62844,11 +62921,11 @@ exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n    transitio
 
 
 /***/ }),
-/* 148 */
+/* 150 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__badge__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__badge__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -62868,7 +62945,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 149 */
+/* 151 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62927,11 +63004,11 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__breadcrumb__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__breadcrumb__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__breadcrumb_item__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb_link__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_plugins__ = __webpack_require__(2);
@@ -62957,7 +63034,7 @@ Object(__WEBPACK_IMPORTED_MODULE_3__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63015,7 +63092,7 @@ var props = {
 });
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63044,11 +63121,11 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_group__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_group__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -63069,7 +63146,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63122,11 +63199,11 @@ var props = {
 });
 
 /***/ }),
-/* 155 */
+/* 157 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -63147,7 +63224,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 156 */
+/* 158 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63273,12 +63350,12 @@ var ITEM_SELECTOR = ['.btn:not(.disabled):not([disabled]):not(.dropdown-item)', 
 });
 
 /***/ }),
-/* 157 */
+/* 159 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_plugins__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_group__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_group__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__input_group_addon__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__input_group_prepend__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__input_group_append__ = __webpack_require__(60);
@@ -63310,7 +63387,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 158 */
+/* 160 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63396,16 +63473,16 @@ var props = {
 });
 
 /***/ }),
-/* 159 */
+/* 161 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_header__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_body__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__card_footer__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__card_img__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__card_group__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__card_group__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_plugins__ = __webpack_require__(2);
 
 
@@ -63435,14 +63512,14 @@ Object(__WEBPACK_IMPORTED_MODULE_6__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 160 */
+/* 162 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export props */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_prefix_prop_name__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_unprefix_prop_name__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_unprefix_prop_name__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_copyProps__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_pluck_props__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_object__ = __webpack_require__(5);
@@ -63529,12 +63606,12 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_5__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 161 */
+/* 163 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = unPrefixPropName;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lower_first__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lower_first__ = __webpack_require__(164);
 
 
 /**
@@ -63546,7 +63623,7 @@ function unPrefixPropName(prefix, value) {
 }
 
 /***/ }),
-/* 162 */
+/* 164 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63562,7 +63639,7 @@ function lowerFirst(str) {
 }
 
 /***/ }),
-/* 163 */
+/* 165 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -63606,12 +63683,12 @@ var props = {
 });
 
 /***/ }),
-/* 164 */
+/* 166 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_slide__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_slide__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
 
@@ -63633,7 +63710,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 165 */
+/* 167 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64094,7 +64171,7 @@ var TransitionEndEvents = {
 });
 
 /***/ }),
-/* 166 */
+/* 168 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64210,13 +64287,13 @@ var TransitionEndEvents = {
 });
 
 /***/ }),
-/* 167 */
+/* 169 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__container__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__row__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__col__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__row__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__col__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_row__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_plugins__ = __webpack_require__(2);
 
@@ -64243,7 +64320,7 @@ Object(__WEBPACK_IMPORTED_MODULE_4__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 168 */
+/* 170 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64309,15 +64386,15 @@ var props = {
 });
 
 /***/ }),
-/* 169 */
+/* 171 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export computeBkPtClass */
 /* unused harmony export props */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_functional_data_merge__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_memoize__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_suffix_prop_name__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_memoize__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_suffix_prop_name__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_object__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_array__ = __webpack_require__(6);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -64462,7 +64539,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_3__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 170 */
+/* 172 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64480,7 +64557,7 @@ function memoize(fn) {
 }
 
 /***/ }),
-/* 171 */
+/* 173 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64500,7 +64577,7 @@ function suffixPropName(suffix, str) {
 }
 
 /***/ }),
-/* 172 */
+/* 174 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64697,7 +64774,7 @@ var EVENT_TOGGLE = 'bv::toggle::collapse';
 });
 
 /***/ }),
-/* 173 */
+/* 175 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64769,14 +64846,14 @@ var EVENT_STATE = 'bv::collapse::state';
 });
 
 /***/ }),
-/* 174 */
+/* 176 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_id__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixins_dropdown__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_button__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_css__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_css__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__dropdown_css__);
 
 
@@ -64905,7 +64982,7 @@ var EVENT_STATE = 'bv::collapse::state';
 });
 
 /***/ }),
-/* 175 */
+/* 177 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64933,13 +65010,13 @@ var EVENT_STATE = 'bv::collapse::state';
 });
 
 /***/ }),
-/* 176 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(177);
+var content = __webpack_require__(179);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -64964,7 +65041,7 @@ if(false) {
 }
 
 /***/ }),
-/* 177 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -64978,7 +65055,7 @@ exports.push([module.i, "/* workaround for https://github.com/bootstrap-vue/boot
 
 
 /***/ }),
-/* 178 */
+/* 180 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65007,7 +65084,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /* propsFactory 
 });
 
 /***/ }),
-/* 179 */
+/* 181 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65045,7 +65122,7 @@ var props = {
 });
 
 /***/ }),
-/* 180 */
+/* 182 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65080,7 +65157,7 @@ var props = {
 });
 
 /***/ }),
-/* 181 */
+/* 183 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65110,11 +65187,11 @@ var props = {
 });
 
 /***/ }),
-/* 182 */
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__embed__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__embed__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -65134,7 +65211,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 183 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65181,12 +65258,12 @@ var props = {
 });
 
 /***/ }),
-/* 184 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_row__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_row__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__form_text__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_invalid_feedback__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__form_valid_feedback__ = __webpack_require__(74);
@@ -65218,7 +65295,7 @@ Object(__WEBPACK_IMPORTED_MODULE_5__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 185 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65228,11 +65305,11 @@ Object(__WEBPACK_IMPORTED_MODULE_5__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__layout_form_row__["a" /* default */]);
 
 /***/ }),
-/* 186 */
+/* 188 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -65253,7 +65330,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 187 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65557,12 +65634,12 @@ var SELECTOR = 'input:not(:disabled),textarea:not(:disabled),select:not(:disable
 });
 
 /***/ }),
-/* 188 */
+/* 190 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_checkbox__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_checkbox_group__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_checkbox_group__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
 
@@ -65588,7 +65665,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 189 */
+/* 191 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65708,12 +65785,12 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 });
 
 /***/ }),
-/* 190 */
+/* 192 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_radio__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_radio_group__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_radio_group__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
 
@@ -65737,7 +65814,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 191 */
+/* 193 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65857,11 +65934,11 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 });
 
 /***/ }),
-/* 192 */
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -65882,7 +65959,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 193 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65891,7 +65968,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_form_size__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins_form_state__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_array__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_input_css__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_input_css__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_input_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__form_input_css__);
 
 
@@ -66044,13 +66121,13 @@ var TYPES = ['text', 'password', 'email', 'number', 'url', 'tel', 'search', 'ran
 });
 
 /***/ }),
-/* 194 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(195);
+var content = __webpack_require__(197);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -66075,7 +66152,7 @@ if(false) {
 }
 
 /***/ }),
-/* 195 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -66089,11 +66166,11 @@ exports.push([module.i, "/* Special styling for type=range and type=color input 
 
 
 /***/ }),
-/* 196 */
+/* 198 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -66114,7 +66191,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 197 */
+/* 199 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66270,11 +66347,11 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 });
 
 /***/ }),
-/* 198 */
+/* 200 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -66295,7 +66372,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 199 */
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66553,11 +66630,11 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 });
 
 /***/ }),
-/* 200 */
+/* 202 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -66578,7 +66655,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 201 */
+/* 203 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66695,12 +66772,12 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 });
 
 /***/ }),
-/* 202 */
+/* 204 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_lazy__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_lazy__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
 
@@ -66722,7 +66799,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 203 */
+/* 205 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66914,11 +66991,11 @@ var THROTTLE = 100;
 });
 
 /***/ }),
-/* 204 */
+/* 206 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__jumbotron__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__jumbotron__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -66938,7 +67015,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 205 */
+/* 207 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67045,7 +67122,7 @@ var props = {
 });
 
 /***/ }),
-/* 206 */
+/* 208 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67069,12 +67146,12 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 207 */
+/* 209 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_group__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_group_item__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_group__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_group_item__ = __webpack_require__(211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
 
@@ -67096,7 +67173,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 208 */
+/* 210 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67133,7 +67210,7 @@ var props = {
 });
 
 /***/ }),
-/* 209 */
+/* 211 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67199,11 +67276,11 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 210 */
+/* 212 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__media__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__media__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__media_aside__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__media_body__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_plugins__ = __webpack_require__(2);
@@ -67229,7 +67306,7 @@ Object(__WEBPACK_IMPORTED_MODULE_3__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 211 */
+/* 213 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67289,11 +67366,11 @@ var props = {
 });
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_modal__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
@@ -67316,7 +67393,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68075,7 +68152,7 @@ var Selector = {
 });
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68112,7 +68189,7 @@ var listenTypes = { click: true };
 });
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68179,7 +68256,7 @@ var props = {
 });
 
 /***/ }),
-/* 216 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68206,7 +68283,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /* propsFactory 
 });
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68234,7 +68311,7 @@ var props = {
 });
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68261,7 +68338,7 @@ var props = {
 });
 
 /***/ }),
-/* 219 */
+/* 221 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68338,14 +68415,14 @@ var props = {
 });
 
 /***/ }),
-/* 220 */
+/* 222 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_nav__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar_brand__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_toggle__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_nav__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar_brand__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_toggle__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__collapse__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dropdown__ = __webpack_require__(35);
@@ -68381,7 +68458,7 @@ Object(__WEBPACK_IMPORTED_MODULE_7__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68440,7 +68517,7 @@ var props = {
 });
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68482,7 +68559,7 @@ var props = {
 });
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68526,7 +68603,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_3__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68579,11 +68656,11 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_3__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 225 */
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination__ = __webpack_require__(228);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -68603,7 +68680,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 226 */
+/* 228 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68669,7 +68746,7 @@ var props = {
 });
 
 /***/ }),
-/* 227 */
+/* 229 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68682,11 +68759,11 @@ var props = {
 });
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -68706,7 +68783,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68800,11 +68877,11 @@ routerProps);
 });
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -68824,7 +68901,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68882,7 +68959,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 });
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68894,11 +68971,11 @@ var isSSR = typeof window === 'undefined';
 var HTMLElement = isSSR ? Object : window.HTMLElement;
 
 /***/ }),
-/* 233 */
+/* 235 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__progress_bar__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
@@ -68921,7 +68998,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 234 */
+/* 236 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68997,11 +69074,11 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 });
 
 /***/ }),
-/* 235 */
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table__ = __webpack_require__(238);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -69021,23 +69098,23 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 236 */
+/* 238 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_startcase__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_startcase__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_startcase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash_startcase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_get__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_get__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_get___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash_get__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_loose_equal__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_stable_sort__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_stable_sort__ = __webpack_require__(241);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_key_codes__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warn__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_object__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_array__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mixins_id__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__mixins_listen_on_root__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__table_css__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__table_css__ = __webpack_require__(242);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__table_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__table_css__);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -69969,7 +70046,7 @@ function processField(key, value) {
 });
 
 /***/ }),
-/* 237 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -70556,7 +70633,7 @@ module.exports = startCase;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ }),
-/* 238 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -71494,7 +71571,7 @@ module.exports = get;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ }),
-/* 239 */
+/* 241 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71532,13 +71609,13 @@ function stableSort(array, compareFn) {
 }
 
 /***/ }),
-/* 240 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(241);
+var content = __webpack_require__(243);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -71563,7 +71640,7 @@ if(false) {
 }
 
 /***/ }),
-/* 241 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -71577,12 +71654,12 @@ exports.push([module.i, "/* Add support for fixed layout table */\ntable.b-table
 
 
 /***/ }),
-/* 242 */
+/* 244 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_plugins__ = __webpack_require__(2);
 
 
@@ -71604,7 +71681,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 243 */
+/* 245 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71991,7 +72068,7 @@ var bTabButtonHelper = {
 });
 
 /***/ }),
-/* 244 */
+/* 246 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72115,11 +72192,11 @@ var bTabButtonHelper = {
 });
 
 /***/ }),
-/* 245 */
+/* 247 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(248);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -72139,7 +72216,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 246 */
+/* 248 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72189,16 +72266,16 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 });
 
 /***/ }),
-/* 247 */
+/* 249 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modal__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrollspy__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrollspy__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover__ = __webpack_require__(255);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Toggle", function() { return __WEBPACK_IMPORTED_MODULE_0__toggle__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Modal", function() { return __WEBPACK_IMPORTED_MODULE_1__modal__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Scrollspy", function() { return __WEBPACK_IMPORTED_MODULE_2__scrollspy__["a"]; });
@@ -72213,11 +72290,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 248 */
+/* 250 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -72237,11 +72314,11 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 249 */
+/* 251 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy_class__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy_class__ = __webpack_require__(252);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_object__ = __webpack_require__(5);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -72350,7 +72427,7 @@ function removeBVSS(el) {
 });
 
 /***/ }),
-/* 250 */
+/* 252 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -72839,11 +72916,11 @@ var ScrollSpy = function () {
 /* harmony default export */ __webpack_exports__["a"] = (ScrollSpy);
 
 /***/ }),
-/* 251 */
+/* 253 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(254);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -72863,7 +72940,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 252 */
+/* 254 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73038,11 +73115,11 @@ function removeBVTT(el) {
 });
 
 /***/ }),
-/* 253 */
+/* 255 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_plugins__ = __webpack_require__(2);
 
 
@@ -73062,7 +73139,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils_plugins__["c" /* vueUse */])(VuePlugin
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 254 */
+/* 256 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73237,13 +73314,13 @@ function removeBVPO(el) {
 });
 
 /***/ }),
-/* 255 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(256);
+var content = __webpack_require__(258);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -73268,7 +73345,7 @@ if(false) {
 }
 
 /***/ }),
-/* 256 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -73282,13 +73359,13 @@ exports.push([module.i, "/*!\n * Bootstrap v4.1.3 (https://getbootstrap.com/)\n 
 
 
 /***/ }),
-/* 257 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(258);
+var content = __webpack_require__(260);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -73313,7 +73390,7 @@ if(false) {
 }
 
 /***/ }),
-/* 258 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -73327,16 +73404,16 @@ exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n    transitio
 
 
 /***/ }),
-/* 259 */
+/* 261 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_meta__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_meta__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_meta___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_meta__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_Homepage__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_Homepage__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_Homepage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_components_Homepage__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_Contact__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_components_Contact___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_components_Contact__);
@@ -73362,6 +73439,8 @@ exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n    transitio
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_components_Barrelsecuring___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_components_Barrelsecuring__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_components_Boltseal__ = __webpack_require__(469);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_components_Boltseal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_components_Boltseal__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_components_AirbagCalculator__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_components_AirbagCalculator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_components_AirbagCalculator__);
 
 
 
@@ -73374,6 +73453,8 @@ exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n    transitio
 
 
 //
+
+
 
 
 
@@ -73425,6 +73506,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
         path: '/Event',
         name: 'Event',
         component: __WEBPACK_IMPORTED_MODULE_8__components_components_Events___default.a
+    }, {
+        path: '/airbagCalculator',
+        name: 'airbagCalculator',
+        component: __WEBPACK_IMPORTED_MODULE_16__components_components_AirbagCalculator___default.a
     },
 
     //product page
@@ -73460,7 +73545,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
 }));
 
 /***/ }),
-/* 260 */
+/* 262 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -76085,7 +76170,7 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 261 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -77230,17 +77315,17 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 262 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(263)
+  __webpack_require__(265)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(266)
+var __vue_script__ = __webpack_require__(268)
 /* template */
 var __vue_template__ = __webpack_require__(272)
 /* template functional */
@@ -77281,13 +77366,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 263 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(264);
+var content = __webpack_require__(266);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -77307,7 +77392,7 @@ if(false) {
 }
 
 /***/ }),
-/* 264 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -77316,13 +77401,13 @@ exports.i(__webpack_require__(86), "");
 exports.i(__webpack_require__(40), "");
 
 // module
-exports.push([module.i, "\n#dunnage_description ul[data-v-1fb0e56c] { list-style:none;\n}\n#dunnage_description li[data-v-1fb0e56c] { margin-bottom:10px;\n}\n#dunnage_description li span[data-v-1fb0e56c] { position: relative; left: 12px;\n}\n#dunnage_description li[data-v-1fb0e56c]:before {\n    /*font-family: 'FontAwesome';*/\n    /*content: '\\f006';*/\n    /*color: red;*/\n    margin:0px 5px 2px -20px;\n}\n#dunnage_description[data-v-1fb0e56c]{\n    color: #0f2452;\n    font-weight: 400;\n}\n.dunnage-airbag[data-v-1fb0e56c]{\n    text-align: left;\n    padding: 8.5rem;\n    background-color: #fdffff;\n}\n.logo img[data-v-1fb0e56c]{\n    height: 40px;\n    width: 80px;\n    /*background-color: powderblue;*/\n}\ntbody[data-v-1fb0e56c]{\n    width:200%;\n}\n@media(max-width:680px){\n#dunnage_description[data-v-1fb0e56c]{\n        margin-right: 30px;\n}\n.dunnage-airbag[data-v-1fb0e56c]{\n        margin-top:4rem;\n        margin-bottom:4rem;\n        padding: 0.6rem;\n}\n.home-area[data-v-1fb0e56c]{\n        text-align: center;\n}\n.dongguan[data-v-1fb0e56c]{\n        width:100%;\n}\n}\n.btn[data-v-1fb0e56c] {\n    border: none;\n    color: #FFFFFF;\n    -webkit-transition: all 0.5s;\n    transition: all 0.5s;\n}\n.airtableFont[data-v-1fb0e56c]{\n    font-size: 1.9vw;\n}\n\n/*select > option {*/\n    /*background-color: #cc0000;*/\n    /*font-weight: bold;*/\n    /*font-size: 12px;*/\n    /*color: white;*/\n\n/*}*/\n.carousel-caption[data-v-1fb0e56c]{\n    position: relative;\n    /*background-color: black;*/\n    text-align: left;\n    font-weight: 500;\n    font-size: 1.6vw;\n    color: #fbfffd;\n    margin-left:50%;\n    margin-top:6%;\n}\n\n/*vuejs animation for fade in and fade out*/\n.fade-enter-active[data-v-1fb0e56c], .fade-leave-active[data-v-1fb0e56c] {\n    -webkit-transition: opacity .5s;\n    transition: opacity .5s;\n}\n.fade-enter[data-v-1fb0e56c], .fade-leave-to[data-v-1fb0e56c] /* .fade-leave-active below version 2.1.8 */ {\n    opacity: 0;\n}\n\n\n\n", ""]);
+exports.push([module.i, "\n#dunnage_description ul[data-v-1fb0e56c] { list-style:none;\n}\n#dunnage_description li[data-v-1fb0e56c] { margin-bottom:10px;\n}\n#dunnage_description li span[data-v-1fb0e56c] { position: relative; left: 12px;\n}\n#dunnage_description li[data-v-1fb0e56c]:before {\n    /*font-family: 'FontAwesome';*/\n    /*content: '\\f006';*/\n    /*color: red;*/\n    margin:0px 5px 2px -20px;\n}\n#dunnage_description[data-v-1fb0e56c]{\n    color: #0f2452;\n    font-weight: 400;\n}\n.dunnage-airbag[data-v-1fb0e56c]{\n    text-align: left;\n    padding: 8.5rem;\n    background-color: #fdffff;\n}\n.logo img[data-v-1fb0e56c]{\n    height: 40px;\n    width: 80px;\n    /*background-color: powderblue;*/\n}\ntbody[data-v-1fb0e56c]{\n    width:200%;\n}\n@media(max-width:680px){\n#dunnage_description[data-v-1fb0e56c]{\n        margin-right: 30px;\n}\n.dunnage-airbag[data-v-1fb0e56c]{\n        margin-top:4rem;\n        margin-bottom:4rem;\n        padding: 0.6rem;\n}\n.home-area[data-v-1fb0e56c]{\n        text-align: center;\n}\n.dongguan[data-v-1fb0e56c]{\n        width:100%;\n}\n}\n.btn[data-v-1fb0e56c] {\n    border: none;\n    color: #FFFFFF;\n    -webkit-transition: all 0.5s;\n    transition: all 0.5s;\n}\n.airtableFont[data-v-1fb0e56c]{\n    font-size: 1.9vw;\n}\n\n/*select > option {*/\n    /*background-color: #cc0000;*/\n    /*font-weight: bold;*/\n    /*font-size: 12px;*/\n    /*color: white;*/\n\n/*}*/\n.carousel-caption[data-v-1fb0e56c]{\n    position: relative;\n    /*background-color: black;*/\n    text-align: left;\n    font-weight: 500;\n    font-size: 1.6vw;\n    color: #fbfffd;\n    margin-left:50%;\n    margin-top:6%;\n}\n\n/*vuejs animation for fade in and fade out*/\n.fade-enter-active[data-v-1fb0e56c], .fade-leave-active[data-v-1fb0e56c] {\n    -webkit-transition: opacity .5s;\n    transition: opacity .5s;\n}\n.fade-enter[data-v-1fb0e56c], .fade-leave-to[data-v-1fb0e56c] /* .fade-leave-active below version 2.1.8 */ {\n    opacity: 0;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 265 */
+/* 267 */
 /***/ (function(module, exports) {
 
 /**
@@ -77355,107 +77440,14 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 266 */
+/* 268 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_gsap__ = __webpack_require__(268);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_gsap__ = __webpack_require__(88);
 //
 //
 //
@@ -77702,16 +77694,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     // props:['loaded'],
     data: function data() {
         return {
-
-            //transition for airtable
-            showWidthOptions: false,
-            showLengthOptions: false,
-            showAirbagType: false,
-            animateSurfaceContact: 0,
-            animateForceNumber: 0,
-            kgToPoundFactor: 2.20462442018,
-            inchToCmFactor: 2.54,
-
             // carousel section
             slide: 0,
             carouselTime: 0,
@@ -77727,7 +77709,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             // dunnage bag section
             productLink: '#/Product',
-            airbagHighlights: [{ message: 'Kraft Paper Air Bags' }, { message: 'PP-Polywoven Air Bags' }, { message: 'Reusable & 100% recyclable ' }, { message: 'SGS, RoHS, REACH, TÜV and AAR available' }, { message: 'Burst pressure up to 3x higher than max. filling pressure' }, { message: 'Equipped with MEGAFLOW fast filling valve' }, { message: 'Vailable length: 36 inch up to 105 inch' }, { message: 'Standard width : 24, 36 and 48 inch' }, { message: 'Meet all common safety standards' }, { message: 'Very user friendly handling' }],
+            airbagHighlights: [{ message: 'Kraft Paper Air Bags' }, { message: 'PP-Polywoven Air Bags' }, { message: 'Reusable & 100% recyclable ' }, { message: 'SGS, RoHS, REACH, TÜV and AAR available' }, { message: 'Burst pressure up to 3x higher than max. filling pressure' }, { message: 'Equipped with MEGAFLOW fast filling valve' }, { message: 'Vailable length: 36 inch up to 105 inch' }, { message: 'Standard width : 24, 36 and 48 inch' }, { message: 'Meet all common safety standards' }, { message: 'Very user friendly handling' }]
 
             //airbag calculator table
             //user selected value
@@ -77736,91 +77718,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             // animalType:[{text:'Bass',value:60},{text:'Catfish',value: 90}, {text:'Jersey cattle', value:120, disabled: true},{text:'Guernsey cattle',value:150}],
 
 
-            surface_contact: 0,
-            forceByMaxFillingPressure: '',
-            test: 0,
-            selectedBagWidth: 0,
-            selectedBagHeight: 0,
-            inputGap: null,
-            selectedGap: 0,
-            inputGapHeight: null,
-            givenGap: 0,
-            selectedBagType: '',
-            selectedPalletHeight: 150,
-            // palletHeight:[{text:'PH > 60',value:60},{text:'PH > 90',value: 90}, {text:'PH > 120', value:120},{text:'PH > 150',value:150}],
-            bagWidth: [{ text: '24', value: 60 }, { text: '36', value: 90 }, { text: '48', value: 120 }, { text: '60', value: 150 }],
-            bagHeight: [{ value: 60, text: '24' }, { value: 90, text: '36' }, { value: 120, text: '48' }, { value: 150, text: '60' }, { value: 180, text: '70' }, { value: 210, text: '83' }, { value: 225, text: '89' }, { value: 240, text: '95' }, { value: 260, text: '103' }, { value: 270, text: '107' }],
-            gap: [{ value: 150, text: '150' }, { value: 200, text: '200' }, { value: 300, text: '300' }, { value: 400, text: '400' }, { value: 500, text: '500' }, { value: 600, text: '600' }],
-            bagType: [{ value: '', text: 'Select Bag Type' }, { value: 'PAPER 1 Ply SAVFER', text: 'PAPER 1 Ply SAVFER' }, { value: 'Paper 2 Ply SAVFER', text: 'Paper 2 Ply SAVFER' }, { value: 'Paper 1 Ply Standard', text: 'Paper 1 Ply Standard' }, { value: 'Paper 2 Ply Standard', text: 'Paper 2 Ply Standard' }, { value: 'Paper 4 Ply Heavy Duty', text: 'Paper 4 Ply Heavy Duty' }, { value: 'Paper 6 Ply Super Heavy', text: 'Paper 6 Ply Super Heavy' }, { value: 'Paper 8 Ply', text: 'Paper 8 Ply' }, { value: 'PP SAVFER medium', text: 'PP SAVFER medium' }, { value: 'PP90 Standard', text: 'PP90 Standard' }, { value: 'PP150 Heavy Duty', text: 'PP150 Heavy Duty' }, { value: 'PP200 Super Heavy', text: 'PP200 Super Heavy' }, { value: 'PP 250 GSM', text: 'PP 250 GSM' }],
-            airbagTable: __WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json___default.a,
-            isActive: false
-
         };
     },
 
-
     //watch vale change within the table
-    watch: {
-        'selectedBagWidth': function selectedBagWidth() {
-            this.getSurfaceContactIndex;
-        },
-        'selectedGap': function selectedGap() {
-            this.getSurfaceContactIndex;
-        },
-        'selectedBagType': function selectedBagType() {
-            // this.getSurfaceContactIndex;
-            this.filterBagTypesOptions;
-        },
-        'inputGap': function inputGap() {
-            if (this.inputGap * this.inchToCmFactor > 30) {
-                this.showWidthOptions = true;
-            } else {
-                this.showWidthOptions = false;
-                // this.showAirbagType = false;
-            }
-        },
-        'inputGapHeight': function inputGapHeight() {
-            if (this.inputGapHeight * this.inchToCmFactor > 20) {
-                this.showLengthOptions = true;
-            } else {
-                this.showLengthOptions = false;
-                // this.showAirbagType = false;
-            }
-        },
-        // 'selectedBagHeight': function(){
-        //     this.getSurfaceContactIndex;
-        // },
-        'selectedBagHeight': function selectedBagHeight() {
-            this.getSurfaceContactIndex;
-            if (this.selectedBagHeight) {
-                this.showAirbagType = true;
-            } else {
-                this.showAirbagType = false;
-            }
-        },
-        'surface_contact': function surface_contact(newValue) {
-            //animated number presentation when it change value
-            __WEBPACK_IMPORTED_MODULE_1_gsap__["a" /* TweenLite */].to(this.$data, 0.5, { animateSurfaceContact: newValue });
-        }
-    },
-    methods: {
-        forceByFillingPressure: function forceByFillingPressure() {
-            var f = 0;
-            f = this.selectedBagWidth * this.selectedBagHeight * this.surface_contact * this.getMaxFillingPressure * 2 / 10 * this.kgToPoundFactor;
-            if (isNaN(f)) {
-                this.isActive = false;
-                return "Please Choose Another Value";
-            } else {
-                this.isActive = true;
-                //animated number presentation when it change value
-                var n = Math.round(f * 10) / 10;
 
-                // return this.test = TweenLite.to(this.$data, 0.5, { animateSurfaceContact: n });
-                // return TweenLite.to(this.$data, 0.5, { animateForceNumber: (Math.round(f * 10) / 10).toString() });
-                return (this.forceByMaxFillingPressure = Math.round(f * 10) / 10).toString() + " lbs";
-            }
-        }
-    },
+
+    methods: {},
     computed: {
         sliderPacechange: function sliderPacechange() {
             // change the carousel pace for each picture
@@ -77844,7 +77748,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             // console.log(this.selectedBagWidth * this.selectedBagHeight * this.selectedGap );
         },
-
         getMaxFillingPressure: function getMaxFillingPressure() {
             var MFP = '';
             for (var i = 0; i < this.airbagTable.length; i++) {
@@ -77853,169 +77756,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     return MFP = this.airbagTable[i]['Max fill. pressure'] * 10;
                 }
             }
-        },
+        }
 
         //change bag width options based on gap width
-        filterUserSelectOptions: function filterUserSelectOptions() {
-            if (this.inputGap * this.inchToCmFactor) {
-                var gapTohWidth = 0;
-                if (0 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 300) {
-                    gapTohWidth = 60;
-                    this.selectedGap = 300;
-                } else if (301 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 400) {
-                    gapTohWidth = 90;
-                    this.selectedGap = 400;
-                } else if (401 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 500) {
-                    gapTohWidth = 120;
-                    this.selectedGap = 500;
-                } else if (501 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 600) {
-                    gapTohWidth = 150;
-                    this.selectedGap = 600;
-                }
-
-                return this.bagWidth.filter(function (t) {
-                    return t.value >= gapTohWidth;
-                });
-            } else {
-                return this.bagWidth;
-            }
-        },
-        filterUserBagLengthOptions: function filterUserBagLengthOptions() {
-            if (this.inputGapHeight * this.inchToCmFactor) {
-                var selectableBagHeight = 0;
-                if (0 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 89) {
-                    selectableBagHeight = 60;
-                } else if (90 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 119) {
-                    selectableBagHeight = 90;
-                } else if (120 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 149) {
-                    selectableBagHeight = 120;
-                } else if (150 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 179) {
-                    selectableBagHeight = 150;
-                } else if (180 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 219) {
-                    selectableBagHeight = 180;
-                } else if (210 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 224) {
-                    selectableBagHeight = 210;
-                } else if (225 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 239) {
-                    selectableBagHeight = 225;
-                } else if (240 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 259) {
-                    selectableBagHeight = 240;
-                } else if (260 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 269) {
-                    selectableBagHeight = 260;
-                } else if (this.inputGapHeight * this.inchToCmFactor >= 270) {
-                    selectableBagHeight = 270;
-                }
-                return this.bagHeight.filter(function (t) {
-                    return t.value <= selectableBagHeight;
-                });
-            } else {
-                return this.bagHeight;
-            }
-        },
-        filterBagTypesOptions: function filterBagTypesOptions() {
-            var bagTypeHaveValue = [];
-            for (var j = 0; j < this.bagType.length; j++) {
-                for (var i = 0; i < this.airbagTable.length; i++) {
-                    var n = this.bagType[j].value.localeCompare(this.airbagTable[i]['Bag type'].trimRight());
-                    if (n === 0 && this.airbagTable[i]['Bags Width'] === this.selectedBagWidth && this.surface_contact === this.airbagTable[i]['Contact surface area']) {
-                        bagTypeHaveValue.push(this.bagType[j].value);
-                        // this.bagType.filter(t => t.value !== this.airbagTable[i]['Bag type'].trimRight());
-                    }
-                }
-            }
-            console.log(bagTypeHaveValue.length);
-            // return this.bagType.filter(function(e){return this.indexOf(e) < 0;},bagTypeHaveValue);
-            if (bagTypeHaveValue.length !== 0) {
-                //exclude the unavailable value on the chart
-                return this.bagType.filter(function (t) {
-                    return bagTypeHaveValue.includes(t.value);
-                });
-            } else {
-                return [{ value: '', text: 'No Dunnage Airbag Available' }];
-            }
-        },
-
-        surfaceContactAnimated: function surfaceContactAnimated() {
-            return this.animateSurfaceContact.toFixed(1);
-        }
     }
 });
-
-/***/ }),
-/* 267 */
-/***/ (function(module, exports) {
-
-module.exports = [{"Bag type":"PP SAVFER medium ","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.55},{"Bag type":"PP SAVFER medium ","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"PP SAVFER medium ","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"PP SAVFER medium ","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"PP SAVFER medium ","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.4},{"Bag type":"PP SAVFER medium ","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.4},{"Bag type":"PP SAVFER medium ","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.4},{"Bag type":"PP90 Standard ","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.6},{"Bag type":"PP90 Standard ","Bags Width":120,"Gap height (mm)":120,"Contact surface area":0.3,"Max fill. pressure":0.8,"Burst presure standard":0.56},{"Bag type":"PP90 Standard ","Bags Width":120,"Gap height (mm)":120,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":0.56},{"Bag type":"PP90 Standard ","Bags Width":120,"Gap height (mm)":120,"Contact surface area":0.5,"Max fill. pressure":0.4,"Burst presure standard":0.56},{"Bag type":"PP90 Standard ","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.55},{"Bag type":"PP90 Standard ","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.55},{"Bag type":"PP90 Standard ","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.55},{"Bag type":"PP150 Heavy Duty","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":0.8},{"Bag type":"PP150 Heavy Duty","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP150 Heavy Duty","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":0.7},{"Bag type":"PP200 Super Heavy","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP200 Super Heavy","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.18},{"Bag type":"PP 250 GSM","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PP 250 GSM","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"PAPER 1 Ply SAVFER","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.13,"Burst presure standard":0.33},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply SAVFER","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 1 Ply Standard","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.18,"Burst presure standard":0.45},{"Bag type":"Paper 2 Ply Standard","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 2 Ply Standard","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.2,"Burst presure standard":0.56},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 4 Ply Heavy Duty","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.4,"Burst presure standard":1.12},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 6 Ply Super Heavy","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.6,"Burst presure standard":1.68},{"Bag type":"Paper 8 Ply","Bags Width":60,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":60,"Gap height (mm)":200,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":90,"Gap height (mm)":150,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":90,"Gap height (mm)":200,"Contact surface area":0.7,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":90,"Gap height (mm)":300,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":90,"Gap height (mm)":400,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":120,"Gap height (mm)":300,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":120,"Gap height (mm)":400,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":120,"Gap height (mm)":500,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":150,"Gap height (mm)":400,"Contact surface area":0.8,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":150,"Gap height (mm)":500,"Contact surface area":0.6,"Max fill. pressure":0.8,"Burst presure standard":1.8},{"Bag type":"Paper 8 Ply","Bags Width":150,"Gap height (mm)":600,"Contact surface area":0.4,"Max fill. pressure":0.8,"Burst presure standard":1.8}]
-
-/***/ }),
-/* 268 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TimelineLite_js__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TimelineMax_js__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__TweenMax_js__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__CSSPlugin_js__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__AttrPlugin_js__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RoundPropsPlugin_js__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__DirectionalRotationPlugin_js__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__BezierPlugin_js__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__EasePack_js__ = __webpack_require__(93);
-/* unused harmony reexport default */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__["f"]; });
-/* unused harmony reexport TweenMax */
-/* unused harmony reexport TimelineLite */
-/* unused harmony reexport TimelineMax */
-/* unused harmony reexport CSSPlugin */
-/* unused harmony reexport AttrPlugin */
-/* unused harmony reexport BezierPlugin */
-/* unused harmony reexport RoundPropsPlugin */
-/* unused harmony reexport DirectionalRotationPlugin */
-/* unused harmony reexport TweenPlugin */
-/* unused harmony reexport Ease */
-/* unused harmony reexport Power0 */
-/* unused harmony reexport Power1 */
-/* unused harmony reexport Power2 */
-/* unused harmony reexport Power3 */
-/* unused harmony reexport Power4 */
-/* unused harmony reexport Linear */
-/* unused harmony reexport Back */
-/* unused harmony reexport Elastic */
-/* unused harmony reexport Bounce */
-/* unused harmony reexport RoughEase */
-/* unused harmony reexport SlowMo */
-/* unused harmony reexport SteppedEase */
-/* unused harmony reexport Circ */
-/* unused harmony reexport Expo */
-/* unused harmony reexport Sine */
-/* unused harmony reexport ExpoScaleEase */
-/* unused harmony reexport _gsScope */
-/*!
- * VERSION: 2.0.2
- * DATE: 2018-08-27
- * UPDATES AND DOCS AT: http://greensock.com
- *
- * @license Copyright (c) 2008-2018, GreenSock. All rights reserved.
- * This work is subject to the terms at http://greensock.com/standard-license or for
- * Club GreenSock members, the software agreement that was issued with your membership.
- *
- * @author: Jack Doyle, jack@greensock.com
- **/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /***/ }),
 /* 269 */
@@ -78056,14 +77801,14 @@ module.exports = function(originalModule) {
 /* unused harmony export default */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__TweenLite_js__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TweenMaxBase_js__ = __webpack_require__(271);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CSSPlugin_js__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__AttrPlugin_js__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RoundPropsPlugin_js__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DirectionalRotationPlugin_js__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CSSPlugin_js__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__AttrPlugin_js__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RoundPropsPlugin_js__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DirectionalRotationPlugin_js__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__TimelineLite_js__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__TimelineMax_js__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__BezierPlugin_js__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__EasePack_js__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__TimelineMax_js__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__BezierPlugin_js__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__EasePack_js__ = __webpack_require__(95);
 /* unused harmony reexport TweenLite */
 /* unused harmony reexport TimelineLite */
 /* unused harmony reexport TimelineMax */
@@ -79033,189 +78778,40 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "mt-lg-8 pt-lg-5 mt-sm-1 mr-lg-5" }, [
               _c("a", { attrs: { href: _vm.productLink } }, [_vm._m(3)])
-            ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mt-lg-8 pt-lg-3 mt-sm-1 mr-lg-5" },
+              [
+                _c(
+                  "router-link",
+                  {
+                    attrs: {
+                      to: { name: "airbagCalculator" },
+                      target: "_blank"
+                    }
+                  },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "btn btn-outline-danger btn-lg btn-block waves-effect",
+                        attrs: { "data-aos": "fade-left" }
+                      },
+                      [_c("span", [_vm._v("Airbag Calculator")])]
+                    )
+                  ]
+                )
+              ],
+              1
+            )
           ]),
           _vm._v(" "),
           _vm._m(4)
         ])
       ])
-    ]),
-    _vm._v(" "),
-    _c("section", { staticClass: "airbag-calculator" }, [
-      _c("div", { staticClass: "container" }, [
-        _c(
-          "table",
-          { staticClass: "table table-bordered text-center shadow" },
-          [
-            _vm._m(5),
-            _vm._v(" "),
-            _c("tbody", [
-              _c("tr", [
-                _c(
-                  "td",
-                  [
-                    _c("b-form-input", {
-                      attrs: { type: "number", placeholder: "Enter Gap Width" },
-                      model: {
-                        value: _vm.inputGap,
-                        callback: function($$v) {
-                          _vm.inputGap = $$v
-                        },
-                        expression: "inputGap"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "td",
-                  [
-                    _c("b-form-input", {
-                      attrs: {
-                        type: "number",
-                        placeholder: "Enter Pallet Height"
-                      },
-                      model: {
-                        value: _vm.inputGapHeight,
-                        callback: function($$v) {
-                          _vm.inputGapHeight = $$v
-                        },
-                        expression: "inputGapHeight"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "td",
-                  [
-                    _c(
-                      "transition",
-                      {
-                        attrs: {
-                          name: "fade",
-                          mode: "out-in",
-                          duration: "1000"
-                        }
-                      },
-                      [
-                        _vm.showWidthOptions
-                          ? _c("b-form-select", {
-                              staticClass: "mb-2 mr-sm-2 mb-sm-0",
-                              attrs: {
-                                options: _vm.filterUserSelectOptions,
-                                id: "bagWidthSelect"
-                              },
-                              model: {
-                                value: _vm.selectedBagWidth,
-                                callback: function($$v) {
-                                  _vm.selectedBagWidth = $$v
-                                },
-                                expression: "selectedBagWidth"
-                              }
-                            })
-                          : _vm._e()
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "td",
-                  [
-                    _c(
-                      "transition",
-                      {
-                        attrs: {
-                          name: "fade",
-                          mode: "out-in",
-                          duration: "1000"
-                        }
-                      },
-                      [
-                        _vm.showLengthOptions
-                          ? _c("b-form-select", {
-                              staticClass: "mb-2 mr-sm-2 mb-sm-0",
-                              attrs: {
-                                options: _vm.filterUserBagLengthOptions,
-                                id: "bagWidthSelect"
-                              },
-                              model: {
-                                value: _vm.selectedBagHeight,
-                                callback: function($$v) {
-                                  _vm.selectedBagHeight = $$v
-                                },
-                                expression: "selectedBagHeight"
-                              }
-                            })
-                          : _vm._e()
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "td",
-                  [
-                    _c(
-                      "transition",
-                      {
-                        attrs: {
-                          name: "fade",
-                          mode: "out-in",
-                          duration: "1000"
-                        }
-                      },
-                      [
-                        _vm.showAirbagType
-                          ? _c("b-form-select", {
-                              staticClass: "mb-2 mr-sm-2 mb-sm-0",
-                              attrs: {
-                                options: _vm.filterBagTypesOptions,
-                                id: "bagWidthSelect"
-                              },
-                              model: {
-                                value: _vm.selectedBagType,
-                                callback: function($$v) {
-                                  _vm.selectedBagType = $$v
-                                },
-                                expression: "selectedBagType"
-                              }
-                            })
-                          : _vm._e()
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("td", [
-                  _c("span", { staticClass: "airtableFont" }, [
-                    _vm._v(_vm._s(_vm.surfaceContactAnimated))
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("td", [
-                  _c(
-                    "span",
-                    { class: { airtableFont: _vm.isActive == true } },
-                    [_vm._v(_vm._s(_vm.forceByFillingPressure()))]
-                  )
-                ])
-              ])
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div")
     ])
   ])
 }
@@ -79525,84 +79121,6 @@ var staticRenderFns = [
           "data-aos-duration": "1000"
         }
       })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", { staticClass: "thead-light text-uppercase" }, [
-      _c("tr", [
-        _c(
-          "th",
-          {
-            staticStyle: {
-              "font-size": "larger",
-              "font-weight": "600",
-              color: "#112133"
-            },
-            attrs: { colspan: "7" }
-          },
-          [_vm._v("Airbag Calculator")]
-        )
-      ]),
-      _vm._v(" "),
-      _c("tr", [
-        _c(
-          "th",
-          {
-            staticStyle: { width: "17%", align: "center" },
-            attrs: { rowspan: "2" }
-          },
-          [
-            _c(
-              "span",
-              {
-                staticStyle: {
-                  "vertical-align": "center",
-                  "margin-bottom": "20px"
-                }
-              },
-              [_vm._v("Gap between pallets")]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c("th", { staticStyle: { width: "18%" }, attrs: { rowspan: "2" } }, [
-          _vm._v("Pallet Height")
-        ]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Width")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Length")]),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticStyle: { width: "17%" },
-            attrs: { scope: "col", rowspan: "2" }
-          },
-          [_vm._v("Airbag Types")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticStyle: { width: "11%" },
-            attrs: { scope: "col", rowspan: "2" }
-          },
-          [_vm._v("Surface contact")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticStyle: { width: "17%" },
-            attrs: { scope: "col", rowspan: "2" }
-          },
-          [_vm._v("Force by Max filling pressure")]
-        )
-      ])
     ])
   }
 ]
@@ -79944,9 +79462,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             message: "445 Coney Island Drive",
             message2: "Sparks, 89431, USA",
             title2: "  Call Us",
-            items: [{ message2: "Call (775)-399-6770" }, { message2: "Main (775)-399-6770" }, { message2: "Accounting (775)-399-6773" }, { message2: "Fax (775)-399-6776" }],
+            items: [{ message2: "Call Free (877)-226–4112" }, { message2: "Main (775)-399-6770" }, { message2: "Accounting (775)-399-6773" }, { message2: "Fax (775)-399-6776" }],
             title3: "Business Hours",
-            hours: [{ text: "Monday to Saturday" }, { text: " 8:30 am - 6:00 pm PST" }],
+            hours: [{ text: "Monday to Friday" }, { text: " 8:30 am - 6:00 pm PST" }],
             popupboxMessage: 'Please send us your message here and we promise you fastest response',
             buttonSize: '',
             msg: 'Hello World! This is a Event listener test.',
@@ -84706,7 +84224,7 @@ if(false) {
 exports = module.exports = __webpack_require__(0)(false);
 // imports
 exports.i(__webpack_require__(40), "");
-exports.i(__webpack_require__(94), "");
+exports.i(__webpack_require__(96), "");
 
 // module
 exports.push([module.i, "\n#prodcut_title > #polywoven[data-v-3246dd3e]:hover{\n    color: lightgrey;\n}\n#prodcut_title > #kraft[data-v-3246dd3e]:hover{\n    color: orange;\n}\n#container_lashing img[data-v-3246dd3e], #boltseal_image img[data-v-3246dd3e], #barrelcover_image img[data-v-3246dd3e]{\n    display:block;\n    margin:auto;\n}\n.container[data-v-3246dd3e] {\n    max-width: 960px;\n}\n\n/*kraft paper bag property*/\n.product-device[data-v-3246dd3e] {\n    position: absolute;\n    right: 0%;\n    bottom: 1%;\n    width: 30rem;\n    height: 500px;\n    background-size: contain;\n    /*background-image: url(\"./products_detail_pages/images/kraft_airbag7.png\");*/\n    background-repeat: no-repeat, repeat;\n    /*background-color: yellow;*/\n    /*border-radius: 21px;*/\n    /*-webkit-transform: rotate(30deg);*/\n    /*transform: rotate(0deg);*/\n}\n.polyweven-image[data-v-3246dd3e]{\n    width: 68%;\n    float:right;\n    margin-right:30px;\n}\n\n/*ppwoven property*/\n.product-device-2[data-v-3246dd3e] {\n    position: absolute;\n    bottom: 0%;\n    right: auto;\n    left: 0%;\n    width: 30rem;\n    height: 500px;\n    background-size: contain;\n    /*background-image: url(\"./images/ppwovenbag4.png\");*/\n    /*background-color: yellow;*/\n    background-repeat: no-repeat, repeat;\n}\n.kraft-image[data-v-3246dd3e]{\n    width:68%;\n    float:left;\n    margin-left: 70px;\n}\nspan[data-v-3246dd3e]{\n    font-weight: 300;\n    font-size: x-large;\n}\n.card-body[data-v-3246dd3e]{\n    background-color: #dedede;\n}\n.paper-bag-text-color[data-v-3246dd3e]{\n    color: black;\n}\n.flex-equal > *[data-v-3246dd3e] {\n    -ms-flex: 1;\n    -webkit-box-flex: 1;\n            flex: 1;\n}\n@media(max-width:1080px){\n#lashing_section[data-v-3246dd3e], #desiccant[data-v-3246dd3e], #barrelcover[data-v-3246dd3e], #boltseal[data-v-3246dd3e]{\n        margin-bottom:10px;\n        padding:40px;\n}\n.polyweven-image[data-v-3246dd3e]{\n        margin-top:150px;\n        width:47%;\n}\n.kraft-image[data-v-3246dd3e]{\n        margin-top:140px;\n        width:47%;\n}\n}\n@media (min-width: 768px) {\n.flex-md-equal > *[data-v-3246dd3e] {\n        -ms-flex: 1;\n        -webkit-box-flex: 1;\n                flex: 1;\n}\n}\n@media(max-width: 781px){\n.paper-bag-text-color[data-v-3246dd3e]{\n        color: #1137b1;\n}\n}\n@media(max-width: 681px){\n#lashing_section[data-v-3246dd3e], #desiccant[data-v-3246dd3e], #barrelcover[data-v-3246dd3e], #boltseal[data-v-3246dd3e]{\n        padding-bottom: 0px;\n        width:380px;\n        margin: 0 auto;\n}\n}\n.overflow-hidden[data-v-3246dd3e] { overflow: hidden;\n}\n\n", ""]);
@@ -86536,7 +86054,7 @@ var render = function() {
                           "margin-bottom": "8px"
                         },
                         attrs: {
-                          src: __webpack_require__(95),
+                          src: __webpack_require__(97),
                           width: "18%"
                         }
                       }),
@@ -87389,7 +86907,7 @@ var render = function() {
                           "margin-bottom": "8px"
                         },
                         attrs: {
-                          src: __webpack_require__(95),
+                          src: __webpack_require__(97),
                           width: "18%"
                         }
                       }),
@@ -87863,7 +87381,7 @@ var render = function() {
                             _c("img", {
                               staticClass: "img-fluid inflater_image1",
                               attrs: {
-                                src: __webpack_require__(96),
+                                src: __webpack_require__(98),
                                 alt: "inflater image"
                               }
                             })
@@ -87873,7 +87391,7 @@ var render = function() {
                             _c("img", {
                               staticClass: "img-fluid",
                               attrs: {
-                                src: __webpack_require__(97),
+                                src: __webpack_require__(99),
                                 alt: "inflater image"
                               }
                             })
@@ -87883,7 +87401,7 @@ var render = function() {
                             _c("img", {
                               staticClass: "img-fluid infater-image",
                               attrs: {
-                                src: __webpack_require__(98),
+                                src: __webpack_require__(100),
                                 alt: "inflater image"
                               }
                             })
@@ -87909,7 +87427,7 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "button-image",
-                            attrs: { src: __webpack_require__(96) }
+                            attrs: { src: __webpack_require__(98) }
                           })
                         ]
                       ),
@@ -87927,7 +87445,7 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "button-image",
-                            attrs: { src: __webpack_require__(97) }
+                            attrs: { src: __webpack_require__(99) }
                           })
                         ]
                       ),
@@ -87945,7 +87463,7 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "button-image",
-                            attrs: { src: __webpack_require__(98) }
+                            attrs: { src: __webpack_require__(100) }
                           })
                         ]
                       )
@@ -88414,7 +87932,7 @@ var render = function() {
                             _c("img", {
                               staticClass: "img-fluid lashing_image1",
                               attrs: {
-                                src: __webpack_require__(99),
+                                src: __webpack_require__(101),
                                 alt: "Containerlashing image"
                               }
                             })
@@ -88466,7 +87984,7 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "button-image",
-                            attrs: { src: __webpack_require__(99) }
+                            attrs: { src: __webpack_require__(101) }
                           })
                         ]
                       ),
@@ -88998,7 +88516,7 @@ var render = function() {
                             _c("img", {
                               staticClass: "img-fluid paperbag-image",
                               attrs: {
-                                src: __webpack_require__(100),
+                                src: __webpack_require__(102),
                                 alt: "kraft paper Airbag"
                               }
                             })
@@ -89039,7 +88557,7 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "button-image",
-                            attrs: { src: __webpack_require__(100) }
+                            attrs: { src: __webpack_require__(102) }
                           })
                         ]
                       ),
@@ -89778,7 +89296,7 @@ var render = function() {
                             _c("img", {
                               staticClass: "img-fluid p-5 m-5",
                               attrs: {
-                                src: __webpack_require__(101),
+                                src: __webpack_require__(103),
                                 alt: "Containerlashing image"
                               }
                             })
@@ -89788,7 +89306,7 @@ var render = function() {
                             _c("img", {
                               staticClass: "img-fluid p-5 m-5",
                               attrs: {
-                                src: __webpack_require__(102),
+                                src: __webpack_require__(104),
                                 alt: "Containerlashing image"
                               }
                             })
@@ -89808,7 +89326,7 @@ var render = function() {
                             _c("img", {
                               staticClass: "img-fluid p-5 ",
                               attrs: {
-                                src: __webpack_require__(103),
+                                src: __webpack_require__(105),
                                 alt: "Containerlashing image"
                               }
                             })
@@ -89844,7 +89362,7 @@ var render = function() {
                         [
                           _c("img", {
                             staticClass: "button-image",
-                            attrs: { src: __webpack_require__(101) }
+                            attrs: { src: __webpack_require__(103) }
                           })
                         ]
                       ),
@@ -89863,7 +89381,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "button-image",
                             attrs: {
-                              src: __webpack_require__(102)
+                              src: __webpack_require__(104)
                             }
                           })
                         ]
@@ -89903,7 +89421,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "button-image",
                             attrs: {
-                              src: __webpack_require__(103)
+                              src: __webpack_require__(105)
                             }
                           })
                         ]
@@ -90502,7 +90020,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "img-fluid product-image1",
                             attrs: {
-                              src: __webpack_require__(104),
+                              src: __webpack_require__(106),
                               alt: "container seal"
                             }
                           }),
@@ -90528,7 +90046,7 @@ var render = function() {
                           _c("img", {
                             staticClass: "img-fluid  product-image2",
                             attrs: {
-                              src: __webpack_require__(105),
+                              src: __webpack_require__(107),
                               alt: "cable seals"
                             }
                           })
@@ -90564,7 +90082,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "button-image",
-                          attrs: { src: __webpack_require__(104) }
+                          attrs: { src: __webpack_require__(106) }
                         })
                       ]
                     ),
@@ -90582,7 +90100,7 @@ var render = function() {
                       [
                         _c("img", {
                           staticClass: "button-image",
-                          attrs: { src: __webpack_require__(105) }
+                          attrs: { src: __webpack_require__(107) }
                         })
                       ]
                     ),
@@ -90694,7 +90212,52 @@ module.exports = "/images/cableseal_b.jpg?78fe73b154f74238c8986836efff384e";
 /* 476 */
 /***/ (function(module, exports, __webpack_require__) {
 
-!function(e,t){ true?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.AOS=t():e.AOS=t()}(this,function(){return function(e){function t(o){if(n[o])return n[o].exports;var i=n[o]={exports:{},id:o,loaded:!1};return e[o].call(i.exports,i,i.exports,t),i.loaded=!0,i.exports}var n={};return t.m=e,t.c=n,t.p="dist/",t(0)}([function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}var i=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o])}return e},r=n(1),a=(o(r),n(6)),u=o(a),c=n(7),s=o(c),f=n(8),d=o(f),l=n(9),p=o(l),m=n(10),b=o(m),v=n(11),y=o(v),g=n(14),h=o(g),w=[],k=!1,x={offset:120,delay:0,easing:"ease",duration:400,disable:!1,once:!1,startEvent:"DOMContentLoaded",throttleDelay:99,debounceDelay:50,disableMutationObserver:!1},j=function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];if(e&&(k=!0),k)return w=(0,y.default)(w,x),(0,b.default)(w,x.once),w},O=function(){w=(0,h.default)(),j()},M=function(){w.forEach(function(e,t){e.node.removeAttribute("data-aos"),e.node.removeAttribute("data-aos-easing"),e.node.removeAttribute("data-aos-duration"),e.node.removeAttribute("data-aos-delay")})},S=function(e){return e===!0||"mobile"===e&&p.default.mobile()||"phone"===e&&p.default.phone()||"tablet"===e&&p.default.tablet()||"function"==typeof e&&e()===!0},_=function(e){x=i(x,e),w=(0,h.default)();var t=document.all&&!window.atob;return S(x.disable)||t?M():(x.disableMutationObserver||d.default.isSupported()||(console.info('\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    '),x.disableMutationObserver=!0),document.querySelector("body").setAttribute("data-aos-easing",x.easing),document.querySelector("body").setAttribute("data-aos-duration",x.duration),document.querySelector("body").setAttribute("data-aos-delay",x.delay),"DOMContentLoaded"===x.startEvent&&["complete","interactive"].indexOf(document.readyState)>-1?j(!0):"load"===x.startEvent?window.addEventListener(x.startEvent,function(){j(!0)}):document.addEventListener(x.startEvent,function(){j(!0)}),window.addEventListener("resize",(0,s.default)(j,x.debounceDelay,!0)),window.addEventListener("orientationchange",(0,s.default)(j,x.debounceDelay,!0)),window.addEventListener("scroll",(0,u.default)(function(){(0,b.default)(w,x.once)},x.throttleDelay)),x.disableMutationObserver||d.default.ready("[data-aos]",O),w)};e.exports={init:_,refresh:j,refreshHard:O}},function(e,t){},,,,,function(e,t){(function(t){"use strict";function n(e,t,n){function o(t){var n=b,o=v;return b=v=void 0,k=t,g=e.apply(o,n)}function r(e){return k=e,h=setTimeout(f,t),M?o(e):g}function a(e){var n=e-w,o=e-k,i=t-n;return S?j(i,y-o):i}function c(e){var n=e-w,o=e-k;return void 0===w||n>=t||n<0||S&&o>=y}function f(){var e=O();return c(e)?d(e):void(h=setTimeout(f,a(e)))}function d(e){return h=void 0,_&&b?o(e):(b=v=void 0,g)}function l(){void 0!==h&&clearTimeout(h),k=0,b=w=v=h=void 0}function p(){return void 0===h?g:d(O())}function m(){var e=O(),n=c(e);if(b=arguments,v=this,w=e,n){if(void 0===h)return r(w);if(S)return h=setTimeout(f,t),o(w)}return void 0===h&&(h=setTimeout(f,t)),g}var b,v,y,g,h,w,k=0,M=!1,S=!1,_=!0;if("function"!=typeof e)throw new TypeError(s);return t=u(t)||0,i(n)&&(M=!!n.leading,S="maxWait"in n,y=S?x(u(n.maxWait)||0,t):y,_="trailing"in n?!!n.trailing:_),m.cancel=l,m.flush=p,m}function o(e,t,o){var r=!0,a=!0;if("function"!=typeof e)throw new TypeError(s);return i(o)&&(r="leading"in o?!!o.leading:r,a="trailing"in o?!!o.trailing:a),n(e,t,{leading:r,maxWait:t,trailing:a})}function i(e){var t="undefined"==typeof e?"undefined":c(e);return!!e&&("object"==t||"function"==t)}function r(e){return!!e&&"object"==("undefined"==typeof e?"undefined":c(e))}function a(e){return"symbol"==("undefined"==typeof e?"undefined":c(e))||r(e)&&k.call(e)==d}function u(e){if("number"==typeof e)return e;if(a(e))return f;if(i(e)){var t="function"==typeof e.valueOf?e.valueOf():e;e=i(t)?t+"":t}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(l,"");var n=m.test(e);return n||b.test(e)?v(e.slice(2),n?2:8):p.test(e)?f:+e}var c="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},s="Expected a function",f=NaN,d="[object Symbol]",l=/^\s+|\s+$/g,p=/^[-+]0x[0-9a-f]+$/i,m=/^0b[01]+$/i,b=/^0o[0-7]+$/i,v=parseInt,y="object"==("undefined"==typeof t?"undefined":c(t))&&t&&t.Object===Object&&t,g="object"==("undefined"==typeof self?"undefined":c(self))&&self&&self.Object===Object&&self,h=y||g||Function("return this")(),w=Object.prototype,k=w.toString,x=Math.max,j=Math.min,O=function(){return h.Date.now()};e.exports=o}).call(t,function(){return this}())},function(e,t){(function(t){"use strict";function n(e,t,n){function i(t){var n=b,o=v;return b=v=void 0,O=t,g=e.apply(o,n)}function r(e){return O=e,h=setTimeout(f,t),M?i(e):g}function u(e){var n=e-w,o=e-O,i=t-n;return S?x(i,y-o):i}function s(e){var n=e-w,o=e-O;return void 0===w||n>=t||n<0||S&&o>=y}function f(){var e=j();return s(e)?d(e):void(h=setTimeout(f,u(e)))}function d(e){return h=void 0,_&&b?i(e):(b=v=void 0,g)}function l(){void 0!==h&&clearTimeout(h),O=0,b=w=v=h=void 0}function p(){return void 0===h?g:d(j())}function m(){var e=j(),n=s(e);if(b=arguments,v=this,w=e,n){if(void 0===h)return r(w);if(S)return h=setTimeout(f,t),i(w)}return void 0===h&&(h=setTimeout(f,t)),g}var b,v,y,g,h,w,O=0,M=!1,S=!1,_=!0;if("function"!=typeof e)throw new TypeError(c);return t=a(t)||0,o(n)&&(M=!!n.leading,S="maxWait"in n,y=S?k(a(n.maxWait)||0,t):y,_="trailing"in n?!!n.trailing:_),m.cancel=l,m.flush=p,m}function o(e){var t="undefined"==typeof e?"undefined":u(e);return!!e&&("object"==t||"function"==t)}function i(e){return!!e&&"object"==("undefined"==typeof e?"undefined":u(e))}function r(e){return"symbol"==("undefined"==typeof e?"undefined":u(e))||i(e)&&w.call(e)==f}function a(e){if("number"==typeof e)return e;if(r(e))return s;if(o(e)){var t="function"==typeof e.valueOf?e.valueOf():e;e=o(t)?t+"":t}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(d,"");var n=p.test(e);return n||m.test(e)?b(e.slice(2),n?2:8):l.test(e)?s:+e}var u="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},c="Expected a function",s=NaN,f="[object Symbol]",d=/^\s+|\s+$/g,l=/^[-+]0x[0-9a-f]+$/i,p=/^0b[01]+$/i,m=/^0o[0-7]+$/i,b=parseInt,v="object"==("undefined"==typeof t?"undefined":u(t))&&t&&t.Object===Object&&t,y="object"==("undefined"==typeof self?"undefined":u(self))&&self&&self.Object===Object&&self,g=v||y||Function("return this")(),h=Object.prototype,w=h.toString,k=Math.max,x=Math.min,j=function(){return g.Date.now()};e.exports=n}).call(t,function(){return this}())},function(e,t){"use strict";function n(e){var t=void 0,o=void 0,i=void 0;for(t=0;t<e.length;t+=1){if(o=e[t],o.dataset&&o.dataset.aos)return!0;if(i=o.children&&n(o.children))return!0}return!1}function o(){return window.MutationObserver||window.WebKitMutationObserver||window.MozMutationObserver}function i(){return!!o()}function r(e,t){var n=window.document,i=o(),r=new i(a);u=t,r.observe(n.documentElement,{childList:!0,subtree:!0,removedNodes:!0})}function a(e){e&&e.forEach(function(e){var t=Array.prototype.slice.call(e.addedNodes),o=Array.prototype.slice.call(e.removedNodes),i=t.concat(o);if(n(i))return u()})}Object.defineProperty(t,"__esModule",{value:!0});var u=function(){};t.default={isSupported:i,ready:r}},function(e,t){"use strict";function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(){return navigator.userAgent||navigator.vendor||window.opera||""}Object.defineProperty(t,"__esModule",{value:!0});var i=function(){function e(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,n,o){return n&&e(t.prototype,n),o&&e(t,o),t}}(),r=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i,a=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,u=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i,c=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,s=function(){function e(){n(this,e)}return i(e,[{key:"phone",value:function(){var e=o();return!(!r.test(e)&&!a.test(e.substr(0,4)))}},{key:"mobile",value:function(){var e=o();return!(!u.test(e)&&!c.test(e.substr(0,4)))}},{key:"tablet",value:function(){return this.mobile()&&!this.phone()}}]),e}();t.default=new s},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(e,t,n){var o=e.node.getAttribute("data-aos-once");t>e.position?e.node.classList.add("aos-animate"):"undefined"!=typeof o&&("false"===o||!n&&"true"!==o)&&e.node.classList.remove("aos-animate")},o=function(e,t){var o=window.pageYOffset,i=window.innerHeight;e.forEach(function(e,r){n(e,i+o,t)})};t.default=o},function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var i=n(12),r=o(i),a=function(e,t){return e.forEach(function(e,n){e.node.classList.add("aos-init"),e.position=(0,r.default)(e.node,t.offset)}),e};t.default=a},function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var i=n(13),r=o(i),a=function(e,t){var n=0,o=0,i=window.innerHeight,a={offset:e.getAttribute("data-aos-offset"),anchor:e.getAttribute("data-aos-anchor"),anchorPlacement:e.getAttribute("data-aos-anchor-placement")};switch(a.offset&&!isNaN(a.offset)&&(o=parseInt(a.offset)),a.anchor&&document.querySelectorAll(a.anchor)&&(e=document.querySelectorAll(a.anchor)[0]),n=(0,r.default)(e).top,a.anchorPlacement){case"top-bottom":break;case"center-bottom":n+=e.offsetHeight/2;break;case"bottom-bottom":n+=e.offsetHeight;break;case"top-center":n+=i/2;break;case"bottom-center":n+=i/2+e.offsetHeight;break;case"center-center":n+=i/2+e.offsetHeight/2;break;case"top-top":n+=i;break;case"bottom-top":n+=e.offsetHeight+i;break;case"center-top":n+=e.offsetHeight/2+i}return a.anchorPlacement||a.offset||isNaN(t)||(o=t),n+o};t.default=a},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(e){for(var t=0,n=0;e&&!isNaN(e.offsetLeft)&&!isNaN(e.offsetTop);)t+=e.offsetLeft-("BODY"!=e.tagName?e.scrollLeft:0),n+=e.offsetTop-("BODY"!=e.tagName?e.scrollTop:0),e=e.offsetParent;return{top:n,left:t}};t.default=n},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(e){return e=e||document.querySelectorAll("[data-aos]"),Array.prototype.map.call(e,function(e){return{node:e}})};t.default=n}])});
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(477)
+}
+var normalizeComponent = __webpack_require__(4)
+/* script */
+var __vue_script__ = __webpack_require__(479)
+/* template */
+var __vue_template__ = __webpack_require__(480)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-4dff2e9e"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/components/AirbagCalculator.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4dff2e9e", Component.options)
+  } else {
+    hotAPI.reload("data-v-4dff2e9e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
 
 /***/ }),
 /* 477 */
@@ -90704,6 +90267,685 @@ module.exports = "/images/cableseal_b.jpg?78fe73b154f74238c8986836efff384e";
 
 // load the styles
 var content = __webpack_require__(478);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("42eb8ff8", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4dff2e9e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AirbagCalculator.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4dff2e9e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AirbagCalculator.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 478 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.dunnage-airbag[data-v-4dff2e9e]{\n    text-align: left;\n    padding: 8.5rem;\n    background-color: #fdffff;\n}\n.airtableFont[data-v-4dff2e9e]{\n    font-size: 1.6vw;\n}\n.showValue[data-v-4dff2e9e]{\n    display: inline;\n}\n.disabledValue[data-v-4dff2e9e]{\n    display: none;\n}\n\n/*vuejs animation for fade in and fade out*/\n.fade-enter-active[data-v-4dff2e9e], .fade-leave-active[data-v-4dff2e9e] {\n    -webkit-transition: opacity .5s;\n    transition: opacity .5s;\n}\n.fade-enter[data-v-4dff2e9e], .fade-leave-to[data-v-4dff2e9e] /* .fade-leave-active below version 2.1.8 */ {\n    opacity: 0;\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 479 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_gsap__ = __webpack_require__(88);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "AirbagCalculator",
+    data: function data() {
+        return {
+
+            //transition for airtable
+            showWidthOptions: false,
+            showLengthOptions: false,
+            showAirbagType: false,
+            animateForceByFillingPressure: 0,
+            animateForceNumber: 0,
+            kgToPoundFactor: 2.20462442018,
+            inchToCmFactor: 2.54,
+            placeholderForGapWidthInput: 'GW (inch)',
+
+            // carousel section
+            slide: 0,
+            carouselTime: 0,
+            attachFontSize: false,
+            loaded: false,
+
+            //airbag calculator table
+            //user selected value
+            // animal_name: '',
+            // selectedAnimalType:0,
+            // animalType:[{text:'Bass',value:60},{text:'Catfish',value: 90}, {text:'Jersey cattle', value:120, disabled: true},{text:'Guernsey cattle',value:150}],
+
+            surface_contact: 0,
+            forceByMaxFillingPressure: 0,
+            test: 0,
+            selectedBagWidth: 0,
+            selectedBagHeight: 0,
+            inputGap: null,
+            selectedGap: 0,
+            inputGapHeight: null,
+            givenGap: 0,
+            selectedBagType: '',
+            selectedPalletHeight: 0,
+            // palletHeight:[{text:'PH > 60',value:60},{text:'PH > 90',value: 90}, {text:'PH > 120', value:120},{text:'PH > 150',value:150}],
+            bagWidth: [{ text: '24', value: 60 }, { text: '36', value: 90 }, { text: '48', value: 120 }, { text: '60', value: 150 }],
+            bagHeight: [{ value: 60, text: '24' }, { value: 90, text: '36' }, { value: 120, text: '48' }, { value: 150, text: '60' }, { value: 180, text: '70' }, { value: 210, text: '83' }, { value: 225, text: '89' }, { value: 240, text: '95' }, { value: 260, text: '103' }, { value: 270, text: '107' }],
+            formulaGap: [{ value: 150, text: '150' }, { value: 200, text: '200' }, { value: 300, text: '300' }, { value: 400, text: '400' }, { value: 500, text: '500' }, { value: 600, text: '600' }],
+            bagType: [{ value: '', text: 'Select Bag Type' }, { value: 'PAPER 1 Ply SAVFER', text: 'PAPER 1 Ply SAVFER' }, { value: 'Paper 2 Ply SAVFER', text: 'Paper 2 Ply SAVFER' }, { value: 'Paper 1 Ply Standard', text: 'Paper 1 Ply Standard' }, { value: 'Paper 2 Ply Standard', text: 'Paper 2 Ply Standard' }, { value: 'Paper 4 Ply Heavy Duty', text: 'Paper 4 Ply Heavy Duty' }, { value: 'Paper 6 Ply Super Heavy', text: 'Paper 6 Ply Super Heavy' }, { value: 'Paper 8 Ply', text: 'Paper 8 Ply' }, { value: 'PP SAVFER medium', text: 'PP SAVFER medium' }, { value: 'PP90 Standard', text: 'PP90 Standard' }, { value: 'PP150 Heavy Duty', text: 'PP150 Heavy Duty' }, { value: 'PP200 Super Heavy', text: 'PP200 Super Heavy' }, { value: 'PP 250 GSM', text: 'PP 250 GSM' }],
+            airbagTable: __WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json___default.a,
+            isActive: false
+            //airbag calculator table
+        };
+    },
+
+    created: function created() {
+        // document.getElementsByTagName("OPTION").style.color = "blue";
+        // console.log(list);
+    },
+    watch: {
+        'selectedBagWidth': function selectedBagWidth() {
+            this.getSurfaceContactIndex;
+        },
+        'selectedGap': function selectedGap() {
+            this.getSurfaceContactIndex;
+        },
+        'selectedBagType': function selectedBagType() {
+            // this.getSurfaceContactIndex;
+            this.filterBagTypesOptions;
+        },
+        'inputGap': function inputGap() {
+            if (this.inputGap * this.inchToCmFactor > 14) {
+                this.showWidthOptions = true;
+            } else {
+                this.showWidthOptions = false;
+                // this.showAirbagType = false;
+            }
+            // this.alterOptionColor();
+            //change option color
+            // console.log(optionElements);
+        },
+        'inputGapHeight': function inputGapHeight() {
+            if (this.inputGapHeight * this.inchToCmFactor > 20) {
+                this.showLengthOptions = true;
+            } else {
+                this.showLengthOptions = false;
+                // this.showAirbagType = false;
+            }
+        },
+        // 'selectedBagHeight': function(){
+        //  this.getSurfaceContactIndex;
+        // },
+        'surface_contact': function surface_contact() {
+            this.forceByFillingPressure();
+        },
+        'selectedBagHeight': function selectedBagHeight() {
+            this.getSurfaceContactIndex;
+            if (this.selectedBagHeight) {
+                this.showAirbagType = true;
+            } else {
+                this.showAirbagType = false;
+            }
+        },
+        'forceByMaxFillingPressure': function forceByMaxFillingPressure(newValue) {
+            // animated number presentation when it change value
+            __WEBPACK_IMPORTED_MODULE_1_gsap__["a" /* TweenLite */].to(this.$data, 0.5, { animateForceByFillingPressure: newValue });
+        }
+
+    },
+    methods: {
+        // alterOptionColor(){
+        //     let optionElements =document.getElementsByTagName('li');
+        //     console.log(optionElements.length);
+        //     for (let i = 0; i< optionElements.length; i++) {
+        //         optionElements[i].style.color= "black";
+        //     }
+        // },
+        forceByFillingPressure: function forceByFillingPressure() {
+            var f = 0;
+            f = this.selectedBagWidth * this.selectedBagHeight * this.surface_contact * this.getMaxFillingPressure * 2 / 10 * this.kgToPoundFactor;
+            if (isNaN(f)) {
+                this.isActive = false;
+                return "Please Choose Another Value";
+            } else {
+                this.isActive = true;
+                //animated number presentation when it change value
+                // let n = (Math.round(f * 10) / 10);
+                // return this.test = TweenLite.to(this.$data, 0.5, { animateSurfaceContact: n });
+                // return TweenLite.to(this.$data, 0.5, { animateForceNumber: (Math.round(f * 10) / 10).toString() });
+                this.forceByMaxFillingPressure = Math.round(f * 10) / 10;
+                return Math.round(f * 10) / 10 + " lbs";
+            }
+        }
+    },
+    computed: {
+        sliderPacechange: function sliderPacechange() {
+            // change the carousel pace for each picture
+            if (this.slide < 3) {
+                this.carouselTime = 6000;
+            } else {
+                this.carouselTime = 3000;
+            }
+            return this.carouselTime;
+        },
+        //gap is for conditional select
+        getSurfaceContactIndex: function getSurfaceContactIndex() {
+            var t = 0;
+            for (var i = 0; i < this.airbagTable.length; i++) {
+                if (this.airbagTable[i]['Bags Width'] === this.selectedBagWidth && this.airbagTable[i]['Gap height (mm)'] === this.selectedGap) {
+                    t = this.airbagTable[i]['Contact surface area'];
+                }
+                // console.log(this.airbagTable[i]['Bags Width']);
+            }
+            return this.surface_contact = t;
+            // console.log(this.selectedBagWidth * this.selectedBagHeight * this.selectedGap );
+        },
+
+        getMaxFillingPressure: function getMaxFillingPressure() {
+            var MFP = '';
+            for (var i = 0; i < this.airbagTable.length; i++) {
+                var n = this.selectedBagType.localeCompare(this.airbagTable[i]['Bag type'].trimRight());
+                if (n === 0 && this.airbagTable[i]['Bags Width'] === this.selectedBagWidth && this.surface_contact === this.airbagTable[i]['Contact surface area']) {
+                    return MFP = this.airbagTable[i]['Max fill. pressure'] * 10;
+                }
+            }
+        },
+        //change bag width options based on gap width
+        filterUserSelectOptions: function filterUserSelectOptions() {
+            if (this.inputGap * this.inchToCmFactor) {
+                var gapTohWidth = 0;
+                if (35.56 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 150) {
+                    gapTohWidth = 60;
+                    this.selectedGap = 150;
+                } else if (151 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 300) {
+                    gapTohWidth = 60;
+                    this.selectedGap = 300;
+                } else if (301 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 400) {
+                    gapTohWidth = 90;
+                    this.selectedGap = 400;
+                } else if (401 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 500) {
+                    gapTohWidth = 120;
+                    this.selectedGap = 500;
+                } else if (501 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 600) {
+                    gapTohWidth = 150;
+                    this.selectedGap = 600;
+                }
+                return this.bagWidth.filter(function (t) {
+                    return t.value >= gapTohWidth;
+                });
+            } else {
+                return this.bagWidth;
+            }
+        },
+
+        // filterUserSelectOptions (){
+        //     if (this.inputGap * this.inchToCmFactor){
+        //         let gapToWidth = 0;
+        //         // console.log( Math.round((this.inputGap * this.inchToCmFactor)/10)*10*10 );
+        //         if(30<this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=40){
+        //             gapToWidth=60;
+        //             this.selectedGap = 300;
+        //         }else if(14<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=30){
+        //             gapToWidth=60;
+        //             this.selectedGap = 150;
+        //         }else if(40<this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=50){
+        //             gapToWidth=90;
+        //             this.selectedGap = 400;
+        //         }else if(50<this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=60){
+        //             gapToWidth=120;
+        //             this.selectedGap = 500;
+        //         }else if(60<this.inputGap * this.inchToCmFactor){
+        //             gapToWidth=150;
+        //             this.selectedGap = 600;
+        //         }
+        //         console.log(this.selectedGap);
+        //         return this.bagWidth.filter(t => t.value <= gapToWidth);
+        //     }else {
+        //         return this.bagWidth
+        //     }
+        // },
+        filterUserBagLengthOptions: function filterUserBagLengthOptions() {
+            if (this.inputGapHeight * this.inchToCmFactor) {
+                var selectableBagHeight = 0;
+                if (0 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 89) {
+                    selectableBagHeight = 60;
+                } else if (90 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 119) {
+                    selectableBagHeight = 90;
+                } else if (120 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 149) {
+                    selectableBagHeight = 120;
+                } else if (150 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 179) {
+                    selectableBagHeight = 150;
+                } else if (180 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 219) {
+                    selectableBagHeight = 180;
+                } else if (210 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 224) {
+                    selectableBagHeight = 210;
+                } else if (225 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 239) {
+                    selectableBagHeight = 225;
+                } else if (240 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 259) {
+                    selectableBagHeight = 240;
+                } else if (260 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 269) {
+                    selectableBagHeight = 260;
+                } else if (this.inputGapHeight * this.inchToCmFactor >= 270) {
+                    selectableBagHeight = 270;
+                }
+                return this.bagHeight.filter(function (t) {
+                    return t.value <= selectableBagHeight;
+                });
+            } else {
+                return this.bagHeight;
+            }
+        },
+        filterBagTypesOptions: function filterBagTypesOptions() {
+            var bagTypeHaveValue = [];
+            for (var j = 0; j < this.bagType.length; j++) {
+                for (var i = 0; i < this.airbagTable.length; i++) {
+                    var n = this.bagType[j].value.localeCompare(this.airbagTable[i]['Bag type'].trimRight());
+                    if (n === 0 && this.airbagTable[i]['Bags Width'] === this.selectedBagWidth && this.surface_contact === this.airbagTable[i]['Contact surface area']) {
+                        bagTypeHaveValue.push(this.bagType[j].value);
+                        // this.bagType.filter(t => t.value !== this.airbagTable[i]['Bag type'].trimRight());
+                    }
+                }
+            }
+            // console.log(bagTypeHaveValue.length);
+            // return this.bagType.filter(function(e){return this.indexOf(e) < 0;},bagTypeHaveValue);
+            if (bagTypeHaveValue.length !== 0) {
+                //exclude the unavailable value on the chart
+                return this.bagType.filter(function (t) {
+                    return bagTypeHaveValue.includes(t.value);
+                });
+            } else {
+                return [{ value: '', text: 'No Dunnage Airbag Available' }];
+            }
+        },
+
+        forceByFillingPressureAnimated: function forceByFillingPressureAnimated() {
+            return this.animateForceByFillingPressure.toFixed(1);
+        }
+    }
+});
+
+/***/ }),
+/* 480 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticStyle: { margin: "100px" } }, [
+    _c("div", { staticClass: "container" }, [
+      _c("table", { staticClass: "table table-bordered text-center shadow" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("tbody", [
+          _c("tr", [
+            _c(
+              "td",
+              [
+                _c("b-form-input", {
+                  attrs: {
+                    type: "number",
+                    placeholder: _vm.placeholderForGapWidthInput
+                  },
+                  model: {
+                    value: _vm.inputGap,
+                    callback: function($$v) {
+                      _vm.inputGap = $$v
+                    },
+                    expression: "inputGap"
+                  }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "td",
+              [
+                _c("b-form-input", {
+                  attrs: { type: "number", placeholder: "PH (inch)" },
+                  model: {
+                    value: _vm.inputGapHeight,
+                    callback: function($$v) {
+                      _vm.inputGapHeight = $$v
+                    },
+                    expression: "inputGapHeight"
+                  }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "td",
+              [
+                _c(
+                  "transition",
+                  { attrs: { name: "fade", mode: "out-in", duration: "1000" } },
+                  [
+                    _vm.showWidthOptions
+                      ? _c("b-form-select", {
+                          staticClass: "mb-2 mr-sm-2 mb-sm-0",
+                          attrs: {
+                            options: _vm.filterUserSelectOptions,
+                            id: "bagWidthSelect"
+                          },
+                          model: {
+                            value: _vm.selectedBagWidth,
+                            callback: function($$v) {
+                              _vm.selectedBagWidth = $$v
+                            },
+                            expression: "selectedBagWidth"
+                          }
+                        })
+                      : _vm._e()
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "td",
+              [
+                _c(
+                  "transition",
+                  { attrs: { name: "fade", mode: "out-in", duration: "1000" } },
+                  [
+                    _vm.showLengthOptions
+                      ? _c("b-form-select", {
+                          staticClass: "mb-2 mr-sm-2 mb-sm-0",
+                          attrs: {
+                            options: _vm.filterUserBagLengthOptions,
+                            id: "bagWidthSelect"
+                          },
+                          model: {
+                            value: _vm.selectedBagHeight,
+                            callback: function($$v) {
+                              _vm.selectedBagHeight = $$v
+                            },
+                            expression: "selectedBagHeight"
+                          }
+                        })
+                      : _vm._e()
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "td",
+              [
+                _c(
+                  "transition",
+                  { attrs: { name: "fade", mode: "out-in", duration: "1000" } },
+                  [
+                    _vm.showAirbagType
+                      ? _c("b-form-select", {
+                          staticClass: "mb-2 mr-sm-2 mb-sm-0",
+                          attrs: {
+                            options: _vm.filterBagTypesOptions,
+                            id: "bagWidthSelect"
+                          },
+                          model: {
+                            value: _vm.selectedBagType,
+                            callback: function($$v) {
+                              _vm.selectedBagType = $$v
+                            },
+                            expression: "selectedBagType"
+                          }
+                        })
+                      : _vm._e()
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c("td", [
+              _c(
+                "span",
+                {
+                  class: {
+                    airtableFont: _vm.isActive === true,
+                    showValue: _vm.isActive === true,
+                    disabledValue: _vm.isActive === false
+                  }
+                },
+                [_vm._v(_vm._s(_vm.forceByFillingPressureAnimated + " lbs"))]
+              ),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  class: {
+                    showValue: _vm.isActive === false,
+                    disabledValue: _vm.isActive === true
+                  }
+                },
+                [_vm._v(_vm._s(_vm.forceByFillingPressure()))]
+              )
+            ])
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div")
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "thead",
+      { staticClass: "thead-light bg-danger text-uppercase" },
+      [
+        _c("tr", [
+          _c(
+            "th",
+            {
+              staticStyle: {
+                "font-size": "larger",
+                "font-weight": "600",
+                color: "#112133"
+              },
+              attrs: { colspan: "7" }
+            },
+            [_vm._v("Airbag Calculator")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c(
+            "th",
+            {
+              staticStyle: { width: "15%", align: "center" },
+              attrs: { rowspan: "2" }
+            },
+            [
+              _c(
+                "span",
+                {
+                  staticStyle: {
+                    "vertical-align": "center",
+                    "margin-bottom": "20px"
+                  }
+                },
+                [_vm._v("Gap between pallets")]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c("th", { staticStyle: { width: "16%" }, attrs: { rowspan: "2" } }, [
+            _vm._v("Pallet Height")
+          ]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Width")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Length")]),
+          _vm._v(" "),
+          _c(
+            "th",
+            {
+              staticStyle: { width: "22%" },
+              attrs: { scope: "col", rowspan: "2" }
+            },
+            [_vm._v("Airbag Types")]
+          ),
+          _vm._v(" "),
+          _c(
+            "th",
+            {
+              staticStyle: { width: "17%" },
+              attrs: { scope: "col", rowspan: "2" }
+            },
+            [_vm._v("Force by Max filling pressure")]
+          )
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-4dff2e9e", module.exports)
+  }
+}
+
+/***/ }),
+/* 481 */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function(e,t){ true?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.AOS=t():e.AOS=t()}(this,function(){return function(e){function t(o){if(n[o])return n[o].exports;var i=n[o]={exports:{},id:o,loaded:!1};return e[o].call(i.exports,i,i.exports,t),i.loaded=!0,i.exports}var n={};return t.m=e,t.c=n,t.p="dist/",t(0)}([function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}var i=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o])}return e},r=n(1),a=(o(r),n(6)),u=o(a),c=n(7),s=o(c),f=n(8),d=o(f),l=n(9),p=o(l),m=n(10),b=o(m),v=n(11),y=o(v),g=n(14),h=o(g),w=[],k=!1,x={offset:120,delay:0,easing:"ease",duration:400,disable:!1,once:!1,startEvent:"DOMContentLoaded",throttleDelay:99,debounceDelay:50,disableMutationObserver:!1},j=function(){var e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];if(e&&(k=!0),k)return w=(0,y.default)(w,x),(0,b.default)(w,x.once),w},O=function(){w=(0,h.default)(),j()},M=function(){w.forEach(function(e,t){e.node.removeAttribute("data-aos"),e.node.removeAttribute("data-aos-easing"),e.node.removeAttribute("data-aos-duration"),e.node.removeAttribute("data-aos-delay")})},S=function(e){return e===!0||"mobile"===e&&p.default.mobile()||"phone"===e&&p.default.phone()||"tablet"===e&&p.default.tablet()||"function"==typeof e&&e()===!0},_=function(e){x=i(x,e),w=(0,h.default)();var t=document.all&&!window.atob;return S(x.disable)||t?M():(x.disableMutationObserver||d.default.isSupported()||(console.info('\n      aos: MutationObserver is not supported on this browser,\n      code mutations observing has been disabled.\n      You may have to call "refreshHard()" by yourself.\n    '),x.disableMutationObserver=!0),document.querySelector("body").setAttribute("data-aos-easing",x.easing),document.querySelector("body").setAttribute("data-aos-duration",x.duration),document.querySelector("body").setAttribute("data-aos-delay",x.delay),"DOMContentLoaded"===x.startEvent&&["complete","interactive"].indexOf(document.readyState)>-1?j(!0):"load"===x.startEvent?window.addEventListener(x.startEvent,function(){j(!0)}):document.addEventListener(x.startEvent,function(){j(!0)}),window.addEventListener("resize",(0,s.default)(j,x.debounceDelay,!0)),window.addEventListener("orientationchange",(0,s.default)(j,x.debounceDelay,!0)),window.addEventListener("scroll",(0,u.default)(function(){(0,b.default)(w,x.once)},x.throttleDelay)),x.disableMutationObserver||d.default.ready("[data-aos]",O),w)};e.exports={init:_,refresh:j,refreshHard:O}},function(e,t){},,,,,function(e,t){(function(t){"use strict";function n(e,t,n){function o(t){var n=b,o=v;return b=v=void 0,k=t,g=e.apply(o,n)}function r(e){return k=e,h=setTimeout(f,t),M?o(e):g}function a(e){var n=e-w,o=e-k,i=t-n;return S?j(i,y-o):i}function c(e){var n=e-w,o=e-k;return void 0===w||n>=t||n<0||S&&o>=y}function f(){var e=O();return c(e)?d(e):void(h=setTimeout(f,a(e)))}function d(e){return h=void 0,_&&b?o(e):(b=v=void 0,g)}function l(){void 0!==h&&clearTimeout(h),k=0,b=w=v=h=void 0}function p(){return void 0===h?g:d(O())}function m(){var e=O(),n=c(e);if(b=arguments,v=this,w=e,n){if(void 0===h)return r(w);if(S)return h=setTimeout(f,t),o(w)}return void 0===h&&(h=setTimeout(f,t)),g}var b,v,y,g,h,w,k=0,M=!1,S=!1,_=!0;if("function"!=typeof e)throw new TypeError(s);return t=u(t)||0,i(n)&&(M=!!n.leading,S="maxWait"in n,y=S?x(u(n.maxWait)||0,t):y,_="trailing"in n?!!n.trailing:_),m.cancel=l,m.flush=p,m}function o(e,t,o){var r=!0,a=!0;if("function"!=typeof e)throw new TypeError(s);return i(o)&&(r="leading"in o?!!o.leading:r,a="trailing"in o?!!o.trailing:a),n(e,t,{leading:r,maxWait:t,trailing:a})}function i(e){var t="undefined"==typeof e?"undefined":c(e);return!!e&&("object"==t||"function"==t)}function r(e){return!!e&&"object"==("undefined"==typeof e?"undefined":c(e))}function a(e){return"symbol"==("undefined"==typeof e?"undefined":c(e))||r(e)&&k.call(e)==d}function u(e){if("number"==typeof e)return e;if(a(e))return f;if(i(e)){var t="function"==typeof e.valueOf?e.valueOf():e;e=i(t)?t+"":t}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(l,"");var n=m.test(e);return n||b.test(e)?v(e.slice(2),n?2:8):p.test(e)?f:+e}var c="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},s="Expected a function",f=NaN,d="[object Symbol]",l=/^\s+|\s+$/g,p=/^[-+]0x[0-9a-f]+$/i,m=/^0b[01]+$/i,b=/^0o[0-7]+$/i,v=parseInt,y="object"==("undefined"==typeof t?"undefined":c(t))&&t&&t.Object===Object&&t,g="object"==("undefined"==typeof self?"undefined":c(self))&&self&&self.Object===Object&&self,h=y||g||Function("return this")(),w=Object.prototype,k=w.toString,x=Math.max,j=Math.min,O=function(){return h.Date.now()};e.exports=o}).call(t,function(){return this}())},function(e,t){(function(t){"use strict";function n(e,t,n){function i(t){var n=b,o=v;return b=v=void 0,O=t,g=e.apply(o,n)}function r(e){return O=e,h=setTimeout(f,t),M?i(e):g}function u(e){var n=e-w,o=e-O,i=t-n;return S?x(i,y-o):i}function s(e){var n=e-w,o=e-O;return void 0===w||n>=t||n<0||S&&o>=y}function f(){var e=j();return s(e)?d(e):void(h=setTimeout(f,u(e)))}function d(e){return h=void 0,_&&b?i(e):(b=v=void 0,g)}function l(){void 0!==h&&clearTimeout(h),O=0,b=w=v=h=void 0}function p(){return void 0===h?g:d(j())}function m(){var e=j(),n=s(e);if(b=arguments,v=this,w=e,n){if(void 0===h)return r(w);if(S)return h=setTimeout(f,t),i(w)}return void 0===h&&(h=setTimeout(f,t)),g}var b,v,y,g,h,w,O=0,M=!1,S=!1,_=!0;if("function"!=typeof e)throw new TypeError(c);return t=a(t)||0,o(n)&&(M=!!n.leading,S="maxWait"in n,y=S?k(a(n.maxWait)||0,t):y,_="trailing"in n?!!n.trailing:_),m.cancel=l,m.flush=p,m}function o(e){var t="undefined"==typeof e?"undefined":u(e);return!!e&&("object"==t||"function"==t)}function i(e){return!!e&&"object"==("undefined"==typeof e?"undefined":u(e))}function r(e){return"symbol"==("undefined"==typeof e?"undefined":u(e))||i(e)&&w.call(e)==f}function a(e){if("number"==typeof e)return e;if(r(e))return s;if(o(e)){var t="function"==typeof e.valueOf?e.valueOf():e;e=o(t)?t+"":t}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(d,"");var n=p.test(e);return n||m.test(e)?b(e.slice(2),n?2:8):l.test(e)?s:+e}var u="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},c="Expected a function",s=NaN,f="[object Symbol]",d=/^\s+|\s+$/g,l=/^[-+]0x[0-9a-f]+$/i,p=/^0b[01]+$/i,m=/^0o[0-7]+$/i,b=parseInt,v="object"==("undefined"==typeof t?"undefined":u(t))&&t&&t.Object===Object&&t,y="object"==("undefined"==typeof self?"undefined":u(self))&&self&&self.Object===Object&&self,g=v||y||Function("return this")(),h=Object.prototype,w=h.toString,k=Math.max,x=Math.min,j=function(){return g.Date.now()};e.exports=n}).call(t,function(){return this}())},function(e,t){"use strict";function n(e){var t=void 0,o=void 0,i=void 0;for(t=0;t<e.length;t+=1){if(o=e[t],o.dataset&&o.dataset.aos)return!0;if(i=o.children&&n(o.children))return!0}return!1}function o(){return window.MutationObserver||window.WebKitMutationObserver||window.MozMutationObserver}function i(){return!!o()}function r(e,t){var n=window.document,i=o(),r=new i(a);u=t,r.observe(n.documentElement,{childList:!0,subtree:!0,removedNodes:!0})}function a(e){e&&e.forEach(function(e){var t=Array.prototype.slice.call(e.addedNodes),o=Array.prototype.slice.call(e.removedNodes),i=t.concat(o);if(n(i))return u()})}Object.defineProperty(t,"__esModule",{value:!0});var u=function(){};t.default={isSupported:i,ready:r}},function(e,t){"use strict";function n(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(){return navigator.userAgent||navigator.vendor||window.opera||""}Object.defineProperty(t,"__esModule",{value:!0});var i=function(){function e(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,n,o){return n&&e(t.prototype,n),o&&e(t,o),t}}(),r=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i,a=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,u=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i,c=/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i,s=function(){function e(){n(this,e)}return i(e,[{key:"phone",value:function(){var e=o();return!(!r.test(e)&&!a.test(e.substr(0,4)))}},{key:"mobile",value:function(){var e=o();return!(!u.test(e)&&!c.test(e.substr(0,4)))}},{key:"tablet",value:function(){return this.mobile()&&!this.phone()}}]),e}();t.default=new s},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(e,t,n){var o=e.node.getAttribute("data-aos-once");t>e.position?e.node.classList.add("aos-animate"):"undefined"!=typeof o&&("false"===o||!n&&"true"!==o)&&e.node.classList.remove("aos-animate")},o=function(e,t){var o=window.pageYOffset,i=window.innerHeight;e.forEach(function(e,r){n(e,i+o,t)})};t.default=o},function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var i=n(12),r=o(i),a=function(e,t){return e.forEach(function(e,n){e.node.classList.add("aos-init"),e.position=(0,r.default)(e.node,t.offset)}),e};t.default=a},function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var i=n(13),r=o(i),a=function(e,t){var n=0,o=0,i=window.innerHeight,a={offset:e.getAttribute("data-aos-offset"),anchor:e.getAttribute("data-aos-anchor"),anchorPlacement:e.getAttribute("data-aos-anchor-placement")};switch(a.offset&&!isNaN(a.offset)&&(o=parseInt(a.offset)),a.anchor&&document.querySelectorAll(a.anchor)&&(e=document.querySelectorAll(a.anchor)[0]),n=(0,r.default)(e).top,a.anchorPlacement){case"top-bottom":break;case"center-bottom":n+=e.offsetHeight/2;break;case"bottom-bottom":n+=e.offsetHeight;break;case"top-center":n+=i/2;break;case"bottom-center":n+=i/2+e.offsetHeight;break;case"center-center":n+=i/2+e.offsetHeight/2;break;case"top-top":n+=i;break;case"bottom-top":n+=e.offsetHeight+i;break;case"center-top":n+=e.offsetHeight/2+i}return a.anchorPlacement||a.offset||isNaN(t)||(o=t),n+o};t.default=a},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(e){for(var t=0,n=0;e&&!isNaN(e.offsetLeft)&&!isNaN(e.offsetTop);)t+=e.offsetLeft-("BODY"!=e.tagName?e.scrollLeft:0),n+=e.offsetTop-("BODY"!=e.tagName?e.scrollTop:0),e=e.offsetParent;return{top:n,left:t}};t.default=n},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n=function(e){return e=e||document.querySelectorAll("[data-aos]"),Array.prototype.map.call(e,function(e){return{node:e}})};t.default=n}])});
+
+/***/ }),
+/* 482 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(483);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -90728,7 +90970,7 @@ if(false) {
 }
 
 /***/ }),
-/* 478 */
+/* 483 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -90742,13 +90984,13 @@ exports.push([module.i, "[data-aos][data-aos][data-aos-duration=\"50\"],body[dat
 
 
 /***/ }),
-/* 479 */
+/* 484 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(480);
+var content = __webpack_require__(485);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -90773,7 +91015,7 @@ if(false) {
 }
 
 /***/ }),
-/* 480 */
+/* 485 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -90787,13 +91029,13 @@ exports.push([module.i, ".material-design-icon {\n  display: inline-flex;\n  ali
 
 
 /***/ }),
-/* 481 */
+/* 486 */
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(e,n){if(true)module.exports=n();else if("function"==typeof define&&define.amd)define([],n);else{var r=n();for(var t in r)("object"==typeof exports?exports:e)[t]=r[t]}}(this,function(){return function(e){function n(t){if(r[t])return r[t].exports;var o=r[t]={i:t,l:!1,exports:{}};return e[t].call(o.exports,o,o.exports,n),o.l=!0,o.exports}var r={};return n.m=e,n.c=r,n.d=function(e,r,t){n.o(e,r)||Object.defineProperty(e,r,{configurable:!1,enumerable:!0,get:t})},n.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(r,"a",r),r},n.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},n.p="",n(n.s=0)}([function(e,n,r){"use strict";function t(e){u(F,e)}function o(){return F.id?[].concat(F.id):[]}function i(){}function a(e){return new Promise(function(n,r){var t=document.head||document.getElementsByTagName("head")[0],o=document.createElement("script");o.async=!0,o.src=e,o.charset="utf8",t.appendChild(o),o.onload=n,o.onerror=r})}function c(e,n){var r=n.split("/"),t=e.split("/");return""===r[0]&&"/"===e[e.length-1]&&r.shift(),t.join("/")+r.join("/")}function u(e,n){return Object.keys(n).forEach(function(r){if(e[r]&&"object"==typeof e[r])return void u(e[r],n[r]);e[r]=n[r]}),e}function f(){return Array.prototype.slice.call(document.getElementsByTagName("script")).filter(function(e){return-1!==e.src.indexOf("analytics")||-1!==e.src.indexOf("gtag")}).length>0}function s(){return!(_.checkDuplicatedScript&&f())}function l(e){return e.name||e.replace(/-/gi,"")}function d(){return new Promise(function(e,n){var r=setInterval(function(){"undefined"!=typeof window&&window.ga&&(e(),clearInterval(r))},10)})}function p(e,n){if(o().length>1){return l(n)+"."+e}return e}function v(e){var n=Object.keys(e).reduce(function(n,r,t,o){var i=t===o.length-1;return n+=r+"="+e[r]+(i?"":"&")},"");return""!==n?"?"+n:""}function y(e){return[e.name,e.path].filter(Boolean).find(function(e){return-1!==_.ignoreRoutes.indexOf(e)})}function h(e){return e.query&&e.params}function g(e){return e.currentRoute}function m(e){if(Array.isArray(e)){for(var n=0,r=Array(e.length);n<e.length;n++)r[n]=e[n];return r}return Array.from(e)}function w(e){for(var n=arguments.length,r=Array(n>1?n-1:0),t=1;t<n;t++)r[t-1]=arguments[t];"undefined"!=typeof window&&o().forEach(function(n){var t={m:p(e,n),a:r};if(!window.ga)return void _.untracked.push(t);if(_.batch.enabled)$.push(t),U||(U=setInterval(function(){$.length?$.splice(0,_.batch.amount).forEach(function(e){var n;(n=window).ga.apply(n,[e.m].concat(m(e.a)))}):(clearInterval(U),U=null)},_.batch.delay));else{var o;(o=window).ga.apply(o,[p(e,n)].concat(r))}})}function b(){for(var e=arguments.length,n=Array(e),r=0;r<e;r++)n[r]=arguments[r];if("object"==typeof n[0]&&n[0].constructor===Object)return void w("set",n[0]);w("set",n[0],n[1])}function k(){var e=o();_.debug.enabled&&(window.ga_debug={trace:_.debug.trace}),e.forEach(function(n){var r=l(n),t=_.customIdFields[n]||{},o=e.length>1?D({},_.fields,t,{name:r}):_.fields;window.ga("create",n.id||n,"auto",o)}),_.beforeFirstHit();var n=_.ecommerce;if(n.enabled){var r=n.enhanced?"ec":"ecommerce";n.options?w("require",r,n.options):w("require",r)}_.linkers.length>0&&(w("require","linker"),w("linker:autoLink",_.linkers)),_.debug.sendHitTask||b("sendHitTask",null)}function x(){for(var e=arguments.length,n=Array(e),r=0;r<e;r++)n[r]=arguments[r];var t=n[0];if(1===n.length&&"string"==typeof t)return w("send","screenview",{screenName:t});w.apply(void 0,["send","screenview"].concat(n))}function A(){for(var e=void 0,n=arguments.length,r=Array(n),t=0;t<n;t++)r[t]=arguments[t];if(r.length&&g(r[0])&&(e=r[0].currentRoute),r.length&&h(r[0])&&(e=r[0]),e)E(e);else{b("page","object"==typeof r[0]?r[0].page:r[0]),w.apply(void 0,["send","pageview"].concat(r))}}function E(e){if(!y(e)){var n=_.autoTracking,r=e.meta.analytics,t=void 0===r?{}:r,o=t.pageviewTemplate||n.pageviewTemplate;if(n.screenview&&!e.name)throw new Error("[vue-analytics] Route name is mandatory when using screenview.");if(n.screenview)return void x(e.name);if(o)A(o(e));else{var i=_.router,a=_.autoTracking,u=a.transformQueryString,f=a.prependBase,s=v(e.query),l=i&&i.options.base,d=f&&l,p=e.path+(u?s:"");p=d?c(l,p):p,A(p)}}}function O(){var e=_.router,n=_.autoTracking;n.page&&e&&(n.pageviewOnLoad&&E(e.currentRoute),_.router.afterEach(function(r,t){var o=n.skipSamePath,i=n.shouldRouterUpdate;o&&r.path===t.path||("function"!=typeof i||i(r,t))&&_.$vue.nextTick().then(function(){E(e.currentRoute)})}))}function j(e){if(Array.isArray(e)){for(var n=0,r=Array(e.length);n<e.length;n++)r[n]=e[n];return r}return Array.from(e)}function T(){for(var e=arguments.length,n=Array(e),r=0;r<e;r++)n[r]=arguments[r];w.apply(void 0,["send","event"].concat(n))}function q(){for(var e=arguments.length,n=Array(e),r=0;r<e;r++)n[r]=arguments[r];w.apply(void 0,["send","social"].concat(n))}function P(){for(var e=arguments.length,n=Array(e),r=0;r<e;r++)n[r]=arguments[r];w.apply(void 0,["send","timing"].concat(n))}function R(e,n,r){return n in e?Object.defineProperty(e,n,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[n]=r,e}function L(e){if(Array.isArray(e)){for(var n=0,r=Array(e.length);n<e.length;n++)r[n]=e[n];return r}return Array.from(e)}function I(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};t(ae({},n,{$vue:e})),e.directive("ga",te),e.prototype.$ga=e.$ga=re,V(e),z()}Object.defineProperty(n,"__esModule",{value:!0});var S=Object.assign||function(e){for(var n=1;n<arguments.length;n++){var r=arguments[n];for(var t in r)Object.prototype.hasOwnProperty.call(r,t)&&(e[t]=r[t])}return e},H={$vue:null,id:null,router:null,fields:{},customIdFields:{},ignoreRoutes:[],linkers:[],commands:{},disabled:!1,customResourceURL:null,set:[],require:[],ecommerce:{enabled:!1,options:null,enhanced:!1},autoTracking:{screenview:!1,shouldRouterUpdate:null,skipSamePath:!1,exception:!1,exceptionLogs:!0,page:!0,transformQueryString:!0,pageviewOnLoad:!0,pageviewTemplate:null,untracked:!0,prependBase:!0},debug:{enabled:!1,trace:!1,sendHitTask:!0},batch:{enabled:!1,delay:500,amount:2},checkDuplicatedScript:!1,disableScriptLoader:!1,beforeFirstHit:i,ready:i,untracked:[]},F=S({},H),_=F,B=function(e){if(e.then)return e;if("function"==typeof e){var n=e();return n.then?n:Promise.resolve(n)}return Promise.resolve(e)},U=void 0,$=[],D=Object.assign||function(e){for(var n=1;n<arguments.length;n++){var r=arguments[n];for(var t in r)Object.prototype.hasOwnProperty.call(r,t)&&(e[t]=r[t])}return e},M=function(){if(2==arguments.length)return void w("require",arguments.length<=0?void 0:arguments[0],arguments.length<=1?void 0:arguments[1]);w("require",arguments.length<=0?void 0:arguments[0])},N=function(){_.set.forEach(function(e){var n=e.field,r=e.value;if(void 0===n||void 0===r)throw new Error('[vue-analytics] Wrong configuration in the plugin options.\nThe "set" array requires each item to have a "field" and a "value" property.');b(n,r)})},C=function(){var e=["ec","ecommerce"];_.require.forEach(function(n){if(-1!==e.indexOf(n)||-1!==e.indexOf(n.name))throw new Error("[vue-analytics] The ecommerce features are built-in in the plugin. \nFollow the ecommerce instructions available in the documentation.");if("string"!=typeof n&&"object"!=typeof n)throw new Error('[vue-analytics] Wrong configuration in the plugin options. \nThe "require" array requires each item to be a string or to have a "name" and an "options" property.');var r=n.name||n;if(n.options)return void M(r,n.options);M(r)})},Q=function(){N(),C()},W=function(){_.untracked.forEach(function(e){w.apply(void 0,[e.m].concat(j(e.a)))})},G=function(){var e=!(arguments.length>0&&void 0!==arguments[0])||arguments[0];"undefined"!=typeof window&&o().forEach(function(n){window["ga-disable-"+n]=e})},z=function(){if("undefined"!=typeof document&&"undefined"!=typeof window){var e=_.disableScriptLoader,n=_.ready,r=_.debug.enabled?"analytics_debug":"analytics",o=_.customResourceURL||"https://www.google-analytics.com/"+r+".js";if(!_.id)throw new Error('[vue-analytics] Missing the "id" parameter. Add at least one tracking domain ID');var i=[B(_.id),B(_.disabled)];return!s()||window.ga&&e||i.push(a(o).catch(function(){throw new Error("[vue-analytics] An error occured! Please check your connection, if you have any Google Analytics blocker installed in your browser or check your custom resource URL if you have added any.")})),Promise.all(i).then(function(e){t({id:e[0],disabled:e[1]}),G(_.disabled),k(),W(),Q(),O(),n()}).catch(function(e){console.error(e.message)})}},J=this,K=function(e){w("send","exception",{exDescription:e,exFatal:arguments.length>1&&void 0!==arguments[1]&&arguments[1]})},V=function(e){if(_.autoTracking.exception){window.addEventListener("error",function(e){K(e.message)});var n=e.config.errorHandler;e.config.errorHandler=function(e,r,t){K(e.message),_.autoTracking.exceptionLogs&&(console.error("[vue-analytics] Error in "+t+": "+e.message),console.error(e)),"function"==typeof n&&n.call(J,e,r,t)}}},X=K,Y=Object.assign||function(e){for(var n=1;n<arguments.length;n++){var r=arguments[n];for(var t in r)Object.prototype.hasOwnProperty.call(r,t)&&(e[t]=r[t])}return e},Z=function(e){return(_.ecommerce.enhanced?"ec":"ecommerce")+":"+e},ee=["addItem","addTransaction","addProduct","addImpression","setAction","addPromo","send"],ne=ee.reduce(function(e,n){return Y({},e,R({},n,function(){for(var e=arguments.length,r=Array(e),t=0;t<e;t++)r[t]=arguments[t];w.apply(void 0,[Z(n)].concat(r))}))},{}),re={event:T,exception:X,page:A,query:w,require:M,set:b,social:q,time:P,screenview:x,ecommerce:ne,disable:function(){return G(!0)},enable:function(){return G(!1)},commands:_.commands},te={inserted:function(e,n,r){var t=Object.keys(n.modifiers);0===t.length&&t.push("click"),t.forEach(function(t){e.addEventListener(t,function(){var e="string"==typeof n.value?_.commands[n.value]:n.value;if(!e)throw new Error("[vue-analytics] The value passed to v-ga is not defined in the commands list.");e.apply(r.context)})})}},oe=function(){function e(e,n){var r=[],t=!0,o=!1,i=void 0;try{for(var a,c=e[Symbol.iterator]();!(t=(a=c.next()).done)&&(r.push(a.value),!n||r.length!==n);t=!0);}catch(e){o=!0,i=e}finally{try{!t&&c.return&&c.return()}finally{if(o)throw i}}return r}return function(n,r){if(Array.isArray(n))return n;if(Symbol.iterator in Object(n))return e(n,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),ie=function(e){e.subscribe(function(e){var n=e.payload;if(n&&n.meta&&n.meta.analytics){var r=n.meta.analytics;if(!Array.isArray(r))throw new Error('The "analytics" property needs to be an array');r.forEach(function(e){var n=void 0,r=e.shift(),t=e;if(r.includes(":")){var o=r.split(":"),i=oe(o,2);r=i[0],n=i[1]}if(!(r in re))throw new Error('[vue-analytics:vuex] The type "'+r+"\" doesn't exist.");if(n&&!(n in re[r]))throw new Error('[vue-analytics:vuex] The type "'+r+'" has not method "'+n+'".');if("ecommerce"===r&&!n)throw new Error('[vue-analytics:vuex] The type "'+r+'" needs to call a method. Check documentation.');if(n){var a;(a=re[r])[n].apply(a,L(t))}else re[r].apply(re,L(t))})}})};n.default=I,r.d(n,"analyticsMiddleware",function(){return ce}),r.d(n,"onAnalyticsReady",function(){return ue}),r.d(n,"event",function(){return fe}),r.d(n,"ecommerce",function(){return se}),r.d(n,"set",function(){return le}),r.d(n,"page",function(){return de}),r.d(n,"query",function(){return pe}),r.d(n,"screenview",function(){return ve}),r.d(n,"time",function(){return ye}),r.d(n,"require",function(){return he}),r.d(n,"exception",function(){return ge}),r.d(n,"social",function(){return me});var ae=Object.assign||function(e){for(var n=1;n<arguments.length;n++){var r=arguments[n];for(var t in r)Object.prototype.hasOwnProperty.call(r,t)&&(e[t]=r[t])}return e},ce=ie,ue=d,fe=re.event,se=re.ecommerce,le=re.set,de=re.page,pe=re.query,ve=re.screenview,ye=re.time,he=re.require,ge=re.exception,me=re.social}])});
 
 /***/ }),
-/* 482 */
+/* 487 */
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(t,e){ true?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.VueSelect=e():t.VueSelect=e()}(this,function(){return function(t){function e(o){if(n[o])return n[o].exports;var r=n[o]={exports:{},id:o,loaded:!1};return t[o].call(r.exports,r,r.exports,e),r.loaded=!0,r.exports}var n={};return e.m=t,e.c=n,e.p="/",e(0)}([function(t,e,n){"use strict";function o(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0}),e.mixins=e.VueSelect=void 0;var r=n(85),i=o(r),s=n(42),a=o(s);e.default=i.default,e.VueSelect=i.default,e.mixins=a.default},function(t,e){var n=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=n)},function(t,e){var n=t.exports={version:"2.5.3"};"number"==typeof __e&&(__e=n)},function(t,e,n){t.exports=!n(9)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,e){var n={}.hasOwnProperty;t.exports=function(t,e){return n.call(t,e)}},function(t,e,n){var o=n(11),r=n(33),i=n(25),s=Object.defineProperty;e.f=n(3)?Object.defineProperty:function(t,e,n){if(o(t),e=i(e,!0),o(n),r)try{return s(t,e,n)}catch(t){}if("get"in n||"set"in n)throw TypeError("Accessors not supported!");return"value"in n&&(t[e]=n.value),t}},function(t,e,n){var o=n(5),r=n(14);t.exports=n(3)?function(t,e,n){return o.f(t,e,r(1,n))}:function(t,e,n){return t[e]=n,t}},function(t,e,n){var o=n(61),r=n(16);t.exports=function(t){return o(r(t))}},function(t,e,n){var o=n(23)("wks"),r=n(15),i=n(1).Symbol,s="function"==typeof i,a=t.exports=function(t){return o[t]||(o[t]=s&&i[t]||(s?i:r)("Symbol."+t))};a.store=o},function(t,e){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,e){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,e,n){var o=n(10);t.exports=function(t){if(!o(t))throw TypeError(t+" is not an object!");return t}},function(t,e,n){var o=n(1),r=n(2),i=n(58),s=n(6),a="prototype",u=function(t,e,n){var l,c,f,p=t&u.F,d=t&u.G,h=t&u.S,b=t&u.P,v=t&u.B,g=t&u.W,y=d?r:r[e]||(r[e]={}),m=y[a],x=d?o:h?o[e]:(o[e]||{})[a];d&&(n=e);for(l in n)c=!p&&x&&void 0!==x[l],c&&l in y||(f=c?x[l]:n[l],y[l]=d&&"function"!=typeof x[l]?n[l]:v&&c?i(f,o):g&&x[l]==f?function(t){var e=function(e,n,o){if(this instanceof t){switch(arguments.length){case 0:return new t;case 1:return new t(e);case 2:return new t(e,n)}return new t(e,n,o)}return t.apply(this,arguments)};return e[a]=t[a],e}(f):b&&"function"==typeof f?i(Function.call,f):f,b&&((y.virtual||(y.virtual={}))[l]=f,t&u.R&&m&&!m[l]&&s(m,l,f)))};u.F=1,u.G=2,u.S=4,u.P=8,u.B=16,u.W=32,u.U=64,u.R=128,t.exports=u},function(t,e,n){var o=n(38),r=n(17);t.exports=Object.keys||function(t){return o(t,r)}},function(t,e){t.exports=function(t,e){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:e}}},function(t,e){var n=0,o=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++n+o).toString(36))}},function(t,e){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,e){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(t,e){t.exports={}},function(t,e){t.exports=!0},function(t,e){e.f={}.propertyIsEnumerable},function(t,e,n){var o=n(5).f,r=n(4),i=n(8)("toStringTag");t.exports=function(t,e,n){t&&!r(t=n?t:t.prototype,i)&&o(t,i,{configurable:!0,value:e})}},function(t,e,n){var o=n(23)("keys"),r=n(15);t.exports=function(t){return o[t]||(o[t]=r(t))}},function(t,e,n){var o=n(1),r="__core-js_shared__",i=o[r]||(o[r]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,e){var n=Math.ceil,o=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?o:n)(t)}},function(t,e,n){var o=n(10);t.exports=function(t,e){if(!o(t))return t;var n,r;if(e&&"function"==typeof(n=t.toString)&&!o(r=n.call(t)))return r;if("function"==typeof(n=t.valueOf)&&!o(r=n.call(t)))return r;if(!e&&"function"==typeof(n=t.toString)&&!o(r=n.call(t)))return r;throw TypeError("Can't convert object to primitive value")}},function(t,e,n){var o=n(1),r=n(2),i=n(19),s=n(27),a=n(5).f;t.exports=function(t){var e=r.Symbol||(r.Symbol=i?{}:o.Symbol||{});"_"==t.charAt(0)||t in e||a(e,t,{value:s.f(t)})}},function(t,e,n){e.f=n(8)},function(t,e){"use strict";t.exports={props:{loading:{type:Boolean,default:!1},onSearch:{type:Function,default:function(t,e){}}},data:function(){return{mutableLoading:!1}},watch:{search:function(){this.search.length>0&&(this.onSearch(this.search,this.toggleLoading),this.$emit("search",this.search,this.toggleLoading))},loading:function(t){this.mutableLoading=t}},methods:{toggleLoading:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:null;return null==t?this.mutableLoading=!this.mutableLoading:this.mutableLoading=t}}}},function(t,e){"use strict";t.exports={watch:{typeAheadPointer:function(){this.maybeAdjustScroll()}},methods:{maybeAdjustScroll:function(){var t=this.pixelsToPointerTop(),e=this.pixelsToPointerBottom();return t<=this.viewport().top?this.scrollTo(t):e>=this.viewport().bottom?this.scrollTo(this.viewport().top+this.pointerHeight()):void 0},pixelsToPointerTop:function t(){var t=0;if(this.$refs.dropdownMenu)for(var e=0;e<this.typeAheadPointer;e++)t+=this.$refs.dropdownMenu.children[e].offsetHeight;return t},pixelsToPointerBottom:function(){return this.pixelsToPointerTop()+this.pointerHeight()},pointerHeight:function(){var t=!!this.$refs.dropdownMenu&&this.$refs.dropdownMenu.children[this.typeAheadPointer];return t?t.offsetHeight:0},viewport:function(){return{top:this.$refs.dropdownMenu?this.$refs.dropdownMenu.scrollTop:0,bottom:this.$refs.dropdownMenu?this.$refs.dropdownMenu.offsetHeight+this.$refs.dropdownMenu.scrollTop:0}},scrollTo:function(t){return this.$refs.dropdownMenu?this.$refs.dropdownMenu.scrollTop=t:null}}}},function(t,e){"use strict";t.exports={data:function(){return{typeAheadPointer:-1}},watch:{filteredOptions:function(){this.typeAheadPointer=0}},methods:{typeAheadUp:function(){this.typeAheadPointer>0&&(this.typeAheadPointer--,this.maybeAdjustScroll&&this.maybeAdjustScroll())},typeAheadDown:function(){this.typeAheadPointer<this.filteredOptions.length-1&&(this.typeAheadPointer++,this.maybeAdjustScroll&&this.maybeAdjustScroll())},typeAheadSelect:function(){this.filteredOptions[this.typeAheadPointer]?this.select(this.filteredOptions[this.typeAheadPointer]):this.taggable&&this.search.length&&this.select(this.search),this.clearSearchOnSelect&&(this.search="")}}}},function(t,e){var n={}.toString;t.exports=function(t){return n.call(t).slice(8,-1)}},function(t,e,n){var o=n(10),r=n(1).document,i=o(r)&&o(r.createElement);t.exports=function(t){return i?r.createElement(t):{}}},function(t,e,n){t.exports=!n(3)&&!n(9)(function(){return 7!=Object.defineProperty(n(32)("div"),"a",{get:function(){return 7}}).a})},function(t,e,n){"use strict";var o=n(19),r=n(12),i=n(39),s=n(6),a=n(4),u=n(18),l=n(63),c=n(21),f=n(69),p=n(8)("iterator"),d=!([].keys&&"next"in[].keys()),h="@@iterator",b="keys",v="values",g=function(){return this};t.exports=function(t,e,n,y,m,x,w){l(n,e,y);var S,O,_,j=function(t){if(!d&&t in C)return C[t];switch(t){case b:return function(){return new n(this,t)};case v:return function(){return new n(this,t)}}return function(){return new n(this,t)}},k=e+" Iterator",P=m==v,A=!1,C=t.prototype,M=C[p]||C[h]||m&&C[m],L=!d&&M||j(m),T=m?P?j("entries"):L:void 0,E="Array"==e?C.entries||M:M;if(E&&(_=f(E.call(new t)),_!==Object.prototype&&_.next&&(c(_,k,!0),o||a(_,p)||s(_,p,g))),P&&M&&M.name!==v&&(A=!0,L=function(){return M.call(this)}),o&&!w||!d&&!A&&C[p]||s(C,p,L),u[e]=L,u[k]=g,m)if(S={values:P?L:j(v),keys:x?L:j(b),entries:T},w)for(O in S)O in C||i(C,O,S[O]);else r(r.P+r.F*(d||A),e,S);return S}},function(t,e,n){var o=n(11),r=n(66),i=n(17),s=n(22)("IE_PROTO"),a=function(){},u="prototype",l=function(){var t,e=n(32)("iframe"),o=i.length,r="<",s=">";for(e.style.display="none",n(60).appendChild(e),e.src="javascript:",t=e.contentWindow.document,t.open(),t.write(r+"script"+s+"document.F=Object"+r+"/script"+s),t.close(),l=t.F;o--;)delete l[u][i[o]];return l()};t.exports=Object.create||function(t,e){var n;return null!==t?(a[u]=o(t),n=new a,a[u]=null,n[s]=t):n=l(),void 0===e?n:r(n,e)}},function(t,e,n){var o=n(38),r=n(17).concat("length","prototype");e.f=Object.getOwnPropertyNames||function(t){return o(t,r)}},function(t,e){e.f=Object.getOwnPropertySymbols},function(t,e,n){var o=n(4),r=n(7),i=n(57)(!1),s=n(22)("IE_PROTO");t.exports=function(t,e){var n,a=r(t),u=0,l=[];for(n in a)n!=s&&o(a,n)&&l.push(n);for(;e.length>u;)o(a,n=e[u++])&&(~i(l,n)||l.push(n));return l}},function(t,e,n){t.exports=n(6)},function(t,e,n){var o=n(16);t.exports=function(t){return Object(o(t))}},function(t,e,n){"use strict";function o(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0});var r=n(45),i=o(r),s=n(48),a=o(s),u=n(43),l=o(u),c=n(49),f=o(c),p=n(29),d=o(p),h=n(30),b=o(h),v=n(28),g=o(v);e.default={mixins:[d.default,b.default,g.default],props:{value:{default:null},options:{type:Array,default:function(){return[]}},disabled:{type:Boolean,default:!1},clearable:{type:Boolean,default:!0},maxHeight:{type:String,default:"400px"},searchable:{type:Boolean,default:!0},multiple:{type:Boolean,default:!1},placeholder:{type:String,default:""},transition:{type:String,default:"fade"},clearSearchOnSelect:{type:Boolean,default:!0},closeOnSelect:{type:Boolean,default:!0},label:{type:String,default:"label"},index:{type:String,default:null},getOptionLabel:{type:Function,default:function(t){return this.index&&(t=this.findOptionByIndexValue(t)),"object"===("undefined"==typeof t?"undefined":(0,f.default)(t))?t.hasOwnProperty(this.label)?t[this.label]:console.warn('[vue-select warn]: Label key "option.'+this.label+'" does not'+(" exist in options object "+(0,l.default)(t)+".\n")+"http://sagalbot.github.io/vue-select/#ex-labels"):t}},onChange:{type:Function,default:function(t){this.$emit("input",t)}},onTab:{type:Function,default:function(){this.selectOnTab&&this.typeAheadSelect()}},taggable:{type:Boolean,default:!1},tabindex:{type:Number,default:null},pushTags:{type:Boolean,default:!1},filterable:{type:Boolean,default:!0},filterBy:{type:Function,default:function(t,e,n){return(e||"").toLowerCase().indexOf(n.toLowerCase())>-1}},filter:{type:Function,default:function(t,e){var n=this;return t.filter(function(t){var o=n.getOptionLabel(t);return"number"==typeof o&&(o=o.toString()),n.filterBy(t,o,e)})}},createOption:{type:Function,default:function(t){return"object"===(0,f.default)(this.mutableOptions[0])&&(t=(0,a.default)({},this.label,t)),this.$emit("option:created",t),t}},resetOnOptionsChange:{type:Boolean,default:!1},noDrop:{type:Boolean,default:!1},inputId:{type:String},dir:{type:String,default:"auto"},selectOnTab:{type:Boolean,default:!1}},data:function(){return{search:"",open:!1,mutableValue:null,mutableOptions:[]}},watch:{value:function(t){this.mutableValue=t},mutableValue:function(t,e){this.multiple?this.onChange?this.onChange(t):null:this.onChange&&t!==e?this.onChange(t):null},options:function(t){this.mutableOptions=t},mutableOptions:function(){!this.taggable&&this.resetOnOptionsChange&&(this.mutableValue=this.multiple?[]:null)},multiple:function(t){this.mutableValue=t?[]:null}},created:function(){this.mutableValue=this.value,this.mutableOptions=this.options.slice(0),this.mutableLoading=this.loading,this.$on("option:created",this.maybePushTag)},methods:{select:function(t){if(!this.isOptionSelected(t)){if(this.taggable&&!this.optionExists(t)&&(t=this.createOption(t)),this.index){if(!t.hasOwnProperty(this.index))return console.warn('[vue-select warn]: Index key "option.'+this.index+'" does not'+(" exist in options object "+(0,l.default)(t)+"."));t=t[this.index]}this.multiple&&!this.mutableValue?this.mutableValue=[t]:this.multiple?this.mutableValue.push(t):this.mutableValue=t}this.onAfterSelect(t)},deselect:function(t){var e=this;if(this.multiple){var n=-1;this.mutableValue.forEach(function(o){(o===t||e.index&&o===t[e.index]||"object"===("undefined"==typeof o?"undefined":(0,f.default)(o))&&o[e.label]===t[e.label])&&(n=o)});var o=this.mutableValue.indexOf(n);this.mutableValue.splice(o,1)}else this.mutableValue=null},clearSelection:function(){this.mutableValue=this.multiple?[]:null},onAfterSelect:function(t){this.closeOnSelect&&(this.open=!this.open,this.$refs.search.blur()),this.clearSearchOnSelect&&(this.search="")},toggleDropdown:function(t){(t.target===this.$refs.openIndicator||t.target===this.$refs.search||t.target===this.$refs.toggle||t.target.classList.contains("selected-tag")||t.target===this.$el)&&(this.open?this.$refs.search.blur():this.disabled||(this.open=!0,this.$refs.search.focus()))},isOptionSelected:function(t){var e=this,n=!1;return this.valueAsArray.forEach(function(o){"object"===("undefined"==typeof o?"undefined":(0,f.default)(o))?n=e.optionObjectComparator(o,t):o!==t&&o!==t[e.index]||(n=!0)}),n},optionObjectComparator:function(t,e){return!(!this.index||t!==e[this.index])||(t[this.label]===e[this.label]||t[this.label]===e||!(!this.index||t[this.index]!==e[this.index]))},findOptionByIndexValue:function(t){var e=this;return this.options.forEach(function(n){(0,l.default)(n[e.index])===(0,l.default)(t)&&(t=n)}),t},onEscape:function(){this.search.length?this.search="":this.$refs.search.blur()},onSearchBlur:function(){this.mousedown&&!this.searching?this.mousedown=!1:(this.clearSearchOnBlur&&(this.search=""),this.open=!1,this.$emit("search:blur"))},onSearchFocus:function(){this.open=!0,this.$emit("search:focus")},maybeDeleteValue:function(){if(!this.$refs.search.value.length&&this.mutableValue)return this.multiple?this.mutableValue.pop():this.mutableValue=null},optionExists:function(t){var e=this,n=!1;return this.mutableOptions.forEach(function(o){"object"===("undefined"==typeof o?"undefined":(0,f.default)(o))&&o[e.label]===t?n=!0:o===t&&(n=!0)}),n},maybePushTag:function(t){this.pushTags&&this.mutableOptions.push(t)},onMousedown:function(){this.mousedown=!0}},computed:{dropdownClasses:function(){return{open:this.dropdownOpen,single:!this.multiple,searching:this.searching,searchable:this.searchable,unsearchable:!this.searchable,loading:this.mutableLoading,rtl:"rtl"===this.dir,disabled:this.disabled}},clearSearchOnBlur:function(){return this.clearSearchOnSelect&&!this.multiple},searching:function(){return!!this.search},dropdownOpen:function(){return!this.noDrop&&(this.open&&!this.mutableLoading)},searchPlaceholder:function(){if(this.isValueEmpty&&this.placeholder)return this.placeholder},filteredOptions:function(){if(!this.filterable&&!this.taggable)return this.mutableOptions.slice();var t=this.search.length?this.filter(this.mutableOptions,this.search,this):this.mutableOptions;return this.taggable&&this.search.length&&!this.optionExists(this.search)&&t.unshift(this.search),t},isValueEmpty:function(){return!this.mutableValue||("object"===(0,f.default)(this.mutableValue)?!(0,i.default)(this.mutableValue).length:!this.valueAsArray.length)},valueAsArray:function(){return this.multiple&&this.mutableValue?this.mutableValue:this.mutableValue?[].concat(this.mutableValue):[]},showClearButton:function(){return!this.multiple&&this.clearable&&!this.open&&null!=this.mutableValue}}}},function(t,e,n){"use strict";function o(t){return t&&t.__esModule?t:{default:t}}Object.defineProperty(e,"__esModule",{value:!0});var r=n(28),i=o(r),s=n(30),a=o(s),u=n(29),l=o(u);e.default={ajax:i.default,pointer:a.default,pointerScroll:l.default}},function(t,e,n){t.exports={default:n(50),__esModule:!0}},function(t,e,n){t.exports={default:n(51),__esModule:!0}},function(t,e,n){t.exports={default:n(52),__esModule:!0}},function(t,e,n){t.exports={default:n(53),__esModule:!0}},function(t,e,n){t.exports={default:n(54),__esModule:!0}},function(t,e,n){"use strict";function o(t){return t&&t.__esModule?t:{default:t}}e.__esModule=!0;var r=n(44),i=o(r);e.default=function(t,e,n){return e in t?(0,i.default)(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}},function(t,e,n){"use strict";function o(t){return t&&t.__esModule?t:{default:t}}e.__esModule=!0;var r=n(47),i=o(r),s=n(46),a=o(s),u="function"==typeof a.default&&"symbol"==typeof i.default?function(t){return typeof t}:function(t){return t&&"function"==typeof a.default&&t.constructor===a.default&&t!==a.default.prototype?"symbol":typeof t};e.default="function"==typeof a.default&&"symbol"===u(i.default)?function(t){return"undefined"==typeof t?"undefined":u(t)}:function(t){return t&&"function"==typeof a.default&&t.constructor===a.default&&t!==a.default.prototype?"symbol":"undefined"==typeof t?"undefined":u(t)}},function(t,e,n){var o=n(2),r=o.JSON||(o.JSON={stringify:JSON.stringify});t.exports=function(t){return r.stringify.apply(r,arguments)}},function(t,e,n){n(75);var o=n(2).Object;t.exports=function(t,e,n){return o.defineProperty(t,e,n)}},function(t,e,n){n(76),t.exports=n(2).Object.keys},function(t,e,n){n(79),n(77),n(80),n(81),t.exports=n(2).Symbol},function(t,e,n){n(78),n(82),t.exports=n(27).f("iterator")},function(t,e){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,e){t.exports=function(){}},function(t,e,n){var o=n(7),r=n(73),i=n(72);t.exports=function(t){return function(e,n,s){var a,u=o(e),l=r(u.length),c=i(s,l);if(t&&n!=n){for(;l>c;)if(a=u[c++],a!=a)return!0}else for(;l>c;c++)if((t||c in u)&&u[c]===n)return t||c||0;return!t&&-1}}},function(t,e,n){var o=n(55);t.exports=function(t,e,n){if(o(t),void 0===e)return t;switch(n){case 1:return function(n){return t.call(e,n)};case 2:return function(n,o){return t.call(e,n,o)};case 3:return function(n,o,r){return t.call(e,n,o,r)}}return function(){return t.apply(e,arguments)}}},function(t,e,n){var o=n(13),r=n(37),i=n(20);t.exports=function(t){var e=o(t),n=r.f;if(n)for(var s,a=n(t),u=i.f,l=0;a.length>l;)u.call(t,s=a[l++])&&e.push(s);return e}},function(t,e,n){var o=n(1).document;t.exports=o&&o.documentElement},function(t,e,n){var o=n(31);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==o(t)?t.split(""):Object(t)}},function(t,e,n){var o=n(31);t.exports=Array.isArray||function(t){return"Array"==o(t)}},function(t,e,n){"use strict";var o=n(35),r=n(14),i=n(21),s={};n(6)(s,n(8)("iterator"),function(){return this}),t.exports=function(t,e,n){t.prototype=o(s,{next:r(1,n)}),i(t,e+" Iterator")}},function(t,e){t.exports=function(t,e){return{value:e,done:!!t}}},function(t,e,n){var o=n(15)("meta"),r=n(10),i=n(4),s=n(5).f,a=0,u=Object.isExtensible||function(){return!0},l=!n(9)(function(){return u(Object.preventExtensions({}))}),c=function(t){s(t,o,{value:{i:"O"+ ++a,w:{}}})},f=function(t,e){if(!r(t))return"symbol"==typeof t?t:("string"==typeof t?"S":"P")+t;if(!i(t,o)){if(!u(t))return"F";if(!e)return"E";c(t)}return t[o].i},p=function(t,e){if(!i(t,o)){if(!u(t))return!0;if(!e)return!1;c(t)}return t[o].w},d=function(t){return l&&h.NEED&&u(t)&&!i(t,o)&&c(t),t},h=t.exports={KEY:o,NEED:!1,fastKey:f,getWeak:p,onFreeze:d}},function(t,e,n){var o=n(5),r=n(11),i=n(13);t.exports=n(3)?Object.defineProperties:function(t,e){r(t);for(var n,s=i(e),a=s.length,u=0;a>u;)o.f(t,n=s[u++],e[n]);return t}},function(t,e,n){var o=n(20),r=n(14),i=n(7),s=n(25),a=n(4),u=n(33),l=Object.getOwnPropertyDescriptor;e.f=n(3)?l:function(t,e){if(t=i(t),e=s(e,!0),u)try{return l(t,e)}catch(t){}if(a(t,e))return r(!o.f.call(t,e),t[e])}},function(t,e,n){var o=n(7),r=n(36).f,i={}.toString,s="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],a=function(t){try{return r(t)}catch(t){return s.slice()}};t.exports.f=function(t){return s&&"[object Window]"==i.call(t)?a(t):r(o(t))}},function(t,e,n){var o=n(4),r=n(40),i=n(22)("IE_PROTO"),s=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=r(t),o(t,i)?t[i]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?s:null}},function(t,e,n){var o=n(12),r=n(2),i=n(9);t.exports=function(t,e){var n=(r.Object||{})[t]||Object[t],s={};s[t]=e(n),o(o.S+o.F*i(function(){n(1)}),"Object",s)}},function(t,e,n){var o=n(24),r=n(16);t.exports=function(t){return function(e,n){var i,s,a=String(r(e)),u=o(n),l=a.length;return u<0||u>=l?t?"":void 0:(i=a.charCodeAt(u),i<55296||i>56319||u+1===l||(s=a.charCodeAt(u+1))<56320||s>57343?t?a.charAt(u):i:t?a.slice(u,u+2):(i-55296<<10)+(s-56320)+65536)}}},function(t,e,n){var o=n(24),r=Math.max,i=Math.min;t.exports=function(t,e){return t=o(t),t<0?r(t+e,0):i(t,e)}},function(t,e,n){var o=n(24),r=Math.min;t.exports=function(t){return t>0?r(o(t),9007199254740991):0}},function(t,e,n){"use strict";var o=n(56),r=n(64),i=n(18),s=n(7);t.exports=n(34)(Array,"Array",function(t,e){this._t=s(t),this._i=0,this._k=e},function(){var t=this._t,e=this._k,n=this._i++;return!t||n>=t.length?(this._t=void 0,r(1)):"keys"==e?r(0,n):"values"==e?r(0,t[n]):r(0,[n,t[n]])},"values"),i.Arguments=i.Array,o("keys"),o("values"),o("entries")},function(t,e,n){var o=n(12);o(o.S+o.F*!n(3),"Object",{defineProperty:n(5).f})},function(t,e,n){var o=n(40),r=n(13);n(70)("keys",function(){return function(t){return r(o(t))}})},function(t,e){},function(t,e,n){"use strict";var o=n(71)(!0);n(34)(String,"String",function(t){this._t=String(t),this._i=0},function(){var t,e=this._t,n=this._i;return n>=e.length?{value:void 0,done:!0}:(t=o(e,n),this._i+=t.length,{value:t,done:!1})})},function(t,e,n){"use strict";var o=n(1),r=n(4),i=n(3),s=n(12),a=n(39),u=n(65).KEY,l=n(9),c=n(23),f=n(21),p=n(15),d=n(8),h=n(27),b=n(26),v=n(59),g=n(62),y=n(11),m=n(10),x=n(7),w=n(25),S=n(14),O=n(35),_=n(68),j=n(67),k=n(5),P=n(13),A=j.f,C=k.f,M=_.f,L=o.Symbol,T=o.JSON,E=T&&T.stringify,V="prototype",B=d("_hidden"),F=d("toPrimitive"),N={}.propertyIsEnumerable,$=c("symbol-registry"),D=c("symbols"),I=c("op-symbols"),R=Object[V],z="function"==typeof L,H=o.QObject,G=!H||!H[V]||!H[V].findChild,J=i&&l(function(){return 7!=O(C({},"a",{get:function(){return C(this,"a",{value:7}).a}})).a})?function(t,e,n){var o=A(R,e);o&&delete R[e],C(t,e,n),o&&t!==R&&C(R,e,o)}:C,U=function(t){var e=D[t]=O(L[V]);return e._k=t,e},W=z&&"symbol"==typeof L.iterator?function(t){return"symbol"==typeof t}:function(t){return t instanceof L},K=function(t,e,n){return t===R&&K(I,e,n),y(t),e=w(e,!0),y(n),r(D,e)?(n.enumerable?(r(t,B)&&t[B][e]&&(t[B][e]=!1),n=O(n,{enumerable:S(0,!1)})):(r(t,B)||C(t,B,S(1,{})),t[B][e]=!0),J(t,e,n)):C(t,e,n)},Y=function(t,e){y(t);for(var n,o=v(e=x(e)),r=0,i=o.length;i>r;)K(t,n=o[r++],e[n]);return t},q=function(t,e){return void 0===e?O(t):Y(O(t),e)},Q=function(t){var e=N.call(this,t=w(t,!0));return!(this===R&&r(D,t)&&!r(I,t))&&(!(e||!r(this,t)||!r(D,t)||r(this,B)&&this[B][t])||e)},Z=function(t,e){if(t=x(t),e=w(e,!0),t!==R||!r(D,e)||r(I,e)){var n=A(t,e);return!n||!r(D,e)||r(t,B)&&t[B][e]||(n.enumerable=!0),n}},X=function(t){for(var e,n=M(x(t)),o=[],i=0;n.length>i;)r(D,e=n[i++])||e==B||e==u||o.push(e);return o},tt=function(t){for(var e,n=t===R,o=M(n?I:x(t)),i=[],s=0;o.length>s;)!r(D,e=o[s++])||n&&!r(R,e)||i.push(D[e]);return i};z||(L=function(){if(this instanceof L)throw TypeError("Symbol is not a constructor!");var t=p(arguments.length>0?arguments[0]:void 0),e=function(n){this===R&&e.call(I,n),r(this,B)&&r(this[B],t)&&(this[B][t]=!1),J(this,t,S(1,n))};return i&&G&&J(R,t,{configurable:!0,set:e}),U(t)},a(L[V],"toString",function(){return this._k}),j.f=Z,k.f=K,n(36).f=_.f=X,n(20).f=Q,n(37).f=tt,i&&!n(19)&&a(R,"propertyIsEnumerable",Q,!0),h.f=function(t){return U(d(t))}),s(s.G+s.W+s.F*!z,{Symbol:L});for(var et="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),nt=0;et.length>nt;)d(et[nt++]);for(var ot=P(d.store),rt=0;ot.length>rt;)b(ot[rt++]);s(s.S+s.F*!z,"Symbol",{for:function(t){return r($,t+="")?$[t]:$[t]=L(t)},keyFor:function(t){if(!W(t))throw TypeError(t+" is not a symbol!");for(var e in $)if($[e]===t)return e},useSetter:function(){G=!0},useSimple:function(){G=!1}}),s(s.S+s.F*!z,"Object",{create:q,defineProperty:K,defineProperties:Y,getOwnPropertyDescriptor:Z,getOwnPropertyNames:X,getOwnPropertySymbols:tt}),T&&s(s.S+s.F*(!z||l(function(){var t=L();return"[null]"!=E([t])||"{}"!=E({a:t})||"{}"!=E(Object(t))})),"JSON",{stringify:function(t){for(var e,n,o=[t],r=1;arguments.length>r;)o.push(arguments[r++]);if(n=e=o[1],(m(e)||void 0!==t)&&!W(t))return g(e)||(e=function(t,e){if("function"==typeof n&&(e=n.call(this,t,e)),!W(e))return e}),o[1]=e,E.apply(T,o)}}),L[V][F]||n(6)(L[V],F,L[V].valueOf),f(L,"Symbol"),f(Math,"Math",!0),f(o.JSON,"JSON",!0)},function(t,e,n){n(26)("asyncIterator")},function(t,e,n){n(26)("observable")},function(t,e,n){n(74);for(var o=n(1),r=n(6),i=n(18),s=n(8)("toStringTag"),a="CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,TextTrackList,TouchList".split(","),u=0;u<a.length;u++){var l=a[u],c=o[l],f=c&&c.prototype;f&&!f[s]&&r(f,s,l),i[l]=i.Array}},function(t,e,n){e=t.exports=n(84)(),e.push([t.id,'.v-select{position:relative;font-family:inherit}.v-select,.v-select *{box-sizing:border-box}.v-select[dir=rtl] .vs__actions{padding:0 3px 0 6px}.v-select[dir=rtl] .dropdown-toggle .clear{margin-left:6px;margin-right:0}.v-select[dir=rtl] .selected-tag .close{margin-left:0;margin-right:2px}.v-select[dir=rtl] .dropdown-menu{text-align:right}.v-select .open-indicator{display:flex;align-items:center;cursor:pointer;pointer-events:all;opacity:1;width:12px}.v-select .open-indicator,.v-select .open-indicator:before{transition:all .15s cubic-bezier(1,-.115,.975,.855);transition-timing-function:cubic-bezier(1,-.115,.975,.855)}.v-select .open-indicator:before{border-color:rgba(60,60,60,.5);border-style:solid;border-width:3px 3px 0 0;content:"";display:inline-block;height:10px;width:10px;vertical-align:text-top;transform:rotate(133deg);box-sizing:inherit}.v-select.open .open-indicator:before{transform:rotate(315deg)}.v-select.loading .open-indicator{opacity:0}.v-select .dropdown-toggle{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:flex;padding:0 0 4px;background:none;border:1px solid rgba(60,60,60,.26);border-radius:4px;white-space:normal}.v-select .vs__selected-options{display:flex;flex-basis:100%;flex-grow:1;flex-wrap:wrap;padding:0 2px;position:relative}.v-select .vs__actions{display:flex;align-items:stretch;padding:0 6px 0 3px}.v-select .dropdown-toggle .clear{font-size:23px;font-weight:700;line-height:1;color:rgba(60,60,60,.5);padding:0;border:0;background-color:transparent;cursor:pointer;margin-right:6px}.v-select.searchable .dropdown-toggle{cursor:text}.v-select.unsearchable .dropdown-toggle{cursor:pointer}.v-select.open .dropdown-toggle{border-bottom-color:transparent;border-bottom-left-radius:0;border-bottom-right-radius:0}.v-select .dropdown-menu{display:block;position:absolute;top:100%;left:0;z-index:1000;min-width:160px;padding:5px 0;margin:0;width:100%;overflow-y:scroll;border:1px solid rgba(0,0,0,.26);box-shadow:0 3px 6px 0 rgba(0,0,0,.15);border-top:none;border-radius:0 0 4px 4px;text-align:left;list-style:none;background:#fff}.v-select .no-options{text-align:center}.v-select .selected-tag{display:flex;align-items:center;background-color:#f0f0f0;border:1px solid #ccc;border-radius:4px;color:#333;line-height:1.42857143;margin:4px 2px 0;padding:0 .25em;transition:opacity .25s}.v-select.single .selected-tag{background-color:transparent;border-color:transparent}.v-select.single.open .selected-tag{position:absolute;opacity:.4}.v-select.single.searching .selected-tag{display:none}.v-select .selected-tag .close{margin-left:2px;font-size:1.25em;appearance:none;padding:0;cursor:pointer;background:0 0;border:0;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}.v-select.single.searching:not(.open):not(.loading) input[type=search]{opacity:.2}.v-select input[type=search]::-webkit-search-cancel-button,.v-select input[type=search]::-webkit-search-decoration,.v-select input[type=search]::-webkit-search-results-button,.v-select input[type=search]::-webkit-search-results-decoration{display:none}.v-select input[type=search]::-ms-clear{display:none}.v-select input[type=search],.v-select input[type=search]:focus{appearance:none;-webkit-appearance:none;-moz-appearance:none;line-height:1.42857143;font-size:1em;display:inline-block;border:1px solid transparent;border-left:none;outline:none;margin:4px 0 0;padding:0 7px;max-width:100%;background:none;box-shadow:none;flex-grow:1;width:0}.v-select.unsearchable input[type=search]{opacity:0}.v-select.unsearchable input[type=search]:hover{cursor:pointer}.v-select li{line-height:1.42857143}.v-select li>a{display:block;padding:3px 20px;clear:both;color:#333;white-space:nowrap}.v-select li:hover{cursor:pointer}.v-select .dropdown-menu .active>a{color:#333;background:rgba(50,50,50,.1)}.v-select .dropdown-menu>.highlight>a{background:#5897fb;color:#fff}.v-select .highlight:not(:last-child){margin-bottom:0}.v-select .spinner{align-self:center;opacity:0;font-size:5px;text-indent:-9999em;overflow:hidden;border-top:.9em solid hsla(0,0%,39%,.1);border-right:.9em solid hsla(0,0%,39%,.1);border-bottom:.9em solid hsla(0,0%,39%,.1);border-left:.9em solid rgba(60,60,60,.45);transform:translateZ(0);animation:vSelectSpinner 1.1s infinite linear;transition:opacity .1s}.v-select .spinner,.v-select .spinner:after{border-radius:50%;width:5em;height:5em}.v-select.disabled .dropdown-toggle,.v-select.disabled .dropdown-toggle .clear,.v-select.disabled .dropdown-toggle input,.v-select.disabled .open-indicator,.v-select.disabled .selected-tag .close{cursor:not-allowed;background-color:#f8f8f8}.v-select.loading .spinner{opacity:1}@-webkit-keyframes vSelectSpinner{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes vSelectSpinner{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.fade-enter-active,.fade-leave-active{transition:opacity .15s cubic-bezier(1,.5,.8,1)}.fade-enter,.fade-leave-to{opacity:0}',""])},function(t,e){t.exports=function(){var t=[];return t.toString=function(){for(var t=[],e=0;e<this.length;e++){var n=this[e];n[2]?t.push("@media "+n[2]+"{"+n[1]+"}"):t.push(n[1])}return t.join("")},t.i=function(e,n){"string"==typeof e&&(e=[[null,e,""]]);for(var o={},r=0;r<this.length;r++){var i=this[r][0];"number"==typeof i&&(o[i]=!0)}for(r=0;r<e.length;r++){var s=e[r];"number"==typeof s[0]&&o[s[0]]||(n&&!s[2]?s[2]=n:n&&(s[2]="("+s[2]+") and ("+n+")"),t.push(s))}},t}},function(t,e,n){n(89);var o=n(86)(n(41),n(87),null,null);t.exports=o.exports},function(t,e){t.exports=function(t,e,n,o){var r,i=t=t||{},s=typeof t.default;"object"!==s&&"function"!==s||(r=t,i=t.default);var a="function"==typeof i?i.options:i;if(e&&(a.render=e.render,a.staticRenderFns=e.staticRenderFns),n&&(a._scopeId=n),o){var u=a.computed||(a.computed={});Object.keys(o).forEach(function(t){var e=o[t];u[t]=function(){return e}})}return{esModule:r,exports:i,options:a}}},function(t,e){t.exports={render:function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"dropdown v-select",class:t.dropdownClasses,attrs:{dir:t.dir}},[n("div",{ref:"toggle",staticClass:"dropdown-toggle",on:{mousedown:function(e){e.preventDefault(),t.toggleDropdown(e)}}},[n("div",{ref:"selectedOptions",staticClass:"vs__selected-options"},[t._l(t.valueAsArray,function(e){return t._t("selected-option-container",[n("span",{key:e.index,staticClass:"selected-tag"},[t._t("selected-option",[t._v("\n            "+t._s(t.getOptionLabel(e))+"\n          ")],null,"object"==typeof e?e:(o={},
@@ -90801,19 +91043,19 @@ o[t.label]=e,o)),t._v(" "),t.multiple?n("button",{staticClass:"close",attrs:{dis
 //# sourceMappingURL=vue-select.js.map
 
 /***/ }),
-/* 483 */
+/* 488 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(484)
+  __webpack_require__(489)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(486)
+var __vue_script__ = __webpack_require__(491)
 /* template */
-var __vue_template__ = __webpack_require__(502)
+var __vue_template__ = __webpack_require__(507)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -90852,13 +91094,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 484 */
+/* 489 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(485);
+var content = __webpack_require__(490);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -90878,7 +91120,7 @@ if(false) {
 }
 
 /***/ }),
-/* 485 */
+/* 490 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -90892,14 +91134,14 @@ exports.push([module.i, "\n#app[data-v-332fccf4] {\n    overflow-x: hidden;\n}\n
 
 
 /***/ }),
-/* 486 */
+/* 491 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Footer_vue__ = __webpack_require__(487);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Footer_vue__ = __webpack_require__(492);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Footer_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Footer_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Header_vue__ = __webpack_require__(497);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Header_vue__ = __webpack_require__(502);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Header_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Header_vue__);
 //
 //
@@ -90930,19 +91172,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 487 */
+/* 492 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(488)
+  __webpack_require__(493)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(491)
+var __vue_script__ = __webpack_require__(496)
 /* template */
-var __vue_template__ = __webpack_require__(492)
+var __vue_template__ = __webpack_require__(497)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -90981,13 +91223,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 488 */
+/* 493 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(489);
+var content = __webpack_require__(494);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -91007,22 +91249,22 @@ if(false) {
 }
 
 /***/ }),
-/* 489 */
+/* 494 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
 // imports
-exports.i(__webpack_require__(490), "");
-exports.i(__webpack_require__(94), "");
+exports.i(__webpack_require__(495), "");
+exports.i(__webpack_require__(96), "");
 
 // module
-exports.push([module.i, "\n/*#footer-container{*/\n    /*margin-left: 10%;*/\n/*}*/\n.logo-background-color[data-v-672e6e19]{\n    background: #0d0d0d;\n}\n.logo_title[data-v-672e6e19]{\n    color:white;\n    padding-right: 10px;\n}\n.logo img[data-v-672e6e19]{\n    height: 40px;\n    width: 80px;\n    /*background-color: powderblue;*/\n}\n.americand_dunnage_alignment[data-v-672e6e19]{\n    float:left;\n    clear: none;\n}\n@media(max-width: 830px){\n#footer-container[data-v-672e6e19]{\n        margin-left: 14%;\n}\n}\n.ad-logo-adjustment[data-v-672e6e19]{\n    height:auto;\n}\n.redback_logo[data-v-672e6e19]{\n    /*margin-left:10px;*/\n    height: auto;\n    padding:0px;\n    background-color: black;\n}\n.oemser_logo[data-v-672e6e19]{\n    /*margin-left:20px;*/\n    /*padding-left:6px;*/\n    height: auto;\n    padding-top:5px;\n    margin-left:30px;\n    background-color: black;\n}\n.securing_logo[data-v-672e6e19]{\n    /*margin-left:20px;*/\n    /*padding-left:0px;*/\n    height: auto;\n    padding-top:5px;\n    padding-bottom:4px;\n    padding-right:12px;\n    margin-left:25px;\n    background-color: black;\n}\n@media(max-width:680px){\n.reference[data-v-672e6e19]{\n        /*padding-top: 0.5rem;*/\n        /*padding-bottom:0.2rem;*/\n}\n.ad-logo-adjustment[data-v-672e6e19]{\n        padding:0px;\n        margin-bottom: 0px;\n}\n.redback_logo[data-v-672e6e19]{\n        margin-left:85px;\n        padding-left:10px;\n        margin-bottom: 8px;\n        padding-top:5px;\n}\n.oemser_logo[data-v-672e6e19]{\n        margin-left:60px;\n        padding-left:10px;\n        margin-bottom: 4px;\n}\n.securing_logo[data-v-672e6e19]{\n        margin-left:85px;\n        padding-left:10px;\n}\n}\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n/*#footer-container{*/\n    /*margin-left: 10%;*/\n/*}*/\n.logo-background-color[data-v-672e6e19]{\n    background: #0d0d0d;\n}\n.logo_title[data-v-672e6e19]{\n    color:white;\n    padding-right: 10px;\n}\n.logo img[data-v-672e6e19]{\n    height: 40px;\n    width: 80px;\n    /*background-color: powderblue;*/\n}\n.americand_dunnage_alignment[data-v-672e6e19]{\n    float:left;\n    clear: none;\n}\n@media(max-width: 830px){\n#footer-container[data-v-672e6e19]{\n        margin-left: 14%;\n}\n}\n.ad-logo-adjustment[data-v-672e6e19]{\n    height:auto;\n}\n.redback_logo[data-v-672e6e19]{\n    /*margin-left:10px;*/\n    height: auto;\n    padding:0px;\n    background-color: black;\n}\n.oemser_logo[data-v-672e6e19]{\n    /*margin-left:20px;*/\n    /*padding-left:6px;*/\n    height: auto;\n    padding-top:5px;\n    margin-left:30px;\n    background-color: black;\n}\n.securing_logo[data-v-672e6e19]{\n    /*margin-left:20px;*/\n    /*padding-left:0px;*/\n    height: auto;\n    padding-top:5px;\n    padding-bottom:4px;\n    padding-right:12px;\n    margin-left:25px;\n    background-color: black;\n}\n@media(max-width:680px){\n.reference[data-v-672e6e19]{\n        /*padding-top: 0.5rem;*/\n        /*padding-bottom:0.2rem;*/\n}\n.ad-logo-adjustment[data-v-672e6e19]{\n        padding:0px;\n        margin-bottom: 0px;\n}\n.redback_logo[data-v-672e6e19]{\n        margin-left:85px;\n        padding-left:10px;\n        margin-bottom: 8px;\n        padding-top:5px;\n}\n.oemser_logo[data-v-672e6e19]{\n        margin-left:60px;\n        padding-left:10px;\n        margin-bottom: 4px;\n}\n.securing_logo[data-v-672e6e19]{\n        margin-left:85px;\n        padding-left:10px;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 490 */
+/* 495 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -91036,7 +91278,7 @@ exports.push([module.i, "/* Boxes */\r\n.boxes_area {padding-top: 40px;padding-b
 
 
 /***/ }),
-/* 491 */
+/* 496 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91127,9 +91369,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             paperdunnagelinks: [{ level: '<a href="#/Product/kraftbag" title="kraftbag level 0">Kraft Paper Air Bags - Level 0</a>' }, { level: '<a href="#/Product/kraftbag" title="kraftbag level 1">Kraft Paper Air Bags - Level 1</a>' }, { level: '<a href="#/Product/kraftbag" title="kraftbag level 3/4" class="disabled text-black-50">Kraft Paper Air Bags - Level 3/4</a>' }, { level: '<a href="#/Product/kraftbag" title="kraftbag level 5" class="disabled text-black-50">Kraft Paper Air Bags - Level 5</a>' }, { level: '<a href="#/Product/inflater" title="inflater">Inflation Tools</a>' }],
             polywovenlinks: [{ level: '<a href="#/Product/ppairbag" title="pparibag level 0">Woven PP Air Bags - Level 0</a>' }, { level: '<a href="#/Product/ppairbag"  title="ppairbag level 1">Woven PP Air Bags - Level 1</a>' }, { level: '<a href="#/Product/ppairbag"  title="ppairbag level 3/4" class="disabled text-black-50">Woven PP Air Bags - Level 3/4</a>' }, { level: '<a href="#/Product/ppairbag"  title="ppairbag level 5" class="disabled text-black-50">Woven PP Air Bags - Level 5</a>' }, { level: '<a href="#/Product/inflater"  title="inflater">Inflation Tools</a>' }],
             cargoproducts: [{ product: '<a href="#/Product/boltseal" title="container seal">Seals - indicative & security</a>' }, { product: '<a href="#/Product/containerlashing" title="container lashing page">Container Lashing</a>' }, { product: '<a href="#/Product/barrelsecuring" title="barrel securing system">Barrel Secure</a>' }, { product: '<a href="#/Product/desiccants" title="container desiccants">Desiccants</a>' }],
-            moreinfopages: [{ page: '<a href="#/Contact" title="Electronic Catalogue" class="disabled text-black-50">Electronic Catalogue</a>' }, { page: '<a href="http://shop.oemserv.com/category/160/8" target="_blank" title="Web shop page link">Web Shop</a>' }, { page: '<a href="#/Contact" title="Location link">Location</a>' }, { page: '<a href="#/Event" title="Event Page Link">Events</a>' }, { page: '<a href="#/Career" title="Career Page link">Career</a>' }],
+            moreinfopages: [{ page: '<a href="#/Contact" title="Electronic Catalogue" class="disabled text-black-50">Electronic Catalogue</a>' }, { page: '<a href="#/airbagCalculator" target="_blank" title="Airbag Calculator">Airbag Calculator</a>' }, { page: '<a href="http://shop.oemserv.com/category/160/8" target="_blank" title="Web shop page link">Web Shop</a>' }, { page: '<a href="#/Contact" title="Location link">Location</a>' }, { page: '<a href="#/Event" title="Event Page Link">Events</a>' }, { page: '<a href="#/Career" title="Career Page link">Career</a>' }],
             contactemail: '<a href="mailto:sales@americandunnage.com"><i class="far fa-envelope mr-2 pt-2"></i><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>sales@americandunnage.com</a>',
-            contactphone: '<a href="tel:+17753996770<"><i class="fas fa-phone mr-2"></i>+1 (775)-399-6770</a>',
+            contactphone: '<a href="tel:+18772264112<"><i class="fas fa-phone mr-2"></i>+1 (877)-226-4112</a>',
             socialchannels: [{ socialmedia: '<a href="https://www.facebook.com/AmericanDunnageBagManufacturer/" target="_blank" alt="american dunnage facebook page"><span><i class="fab fa-facebook"></i></span></a>' }, { socialmedia: '<a href="https://www.youtube.com/channel/UCJwfPgzpPWE3OtJ6xbCQVyg" target="_blank" alt="OEMSERV youtube channel"><span><i class="fab fa-youtube"></i></span></a>' }, { socialmedia: '<a href="https://www.linkedin.com/company/american-dunnage-inc/" target="_blank" alt="Company Linkedin Page"><span><i class="fab fa-linkedin"></i></span></a>' }],
             oemservlink: 'http://www.oemserv.com/',
             redbacklinke: 'https://www.redback.com/'
@@ -91138,7 +91380,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 492 */
+/* 497 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -91243,7 +91485,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "img-fluid reference oemser_logo  ",
                       attrs: {
-                        src: __webpack_require__(493),
+                        src: __webpack_require__(498),
                         alt: "oemserv logo"
                       }
                     })
@@ -91261,7 +91503,7 @@ var render = function() {
                     _c("img", {
                       staticClass: "img-fluid reference redback_logo ",
                       attrs: {
-                        src: __webpack_require__(494),
+                        src: __webpack_require__(499),
                         alt: "redback logo"
                       }
                     })
@@ -91300,7 +91542,7 @@ var staticRenderFns = [
       _c("img", {
         staticClass: "img-fluid reference ad-logo-adjustment ",
         attrs: {
-          src: __webpack_require__(495),
+          src: __webpack_require__(500),
           alt: "american dunnage logo"
         }
       })
@@ -91314,7 +91556,7 @@ var staticRenderFns = [
       _c("img", {
         staticClass: "img-fluid reference securing_logo ",
         attrs: {
-          src: __webpack_require__(496),
+          src: __webpack_require__(501),
           alt: "cargo securing experts logo"
         }
       })
@@ -91331,43 +91573,43 @@ if (false) {
 }
 
 /***/ }),
-/* 493 */
+/* 498 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/oemservlogo.png?e3bcb85159a1a438a4cb3398bcd82bc5";
 
 /***/ }),
-/* 494 */
+/* 499 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/redback_logo.jpg?099e5e1df3f0068f8b600843343cd389";
 
 /***/ }),
-/* 495 */
+/* 500 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/American_dunnage_logo.png?dd2e7ea7facdc1bf2716d4b84973936c";
 
 /***/ }),
-/* 496 */
+/* 501 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/cargosecuringexperts.png?9641bed3a01f34ae672b5c908a88ad78";
 
 /***/ }),
-/* 497 */
+/* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(498)
+  __webpack_require__(503)
 }
 var normalizeComponent = __webpack_require__(4)
 /* script */
-var __vue_script__ = __webpack_require__(500)
+var __vue_script__ = __webpack_require__(505)
 /* template */
-var __vue_template__ = __webpack_require__(501)
+var __vue_template__ = __webpack_require__(506)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -91406,13 +91648,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 498 */
+/* 503 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(499);
+var content = __webpack_require__(504);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -91432,7 +91674,7 @@ if(false) {
 }
 
 /***/ }),
-/* 499 */
+/* 504 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -91446,7 +91688,7 @@ exports.push([module.i, "\nli.router-link-active a[data-v-ef3e5bea] {\n    color
 
 
 /***/ }),
-/* 500 */
+/* 505 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91528,7 +91770,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 501 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -91551,7 +91793,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "img-fluid float-right p-lg-3 p-md-4 pt-sm-3",
                   attrs: {
-                    src: __webpack_require__(106),
+                    src: __webpack_require__(108),
                     alt: "american dunnage logo"
                   }
                 })
@@ -91577,7 +91819,7 @@ var render = function() {
                             staticClass: "img-fluid float-right pt-2 ",
                             staticStyle: { width: "65%" },
                             attrs: {
-                              src: __webpack_require__(106),
+                              src: __webpack_require__(108),
                               alt: "american dunnage logo"
                             }
                           })
@@ -91597,7 +91839,7 @@ var render = function() {
                             staticClass: "img-fluid float-left pt-2 pb-2",
                             staticStyle: { width: "40%" },
                             attrs: {
-                              src: __webpack_require__(107),
+                              src: __webpack_require__(109),
                               alt: "5 star logo"
                             }
                           })
@@ -91709,7 +91951,7 @@ var render = function() {
                   staticClass:
                     "img-fluid float-left five_star_lgo p-lg-2 p-md-3 mt-md-2 pt-sm-2 p-xl-0 mt-xl-3",
                   attrs: {
-                    src: __webpack_require__(107),
+                    src: __webpack_require__(109),
                     alt: "5 star logo"
                   }
                 })
@@ -91734,7 +91976,7 @@ if (false) {
 }
 
 /***/ }),
-/* 502 */
+/* 507 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -91776,7 +92018,7 @@ if (false) {
 }
 
 /***/ }),
-/* 503 */
+/* 508 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -19,6 +19,8 @@ import Containerlashing from '../components/components/Containerlashing';
 import Desiccants from '../components/components/Desiccants';
 import Barrelsecuring from '../components/components/Barrelsecuring';
 import Boltseal from '../components/components/Boltseal';
+import AirbagCalculator from '../components/components/AirbagCalculator';
+
 //
 // import About_us from '../components/About_us'
 
@@ -69,6 +71,11 @@ export default new Router({
             path: '/Event',
             name: 'Event',
             component: Event
+        },
+        {
+            path: '/airbagCalculator',
+            name: 'airbagCalculator',
+            component: AirbagCalculator
         },
 
 

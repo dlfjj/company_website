@@ -209,6 +209,13 @@
                         <div class="mt-lg-8 pt-lg-5 mt-sm-1 mr-lg-5">
                             <a v-bind:href="productLink"><button class="btn btn-primary btn-lg btn-block waves-effect" data-aos="fade-left"><span>More Product Information</span></button></a>
                         </div>
+
+                        <div class="mt-lg-8 pt-lg-3 mt-sm-1 mr-lg-5">
+                            <router-link :to="{ name: 'airbagCalculator'}" target="_blank">
+                                <button class="btn btn-outline-danger btn-lg btn-block waves-effect" data-aos="fade-left"><span>Airbag Calculator</span></button>
+                                <!--<i class="fas fa-calculator"></i>-->
+                            </router-link>
+                        </div>
                     </div>
                     <div class="col-lg-6 mt-lg-0">
                         <img src="./images/homepage_product.png" class="img-fluid" alt="standard dunnage airbag" data-aos="fade-in" data-aos-duration="1000">
@@ -217,106 +224,6 @@
             </div>
         </section>
 
-        <section class="airbag-calculator">
-            <div class="container">
-                <table class="table table-bordered text-center shadow">
-                    <thead class="thead-light text-uppercase">
-                    <tr>
-                        <th colspan="7" style="font-size: larger; font-weight: 600; color: #112133">Airbag Calculator</th>
-                    </tr>
-                    <tr>
-                        <th rowspan="2" style="width: 17%; align:center;"><span style="vertical-align: center;margin-bottom: 20px;">Gap between pallets</span></th>
-                        <th rowspan="2" style="width: 18%;">Pallet Height</th>
-                        <!--<th colspan="2" style="width: 20%">Bag size</th>-->
-                        <th>Width</th>
-                        <th>Length</th>
-                        <th scope="col" rowspan="2" style="width: 17%;">Airbag Types</th>
-                        <th scope="col" rowspan="2" style="width: 11%;">Surface contact</th>
-                        <th scope="col" rowspan="2" style="width: 17%;">Force by Max filling pressure</th>
-                    </tr>
-                    <!--<tr>-->
-                        <!--<th>Width (cm)</th>-->
-                        <!--<th>Length (cm)</th>-->
-                    <!--</tr>-->
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <b-form-input type="number" v-model="inputGap" placeholder="Enter Gap Width"></b-form-input>
-                            <!--<b-form-input type="text" v-model="animal_name"></b-form-input>-->
-                            <!--<b-form-select class="mb-2 mr-sm-2 mb-sm-0"-->
-                                           <!--v-model="selectedGap"-->
-                                           <!--:options="gap"-->
-                                           <!--id="bagWidthSelect"-->
-                            <!--&gt;-->
-                            <!--</b-form-select>-->
-                        </td>
-                        <td>
-                            <!--<b-form-select class="mb-2 mr-sm-2 mb-sm-0"-->
-                                           <!--v-model="selectedPalletHeight"-->
-                                           <!--:options="filterUserSelectOptions"-->
-                                           <!--id="bagWidthSelect"-->
-                             <!--&gt;-->
-                            <!--</b-form-select>-->
-                            <!--<b-form-select class="mb-2 mr-sm-2 mb-sm-0"-->
-                                           <!--v-model="selectedAnimalType"-->
-                                           <!--:options="animalType"-->
-                            <!--&gt;-->
-                            <!--</b-form-select>-->
-                            <b-form-input type="number" v-model="inputGapHeight" placeholder="Enter Pallet Height"></b-form-input>
-                        </td>
-                        <td>
-                            <transition name="fade" mode="out-in" duration="1000">
-                                <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                               v-model="selectedBagWidth"
-                                               :options="filterUserSelectOptions"
-                                               id="bagWidthSelect"
-                                               v-if="showWidthOptions"
-                                >
-                                </b-form-select>
-                            </transition>
-                            <!--<div>Selected: <strong>{{ selectedBagWidth }}</strong></div>-->
-                        </td>
-                        <td>
-                            <transition name="fade" mode="out-in" duration="1000">
-                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                           v-model="selectedBagHeight"
-                                           :options="filterUserBagLengthOptions"
-                                           id="bagWidthSelect"
-                                           v-if="showLengthOptions"
-                            >
-                            </b-form-select>
-                            </transition>
-                            <!--<div>Selected: <strong>{{ selectedBagHeight }}</strong></div>-->
-                        </td>
-                        <td>
-                            <transition name="fade" mode="out-in" duration="1000">
-                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                           v-model="selectedBagType"
-                                           :options="filterBagTypesOptions"
-                                           id="bagWidthSelect"
-                                           v-if="showAirbagType"
-                            >
-                            </b-form-select>
-                            </transition>
-                        </td>
-                        <!--<td><span class="airtableFont">{{ surface_contact }} </span></td>-->
-                        <td><span class="airtableFont">{{ surfaceContactAnimated }}</span></td>
-                        <!--binding style with condition-->
-                        <td><span v-bind:class="{ 'airtableFont': isActive == true }">{{ forceByFillingPressure() }}</span></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!--testing for the table to load -->
-            <div>
-                <!--<div v-for="data in airbagTable">{{ data }}</div>-->
-                <!--<div v-for="(data,index) in airbagTable" v-if="index <=1">{{data['Bag type']}}</div>-->
-                <!--<div v-for="data in bagWidth">{{ data }}</div>-->
-            </div>
-
-        </section>
     </div>
 </template>
 
@@ -339,16 +246,6 @@
         // props:['loaded'],
         data(){
             return{
-
-                //transition for airtable
-                showWidthOptions:false,
-                showLengthOptions:false,
-                showAirbagType:false,
-                animateSurfaceContact:0,
-                animateForceNumber: 0,
-                kgToPoundFactor: 2.20462442018,
-                inchToCmFactor: 2.54,
-
                 // carousel section
                 slide: 0,
                 carouselTime: 0,
@@ -386,97 +283,14 @@
                 // animalType:[{text:'Bass',value:60},{text:'Catfish',value: 90}, {text:'Jersey cattle', value:120, disabled: true},{text:'Guernsey cattle',value:150}],
 
 
-                surface_contact: 0,
-                forceByMaxFillingPressure: '',
-                test:0,
-                selectedBagWidth: 0,
-                selectedBagHeight: 0,
-                inputGap: null,
-                selectedGap:0,
-                inputGapHeight: null,
-                givenGap:0,
-                selectedBagType: '',
-                selectedPalletHeight: 150,
-                // palletHeight:[{text:'PH > 60',value:60},{text:'PH > 90',value: 90}, {text:'PH > 120', value:120},{text:'PH > 150',value:150}],
-                bagWidth:[{text:'24',value:60},{text:'36',value: 90}, {text:'48', value:120},{text:'60',value:150}],
-                bagHeight:[{value:60, text:'24'},{value:90,text:'36'},{value:120,text:'48'},{value:150,text:'60'},{value:180,text:'70'},{value:210,text:'83'},{value:225,text:'89'},{value:240,text:'95'},{value:260,text:'103'},{value:270,text:'107'}],
-                gap: [{value:150, text:'150'},{value:200, text:'200'},{value:300,text:'300'},{value:400, text:'400'},{value:500, text:'500'},{value:600, text:'600'}],
-                bagType:[{ value: '', text: 'Select Bag Type'},{value:'PAPER 1 Ply SAVFER',text:'PAPER 1 Ply SAVFER'},{value:'Paper 2 Ply SAVFER',text:'Paper 2 Ply SAVFER'},
-                    {value:'Paper 1 Ply Standard',text:'Paper 1 Ply Standard'},{value:'Paper 2 Ply Standard', text:'Paper 2 Ply Standard'},
-                    {value:'Paper 4 Ply Heavy Duty',text:'Paper 4 Ply Heavy Duty'},{value:'Paper 6 Ply Super Heavy',text:'Paper 6 Ply Super Heavy'},
-                    {value:'Paper 8 Ply',text:'Paper 8 Ply'},{value:'PP SAVFER medium',text:'PP SAVFER medium'},{value:'PP90 Standard',text:'PP90 Standard'},
-                    {value:'PP150 Heavy Duty',text:'PP150 Heavy Duty'},{value:'PP200 Super Heavy',text:'PP200 Super Heavy'},{value:'PP 250 GSM',text:'PP 250 GSM'}],
-                airbagTable : json,
-                isActive: false,
-
 
             }
         },
-
         //watch vale change within the table
-        watch:{
-            'selectedBagWidth': function(){
-                this.getSurfaceContactIndex;
-            },
-            'selectedGap': function(){
-                this.getSurfaceContactIndex;
-            },
-            'selectedBagType': function(){
-                // this.getSurfaceContactIndex;
-                this.filterBagTypesOptions;
-            },
-            'inputGap':function(){
-                if(this.inputGap * this.inchToCmFactor>30){
-                    this.showWidthOptions=true;
-                }else{
-                    this.showWidthOptions=false;
-                    // this.showAirbagType = false;
-                }
 
-            },
-            'inputGapHeight':function(){
-                if(this.inputGapHeight * this.inchToCmFactor>20){
-                    this.showLengthOptions = true;
-                }else{
-                    this.showLengthOptions = false;
-                    // this.showAirbagType = false;
-                }
 
-            },
-            // 'selectedBagHeight': function(){
-            //     this.getSurfaceContactIndex;
-            // },
-            'selectedBagHeight':function(){
-                this.getSurfaceContactIndex;
-                if(this.selectedBagHeight){
-                    this.showAirbagType = true;
-                }else{
-                    this.showAirbagType = false;
-                }
-            },
-            'surface_contact':function(newValue){
-                //animated number presentation when it change value
-                TweenLite.to(this.$data, 0.5, { animateSurfaceContact: newValue });
-            }
-        },
         methods:{
-            forceByFillingPressure(){
-                let f = 0;
-                f = this.selectedBagWidth * this.selectedBagHeight * this.surface_contact * this.getMaxFillingPressure * 2 / 10 * this.kgToPoundFactor;
-                if (isNaN(f)){
-                    this.isActive = false;
-                    return "Please Choose Another Value";
-                }else {
-                    this.isActive = true;
-                    //animated number presentation when it change value
-                    let n = (Math.round(f * 10) / 10);
 
-
-                    // return this.test = TweenLite.to(this.$data, 0.5, { animateSurfaceContact: n });
-                    // return TweenLite.to(this.$data, 0.5, { animateForceNumber: (Math.round(f * 10) / 10).toString() });
-                    return (this.forceByMaxFillingPressure = Math.round(f * 10) / 10).toString() + " lbs" ;
-                }
-            },
 
         },
         computed:{
@@ -502,7 +316,6 @@
 
                 // console.log(this.selectedBagWidth * this.selectedBagHeight * this.selectedGap );
             },
-
             getMaxFillingPressure: function(){
                 let MFP = '';
                 for (let i = 0; i < this.airbagTable.length; i++) {
@@ -514,81 +327,6 @@
             },
 
             //change bag width options based on gap width
-            filterUserSelectOptions (){
-                if (this.inputGap * this.inchToCmFactor){
-                    let gapTohWidth = 0;
-                    if(0<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=300){
-                        gapTohWidth=60;
-                        this.selectedGap = 300;
-                    }else if(301<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=400){
-                        gapTohWidth=90;
-                        this.selectedGap = 400;
-                    }else if(401<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=500){
-                        gapTohWidth=120;
-                        this.selectedGap = 500;
-                    }else if(501<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=600){
-                        gapTohWidth=150;
-                        this.selectedGap = 600;
-                    }
-
-                    return this.bagWidth.filter(t => t.value >= gapTohWidth);
-                }else {
-                    return this.bagWidth
-                }
-            },
-            filterUserBagLengthOptions (){
-                if (this.inputGapHeight * this.inchToCmFactor){
-                    let selectableBagHeight = 0;
-                    if(0<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=89){
-                        selectableBagHeight=60;
-                    }else if(90<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=119){
-                        selectableBagHeight=90;
-                    }else if(120<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=149){
-                        selectableBagHeight=120;
-                    }else if(150<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=179){
-                        selectableBagHeight=150;
-                    }else if(180<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=219){
-                        selectableBagHeight=180;
-                    }else if(210<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=224){
-                        selectableBagHeight=210;
-                    }else if(225<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=239){
-                        selectableBagHeight=225;
-                    }else if(240<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=259){
-                        selectableBagHeight=240;
-                    }else if(260<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=269){
-                        selectableBagHeight=260;
-                    }else if(this.inputGapHeight * this.inchToCmFactor>=270){
-                        selectableBagHeight=270;
-                    }
-                    return this.bagHeight.filter(t => t.value <= selectableBagHeight);
-                }else {
-                    return this.bagHeight
-                }
-            },
-            filterBagTypesOptions (){
-                let bagTypeHaveValue = [];
-                for(let j =0; j< this.bagType.length; j++) {
-                    for (let i = 0; i < this.airbagTable.length; i++) {
-                        let n = this.bagType[j].value.localeCompare(this.airbagTable[i]['Bag type'].trimRight());
-                        if (n === 0 && this.airbagTable[i]['Bags Width'] === this.selectedBagWidth && this.surface_contact === this.airbagTable[i]['Contact surface area']) {
-                            bagTypeHaveValue.push(this.bagType[j].value);
-                            // this.bagType.filter(t => t.value !== this.airbagTable[i]['Bag type'].trimRight());
-                        }
-                    }
-                }
-                console.log(bagTypeHaveValue.length);
-                // return this.bagType.filter(function(e){return this.indexOf(e) < 0;},bagTypeHaveValue);
-                if(bagTypeHaveValue.length !== 0){
-                    //exclude the unavailable value on the chart
-                    return this.bagType.filter(t => bagTypeHaveValue.includes(t.value));
-                }else{
-                    return [{value: '', text: 'No Dunnage Airbag Available'}];
-                }
-
-            },
-            surfaceContactAnimated: function() {
-                return this.animateSurfaceContact.toFixed(1);
-            }
         },
     }
 </script>
@@ -684,7 +422,4 @@
     .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
         opacity: 0;
     }
-
-
-
 </style>
