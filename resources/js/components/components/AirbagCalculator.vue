@@ -1,90 +1,93 @@
 <template>
-    <div style="margin: 100px">
-            <div class="container">
-                <table class="table table-bordered text-center shadow">
-                    <thead class="thead-light bg-danger text-uppercase">
-                    <tr>
-                        <th colspan="7" style="font-size: larger; font-weight: 600; color: #112133">Airbag Calculator</th>
-                    </tr>
-                    <tr>
-                        <th rowspan="2" style="width: 15%; align:center;"><span style="vertical-align: center;margin-bottom: 20px;">Gap between pallets</span></th>
-                        <th rowspan="2" style="width: 16%;">Pallet Height</th>
-                        <!--<th colspan="2" style="width: 20%">Bag size</th>-->
-                        <th>Width</th>
-                        <th>Length</th>
-                        <th scope="col" rowspan="2" style="width: 22%;">Airbag Types</th>
-                        <!--<th scope="col" rowspan="2" style="width: 11%;">Surface contact</th>-->
-                        <th scope="col" rowspan="2" style="width: 17%;">Force by Max filling pressure</th>
-                    </tr>
-                    <!--<tr>-->
-                    <!--<th>Width (cm)</th>-->
-                    <!--<th>Length (cm)</th>-->
-                    <!--</tr>-->
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <!-- gap width determine the bag width, this formula is marked at oemserv catalgue 2017 page 5-->
-                            <b-form-input type="number" v-model="inputGap" :placeholder="placeholderForGapWidthInput"></b-form-input>
+    <div style="margin: 100px 130px 100px 100px">
+        <div class="container">
+            <table class="table table-bordered text-center shadow">
+                <thead class="thead-light bg-danger text-uppercase">
+                <tr>
+                    <th colspan="6" ><span style="font-size: larger; font-weight: 600; color: #112133">Airbag Calculator</span >
+                        <select class="float-right"  v-model="cmOrInch" style="display: inline-flex;">
+                            <option v-for="option in metricOptions" v-bind:value="option.value">
+                                {{ option.text }}
+                            </option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th rowspan="2" style="width: 15%; align:center;"><span style="vertical-align: center;margin-bottom: 20px;">Gap between pallets</span></th>
+                    <th rowspan="2" style="width: 16%;">Pallet Height</th>
+                    <!--<th colspan="2" style="width: 20%">Bag size</th>-->
+                    <th>Width</th>
+                    <th>Length</th>
+                    <th scope="col" rowspan="2" style="width: 22%;">Airbag Types</th>
+                    <!--<th scope="col" rowspan="2" style="width: 11%;">Surface contact</th>-->
+                    <th scope="col" rowspan="2" style="width: 17%;">Force by Max filling pressure</th>
+                </tr>
+                <!--<tr>-->
+                <!--<th>Width (cm)</th>-->
+                <!--<th>Length (cm)</th>-->
+                <!--</tr>-->
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <!-- gap width determine the bag width, this formula is marked at oemserv catalgue 2017 page 5-->
+                        <b-form-input type="number" v-model="inputGap"  :placeholder="gapInputPlaceholder"></b-form-input>
 
-                        </td>
-                        <td>
-                            <b-form-input type="number" v-model="inputGapHeight" placeholder="PH (inch)"></b-form-input>
-                        </td>
-                        <td>
-                            <transition name="fade" mode="out-in" duration="1000">
-                                <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                               v-model="selectedBagWidth"
-                                               :options="filterUserSelectOptions"
-                                               id="bagWidthSelect"
-                                               v-if="showWidthOptions"
-                                >
-                                </b-form-select>
-                                <!--<v-select :options="filterUserSelectOptions" v-model="selectedBagWidth" label="text" v-if="showWidthOptions"></v-select>-->
-                            </transition>
-                            <!--<div>Selected: <strong>{{ selectedBagWidth }}</strong></div>-->
-                        </td>
-                        <td>
-                            <transition name="fade" mode="out-in" duration="1000">
-                                <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                               v-model="selectedBagHeight"
-                                               :options="filterUserBagLengthOptions"
-                                               id="bagWidthSelect"
-                                               v-if="showLengthOptions"
-                                >
-                                </b-form-select>
-                            </transition>
-                            <!--<div>Selected: <strong>{{ selectedBagHeight }}</strong></div>-->
-                        </td>
-                        <td>
-                            <transition name="fade" mode="out-in" duration="1000">
-                                <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                               v-model="selectedBagType"
-                                               :options="filterBagTypesOptions"
-                                               id="bagWidthSelect"
-                                               v-if="showAirbagType"
-                                >
-                                </b-form-select>
-                            </transition>
-                        </td>
-                        <!--<td><span class="airtableFont">{{ surface_contact }} </span></td>-->
-                        <!--<td><span class="airtableFont">{{ surfaceContactAnimated }}</span></td>-->
-                        <!--binding style with condition-->
-                        <td>
-                            <span v-bind:class="{ 'airtableFont': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{ forceByFillingPressureAnimated + ' lbs' }}</span>
-                            <span v-bind:class="{ 'showValue': isActive === false, 'disabledValue':isActive === true }">{{ forceByFillingPressure() }}</span>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!--testing for the table to load -->
-            <div>
-                <!--<div v-for="data in airbagTable">{{ data }}</div>-->
-                <!--<div v-for="(data,index) in airbagTable" v-if="index <=1">{{data['Bag type']}}</div>-->
-                <!--<div v-for="data in bagWidth">{{ data }}</div>-->
-            </div>
+                    </td>
+                    <td>
+                        <b-form-input type="number" v-model="inputGapHeight" :placeholder="phInputPlaceholder"></b-form-input>
+                    </td>
+                    <td>
+                        <transition name="fade" mode="out-in" duration="1000">
+                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
+                                           v-model="selectedBagWidth"
+                                           :options="filterUserSelectOptions"
+                                           v-if="showWidthOptions"
+                            >
+                            </b-form-select>
+                            <!--<v-select :options="filterUserSelectOptions" v-model="selectedBagWidth" label="text" v-if="showWidthOptions"></v-select>-->
+                        </transition>
+                        <!--<div>Selected: <strong>{{ selectedBagWidth }}</strong></div>-->
+                    </td>
+                    <td>
+                        <transition name="fade" mode="out-in" duration="1000">
+                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
+                                           v-model="selectedBagHeight"
+                                           :options="filterUserBagLengthOptions"
+                                           v-if="showLengthOptions"
+                            >
+                            </b-form-select>
+                        </transition>
+                        <!--<div>Selected: <strong>{{ selectedBagHeight }}</strong></div>-->
+                    </td>
+                    <td>
+                        <transition name="fade" mode="out-in" duration="1000">
+                            <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
+                                           v-model="selectedBagType"
+                                           :options="filterBagTypesOptions"
+                                           v-if="showAirbagType"
+                            >
+                            </b-form-select>
+                        </transition>
+                    </td>
+                    <!--<td><span class="airtableFont">{{ surface_contact }} </span></td>-->
+                    <!--<td><span class="airtableFont">{{ surfaceContactAnimated }}</span></td>-->
+                    <!--binding style with condition-->
+                    <td>
+                        <span v-bind:class="{ 'airtableFont': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{ forceByFillingPressureAnimated + ' ' + kgOrPound }}</span>
+                        <span v-bind:class="{ 'showValue': isActive === false, 'disabledValue':isActive === true }">{{ forceByFillingPressure() }}</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
+        <!--testing for the table to load -->
+        <div>
+            <!--<div v-for="data in airbagTable">{{ data }}</div>-->
+            <!--<div v-for="(data,index) in airbagTable" v-if="index <=1">{{data['Bag type']}}</div>-->
+            <!--<div v-for="data in bagWidth">{{ data }}</div>-->
+        </div>
+    </div>
 </template>
 
 <script>
@@ -103,7 +106,7 @@
                 animateForceNumber: 0,
                 kgToPoundFactor: 2.20462442018,
                 inchToCmFactor: 2.54,
-                placeholderForGapWidthInput: 'GW (inch)',
+                // placeholderForGapWidthInput: 'GW (inch)',
 
                 // carousel section
                 slide: 0,
@@ -117,6 +120,17 @@
                 // selectedAnimalType:0,
                 // animalType:[{text:'Bass',value:60},{text:'Catfish',value: 90}, {text:'Jersey cattle', value:120, disabled: true},{text:'Guernsey cattle',value:150}],
 
+                //airbag table metric selection
+                cmOrInch: 'inch',
+                kgOrPound: 'lbs',
+                metricOptions: [
+                    { text: 'cm', value: 'cm' },
+                    { text: 'inch', value: 'inch' },
+                ],
+                gapInputPlaceholder: '> 14 inch',
+                phInputPlaceholder: '> 36 inch',
+
+
                 surface_contact: 0,
                 forceByMaxFillingPressure: 0,
                 test:0,
@@ -129,8 +143,19 @@
                 selectedBagType: '',
                 selectedPalletHeight: 0,
                 // palletHeight:[{text:'PH > 60',value:60},{text:'PH > 90',value: 90}, {text:'PH > 120', value:120},{text:'PH > 150',value:150}],
-                bagWidth:[{text:'24',value:60},{text:'36',value: 90}, {text:'48', value:120},{text:'60',value:150}],
-                bagHeight:[{value:60, text:'24'},{value:90,text:'36'},{value:120,text:'48'},{value:150,text:'60'},{value:180,text:'70'},{value:210,text:'83'},{value:225,text:'89'},{value:240,text:'95'},{value:260,text:'103'},{value:270,text:'107'}],
+
+                bagWidth:{
+                    bagWidthInch:[{text:'24',value:60},{text:'36',value: 90}, {text:'48', value:120},{text:'60',value:150}],
+                    bagWidthCm:[{text:'60',value:60},{text:'90',value: 90}, {text:'120', value:120},{text:'150',value:150}],
+                },
+
+                bagHeight:{
+                    bagHeightInch:[{value:60, text:'24'},{value:90,text:'36'},{value:120,text:'48'},{value:150,text:'60'},{value:180,text:'70'},{value:210,text:'83'},{value:225,text:'89'},{value:240,text:'95'},{value:260,text:'103'},{value:270,text:'107'}],
+                    bagHeightCm:[{value:60, text:'60'},{value:90,text:'90'},{value:120,text:'120'},{value:150,text:'150'},{value:180,text:'180'},{value:210,text:'210'},{value:225,text:'225'},{value:240,text:'240'},{value:260,text:'260'},{value:270,text:'270'}],
+
+                },
+
+
                 formulaGap: [{value:150, text:'150'},{value:200, text:'200'},{value:300,text:'300'},{value:400, text:'400'},{value:500, text:'500'},{value:600, text:'600'}],
                 bagType:[{ value: '', text: 'Select Bag Type'},{value:'PAPER 1 Ply SAVFER',text:'PAPER 1 Ply SAVFER'},{value:'Paper 2 Ply SAVFER',text:'Paper 2 Ply SAVFER'},
                     {value:'Paper 1 Ply Standard',text:'Paper 1 Ply Standard'},{value:'Paper 2 Ply Standard', text:'Paper 2 Ply Standard'},
@@ -147,6 +172,23 @@
             // console.log(list);
         },
         watch:{
+
+            //conversion between cm and inch
+            'cmOrInch': function (){
+                if(this.cmOrInch === "cm"){
+                    this.inchToCmFactor = 1;
+                    this.kgToPoundFactor = 1;
+                    this.kgOrPound = 'kg';
+                    this.gapInputPlaceholder= '> 36 cm';
+                    this.phInputPlaceholder= '> 60 cm';
+                }else if(this.cmOrInch === "inch"){
+                    this.inchToCmFactor = 2.54;
+                    this.kgToPoundFactor = 2.20462442018;
+                    this.kgOrPound = 'lbs';
+                    this.gapInputPlaceholder= '> 14 inch';
+                    this.phInputPlaceholder= '> 24 inch';
+                }
+            },
             'selectedBagWidth': function(){
                 this.getSurfaceContactIndex;
             },
@@ -255,6 +297,15 @@
             },
             //change bag width options based on gap width
             filterUserSelectOptions (){
+
+                //show the bag bag width conversion between cm an inch
+                let bagWithMetric = this.bagWidth['bagWidthInch'];
+                if(this.cmOrInch === 'cm'){
+                    bagWithMetric = this.bagWidth['bagWidthCm'];
+                }else{
+                    bagWithMetric = this.bagWidth['bagWidthInch'];
+
+                }
                 if (this.inputGap * this.inchToCmFactor){
                     let gapTohWidth = 0;
                     if(35.56<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=150){
@@ -273,9 +324,9 @@
                         gapTohWidth=150;
                         this.selectedGap = 600;
                     }
-                    return this.bagWidth.filter(t => t.value >= gapTohWidth);
+                    return bagWithMetric.filter(t => t.value >= gapTohWidth);
                 }else {
-                    return this.bagWidth
+                    return bagWithMetric
                 }
             },
             // filterUserSelectOptions (){
@@ -305,6 +356,12 @@
             //     }
             // },
             filterUserBagLengthOptions (){
+                let bagHeightMetric = this.bagHeight['bagHeightInch'];
+                if(this.cmOrInch === 'cm'){
+                    bagHeightMetric = this.bagHeight['bagHeightCm'];
+                }else{
+                    bagHeightMetric = this.bagHeight['bagHeightInch'];
+                }
                 if (this.inputGapHeight * this.inchToCmFactor){
                     let selectableBagHeight = 0;
                     if(0<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=89){
@@ -328,9 +385,9 @@
                     }else if(this.inputGapHeight * this.inchToCmFactor>=270){
                         selectableBagHeight=270;
                     }
-                    return this.bagHeight.filter(t => t.value <= selectableBagHeight);
+                    return bagHeightMetric.filter(t => t.value <= selectableBagHeight);
                 }else {
-                    return this.bagHeight
+                    return bagHeightMetric
                 }
             },
             filterBagTypesOptions (){

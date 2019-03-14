@@ -90397,6 +90397,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -90413,7 +90416,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             animateForceNumber: 0,
             kgToPoundFactor: 2.20462442018,
             inchToCmFactor: 2.54,
-            placeholderForGapWidthInput: 'GW (inch)',
+            // placeholderForGapWidthInput: 'GW (inch)',
 
             // carousel section
             slide: 0,
@@ -90427,6 +90430,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             // selectedAnimalType:0,
             // animalType:[{text:'Bass',value:60},{text:'Catfish',value: 90}, {text:'Jersey cattle', value:120, disabled: true},{text:'Guernsey cattle',value:150}],
 
+            //airbag table metric selection
+            cmOrInch: 'inch',
+            kgOrPound: 'lbs',
+            metricOptions: [{ text: 'cm', value: 'cm' }, { text: 'inch', value: 'inch' }],
+            gapInputPlaceholder: '> 14 inch',
+            phInputPlaceholder: '> 36 inch',
+
             surface_contact: 0,
             forceByMaxFillingPressure: 0,
             test: 0,
@@ -90439,8 +90449,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             selectedBagType: '',
             selectedPalletHeight: 0,
             // palletHeight:[{text:'PH > 60',value:60},{text:'PH > 90',value: 90}, {text:'PH > 120', value:120},{text:'PH > 150',value:150}],
-            bagWidth: [{ text: '24', value: 60 }, { text: '36', value: 90 }, { text: '48', value: 120 }, { text: '60', value: 150 }],
-            bagHeight: [{ value: 60, text: '24' }, { value: 90, text: '36' }, { value: 120, text: '48' }, { value: 150, text: '60' }, { value: 180, text: '70' }, { value: 210, text: '83' }, { value: 225, text: '89' }, { value: 240, text: '95' }, { value: 260, text: '103' }, { value: 270, text: '107' }],
+
+            bagWidth: {
+                bagWidthInch: [{ text: '24', value: 60 }, { text: '36', value: 90 }, { text: '48', value: 120 }, { text: '60', value: 150 }],
+                bagWidthCm: [{ text: '60', value: 60 }, { text: '90', value: 90 }, { text: '120', value: 120 }, { text: '150', value: 150 }]
+            },
+
+            bagHeight: {
+                bagHeightInch: [{ value: 60, text: '24' }, { value: 90, text: '36' }, { value: 120, text: '48' }, { value: 150, text: '60' }, { value: 180, text: '70' }, { value: 210, text: '83' }, { value: 225, text: '89' }, { value: 240, text: '95' }, { value: 260, text: '103' }, { value: 270, text: '107' }],
+                bagHeightCm: [{ value: 60, text: '60' }, { value: 90, text: '90' }, { value: 120, text: '120' }, { value: 150, text: '150' }, { value: 180, text: '180' }, { value: 210, text: '210' }, { value: 225, text: '225' }, { value: 240, text: '240' }, { value: 260, text: '260' }, { value: 270, text: '270' }]
+
+            },
+
             formulaGap: [{ value: 150, text: '150' }, { value: 200, text: '200' }, { value: 300, text: '300' }, { value: 400, text: '400' }, { value: 500, text: '500' }, { value: 600, text: '600' }],
             bagType: [{ value: '', text: 'Select Bag Type' }, { value: 'PAPER 1 Ply SAVFER', text: 'PAPER 1 Ply SAVFER' }, { value: 'Paper 2 Ply SAVFER', text: 'Paper 2 Ply SAVFER' }, { value: 'Paper 1 Ply Standard', text: 'Paper 1 Ply Standard' }, { value: 'Paper 2 Ply Standard', text: 'Paper 2 Ply Standard' }, { value: 'Paper 4 Ply Heavy Duty', text: 'Paper 4 Ply Heavy Duty' }, { value: 'Paper 6 Ply Super Heavy', text: 'Paper 6 Ply Super Heavy' }, { value: 'Paper 8 Ply', text: 'Paper 8 Ply' }, { value: 'PP SAVFER medium', text: 'PP SAVFER medium' }, { value: 'PP90 Standard', text: 'PP90 Standard' }, { value: 'PP150 Heavy Duty', text: 'PP150 Heavy Duty' }, { value: 'PP200 Super Heavy', text: 'PP200 Super Heavy' }, { value: 'PP 250 GSM', text: 'PP 250 GSM' }],
             airbagTable: __WEBPACK_IMPORTED_MODULE_0__csvFiles_airbag_size_table_json___default.a,
@@ -90454,6 +90474,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         // console.log(list);
     },
     watch: {
+
+        //conversion between cm and inch
+        'cmOrInch': function cmOrInch() {
+            if (this.cmOrInch === "cm") {
+                this.inchToCmFactor = 1;
+                this.kgToPoundFactor = 1;
+                this.kgOrPound = 'kg';
+                this.gapInputPlaceholder = '> 36 cm';
+                this.phInputPlaceholder = '> 60 cm';
+            } else if (this.cmOrInch === "inch") {
+                this.inchToCmFactor = 2.54;
+                this.kgToPoundFactor = 2.20462442018;
+                this.kgOrPound = 'lbs';
+                this.gapInputPlaceholder = '> 14 inch';
+                this.phInputPlaceholder = '> 24 inch';
+            }
+        },
         'selectedBagWidth': function selectedBagWidth() {
             this.getSurfaceContactIndex;
         },
@@ -90562,6 +90599,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         //change bag width options based on gap width
         filterUserSelectOptions: function filterUserSelectOptions() {
+
+            //show the bag bag width conversion between cm an inch
+            var bagWithMetric = this.bagWidth['bagWidthInch'];
+            if (this.cmOrInch === 'cm') {
+                bagWithMetric = this.bagWidth['bagWidthCm'];
+            } else {
+                bagWithMetric = this.bagWidth['bagWidthInch'];
+            }
             if (this.inputGap * this.inchToCmFactor) {
                 var gapTohWidth = 0;
                 if (35.56 <= this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor <= 150) {
@@ -90580,11 +90625,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     gapTohWidth = 150;
                     this.selectedGap = 600;
                 }
-                return this.bagWidth.filter(function (t) {
+                return bagWithMetric.filter(function (t) {
                     return t.value >= gapTohWidth;
                 });
             } else {
-                return this.bagWidth;
+                return bagWithMetric;
             }
         },
 
@@ -90615,6 +90660,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         //     }
         // },
         filterUserBagLengthOptions: function filterUserBagLengthOptions() {
+            var bagHeightMetric = this.bagHeight['bagHeightInch'];
+            if (this.cmOrInch === 'cm') {
+                bagHeightMetric = this.bagHeight['bagHeightCm'];
+            } else {
+                bagHeightMetric = this.bagHeight['bagHeightInch'];
+            }
             if (this.inputGapHeight * this.inchToCmFactor) {
                 var selectableBagHeight = 0;
                 if (0 <= this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor <= 89) {
@@ -90638,11 +90689,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 } else if (this.inputGapHeight * this.inchToCmFactor >= 270) {
                     selectableBagHeight = 270;
                 }
-                return this.bagHeight.filter(function (t) {
+                return bagHeightMetric.filter(function (t) {
                     return t.value <= selectableBagHeight;
                 });
             } else {
-                return this.bagHeight;
+                return bagHeightMetric;
             }
         },
         filterBagTypesOptions: function filterBagTypesOptions() {
@@ -90682,10 +90733,69 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticStyle: { margin: "100px" } }, [
+  return _c("div", { staticStyle: { margin: "100px 130px 100px 100px" } }, [
     _c("div", { staticClass: "container" }, [
       _c("table", { staticClass: "table table-bordered text-center shadow" }, [
-        _vm._m(0),
+        _c("thead", { staticClass: "thead-light bg-danger text-uppercase" }, [
+          _c("tr", [
+            _c("th", { attrs: { colspan: "6" } }, [
+              _c(
+                "span",
+                {
+                  staticStyle: {
+                    "font-size": "larger",
+                    "font-weight": "600",
+                    color: "#112133"
+                  }
+                },
+                [_vm._v("Airbag Calculator")]
+              ),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.cmOrInch,
+                      expression: "cmOrInch"
+                    }
+                  ],
+                  staticClass: "float-right",
+                  staticStyle: { display: "inline-flex" },
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.cmOrInch = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    }
+                  }
+                },
+                _vm._l(_vm.metricOptions, function(option) {
+                  return _c("option", { domProps: { value: option.value } }, [
+                    _vm._v(
+                      "\n                            " +
+                        _vm._s(option.text) +
+                        "\n                        "
+                    )
+                  ])
+                }),
+                0
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(0)
+        ]),
         _vm._v(" "),
         _c("tbody", [
           _c("tr", [
@@ -90695,7 +90805,7 @@ var render = function() {
                 _c("b-form-input", {
                   attrs: {
                     type: "number",
-                    placeholder: _vm.placeholderForGapWidthInput
+                    placeholder: _vm.gapInputPlaceholder
                   },
                   model: {
                     value: _vm.inputGap,
@@ -90713,7 +90823,10 @@ var render = function() {
               "td",
               [
                 _c("b-form-input", {
-                  attrs: { type: "number", placeholder: "PH (inch)" },
+                  attrs: {
+                    type: "number",
+                    placeholder: _vm.phInputPlaceholder
+                  },
                   model: {
                     value: _vm.inputGapHeight,
                     callback: function($$v) {
@@ -90736,10 +90849,7 @@ var render = function() {
                     _vm.showWidthOptions
                       ? _c("b-form-select", {
                           staticClass: "mb-2 mr-sm-2 mb-sm-0",
-                          attrs: {
-                            options: _vm.filterUserSelectOptions,
-                            id: "bagWidthSelect"
-                          },
+                          attrs: { options: _vm.filterUserSelectOptions },
                           model: {
                             value: _vm.selectedBagWidth,
                             callback: function($$v) {
@@ -90766,10 +90876,7 @@ var render = function() {
                     _vm.showLengthOptions
                       ? _c("b-form-select", {
                           staticClass: "mb-2 mr-sm-2 mb-sm-0",
-                          attrs: {
-                            options: _vm.filterUserBagLengthOptions,
-                            id: "bagWidthSelect"
-                          },
+                          attrs: { options: _vm.filterUserBagLengthOptions },
                           model: {
                             value: _vm.selectedBagHeight,
                             callback: function($$v) {
@@ -90796,10 +90903,7 @@ var render = function() {
                     _vm.showAirbagType
                       ? _c("b-form-select", {
                           staticClass: "mb-2 mr-sm-2 mb-sm-0",
-                          attrs: {
-                            options: _vm.filterBagTypesOptions,
-                            id: "bagWidthSelect"
-                          },
+                          attrs: { options: _vm.filterBagTypesOptions },
                           model: {
                             value: _vm.selectedBagType,
                             callback: function($$v) {
@@ -90826,7 +90930,13 @@ var render = function() {
                     disabledValue: _vm.isActive === false
                   }
                 },
-                [_vm._v(_vm._s(_vm.forceByFillingPressureAnimated + " lbs"))]
+                [
+                  _vm._v(
+                    _vm._s(
+                      _vm.forceByFillingPressureAnimated + " " + _vm.kgOrPound
+                    )
+                  )
+                ]
               ),
               _vm._v(" "),
               _c(
@@ -90853,74 +90963,53 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "thead",
-      { staticClass: "thead-light bg-danger text-uppercase" },
-      [
-        _c("tr", [
+    return _c("tr", [
+      _c(
+        "th",
+        {
+          staticStyle: { width: "15%", align: "center" },
+          attrs: { rowspan: "2" }
+        },
+        [
           _c(
-            "th",
+            "span",
             {
               staticStyle: {
-                "font-size": "larger",
-                "font-weight": "600",
-                color: "#112133"
-              },
-              attrs: { colspan: "7" }
+                "vertical-align": "center",
+                "margin-bottom": "20px"
+              }
             },
-            [_vm._v("Airbag Calculator")]
+            [_vm._v("Gap between pallets")]
           )
-        ]),
-        _vm._v(" "),
-        _c("tr", [
-          _c(
-            "th",
-            {
-              staticStyle: { width: "15%", align: "center" },
-              attrs: { rowspan: "2" }
-            },
-            [
-              _c(
-                "span",
-                {
-                  staticStyle: {
-                    "vertical-align": "center",
-                    "margin-bottom": "20px"
-                  }
-                },
-                [_vm._v("Gap between pallets")]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("th", { staticStyle: { width: "16%" }, attrs: { rowspan: "2" } }, [
-            _vm._v("Pallet Height")
-          ]),
-          _vm._v(" "),
-          _c("th", [_vm._v("Width")]),
-          _vm._v(" "),
-          _c("th", [_vm._v("Length")]),
-          _vm._v(" "),
-          _c(
-            "th",
-            {
-              staticStyle: { width: "22%" },
-              attrs: { scope: "col", rowspan: "2" }
-            },
-            [_vm._v("Airbag Types")]
-          ),
-          _vm._v(" "),
-          _c(
-            "th",
-            {
-              staticStyle: { width: "17%" },
-              attrs: { scope: "col", rowspan: "2" }
-            },
-            [_vm._v("Force by Max filling pressure")]
-          )
-        ])
-      ]
-    )
+        ]
+      ),
+      _vm._v(" "),
+      _c("th", { staticStyle: { width: "16%" }, attrs: { rowspan: "2" } }, [
+        _vm._v("Pallet Height")
+      ]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Width")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Length")]),
+      _vm._v(" "),
+      _c(
+        "th",
+        {
+          staticStyle: { width: "22%" },
+          attrs: { scope: "col", rowspan: "2" }
+        },
+        [_vm._v("Airbag Types")]
+      ),
+      _vm._v(" "),
+      _c(
+        "th",
+        {
+          staticStyle: { width: "17%" },
+          attrs: { scope: "col", rowspan: "2" }
+        },
+        [_vm._v("Force by Max filling pressure")]
+      )
+    ])
   }
 ]
 render._withStripped = true
