@@ -19,7 +19,7 @@ import Containerlashing from '../components/components/Containerlashing';
 import Desiccants from '../components/components/Desiccants';
 import Barrelsecuring from '../components/components/Barrelsecuring';
 import Boltseal from '../components/components/Boltseal';
-import AirbagCalculator from '../components/components/AirbagCalculator';
+import AirbagCalculator from '../components/components/AirbagCalculator2';
 
 //
 // import About_us from '../components/About_us'
