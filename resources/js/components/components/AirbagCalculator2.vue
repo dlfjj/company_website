@@ -8,43 +8,48 @@
                     </option>
                 </select>
                 <h1 style="font-weight: 600; color: #112133">Airbag Calculator</h1>
-                <b-form inline class="mt-4">
-                    <b-input class="mb-2 mr-sm-2 mb-sm-0" style="width: 8vm" type="number" v-model="inputGap"  :placeholder="gapInputPlaceholder" id="inputGap"></b-input>
-                    <b-input class="mb-2 mr-sm-2 mb-sm-0" style="width: 6vm" type="number" v-model="inputGapHeight" :placeholder="phInputPlaceholder" id="inputGapHeight"></b-input>
-                </b-form>
+                <h4>we can recommend you the best dunnage airbag for your cargo security</h4>
+                <div inline class="mt-4">
+                    <div>
+                        <label for="inputGap" v-if="inputGap === null || inputGap === ''"><small class="text-danger">Put in the gap width between your pallet</small></label>
+                        <b-input  class="mb-2 mr-sm-2 mb-sm-0 form_input_width" type="number" v-model="inputGap"  :placeholder="gapInputPlaceholder" id="inputGap"></b-input>
+                    </div>
+                    <div class="mt-3">
+                        <label for="inputGap" v-if="inputGapHeight === null || inputGapHeight === ''" ><small class="text-danger">Type in your gap Height where your bag will be placed</small></label>
+                        <b-input class="mb-2 mr-sm-2 mb-sm-0 form_input_width" type="number" v-model="inputGapHeight" :placeholder="phInputPlaceholder" id="inputGapHeight"></b-input>
+                    </div>
+                </div>
                 <transition name="fade" mode="out-in" duration="1000">
-                    <b-form-group  label="Bag Width:"  v-if="showWidthOptions" class="mt-3">
-                        <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
+                    <b-form-group  label="Select the bag width"  v-if="showWidthOptions" class="mt-3">
+                        <b-form-select class="mb-2 mr-sm-2 mb-sm-0 form_input_width"
                                        v-model="selectedBagWidth"
                                        :options="filterUserSelectOptions"
-                                       style="width: 40%"
                         >
                         </b-form-select>
                     </b-form-group>
                 </transition>
                 <transition name="fade" mode="out-in" duration="1000">
-                    <b-form-group  label="Bag Length:"   v-if="showLengthOptions">
-                        <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
+                    <b-form-group  label="Select the bag length"   v-if="showLengthOptions">
+                        <b-form-select class="mb-2 mr-sm-2 mb-sm-0 form_input_width"
                                        v-model="selectedBagHeight"
                                        :options="filterUserBagLengthOptions"
-                                       style="width: 40%;"
                         >
                         </b-form-select>
                     </b-form-group>
                 </transition>
                 <transition name="fade" mode="out-in" duration="1000">
-                    <b-form-group  label="Dunnage Airbag Type:"   v-if="showLengthOptions">
-                        <b-form-select class="mb-2 mr-sm-2 mb-sm-0"
-                                   v-model="selectedBagType"
-                                   :options="filterBagTypesOptions"
-                                   v-if="showAirbagType"
-                                       style="width: 40%;"
+                    <b-form-group  label="Select Dunnage Airbag Type"   v-if="showLengthOptions">
+                        <b-form-select class="mb-2 mr-sm-2 mb-sm-0 form_input_width"
+                                       v-model="selectedBagType"
+                                       :options="filterBagTypesOptions"
+                                       v-if="showAirbagType"
                         >
-                    </b-form-select>
+                        </b-form-select>
                     </b-form-group>
                 </transition>
                 <b-jumbotron style="width: 300px; margin-top: 70px;" class="text-center">
-                    <div v-bind:class="{ 'airtableFont': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{ forceByFillingPressureAnimated + ' ' + kgOrPound }}</div>
+                    <div v-bind:class="{ 'airtableResult': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{ selectedBagType + " can withstand force up to" }}</div><br>
+                    <div v-bind:class="{ 'airtableFont': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{forceByFillingPressureAnimated + ' ' + kgOrPound }}</div>
                     <div v-bind:class="{ 'showValue': isActive === false, 'disabledValue':isActive === true }">{{ forceByFillingPressure() }}</div>
                 </b-jumbotron>
 
@@ -90,8 +95,8 @@
                     { text: 'cm', value: 'cm' },
                     { text: 'inch', value: 'inch' },
                 ],
-                gapInputPlaceholder: 'Gap Width > 14 inch',
-                phInputPlaceholder: 'Gap Height > 36 inch',
+                gapInputPlaceholder: '6 inch <= Gap Width <= 23 inch',
+                phInputPlaceholder: '24 inch <= Gap Height <= 110 inch',
                 surface_contact: 0,
                 forceByMaxFillingPressure: 0,
                 test:0,
@@ -105,12 +110,12 @@
                 selectedPalletHeight: 0,
                 // palletHeight:[{text:'PH > 60',value:60},{text:'PH > 90',value: 90}, {text:'PH > 120', value:120},{text:'PH > 150',value:150}],
                 bagWidth:{
-                    bagWidthInch:[{text:'24',value:60},{text:'36',value: 90}, {text:'48', value:120},{text:'60',value:150}],
-                    bagWidthCm:[{text:'60',value:60},{text:'90',value: 90}, {text:'120', value:120},{text:'150',value:150}],
+                    bagWidthInch:[{text:'24',value:60, disabled: true},{text:'36',value: 90, disabled: true}, {text:'48', value:120, disabled: true},{text:'60',value:150, disabled: true}],
+                    bagWidthCm:[{text:'60',value:60, disabled: true},{text:'90',value: 90, disabled: true}, {text:'120', value:120, disabled: true},{text:'150',value:150, disabled: true}],
                 },
                 bagHeight:{
-                    bagHeightInch:[{value:60, text:'24'},{value:90,text:'36'},{value:120,text:'48'},{value:150,text:'60'},{value:180,text:'70'},{value:210,text:'83'},{value:225,text:'89'},{value:240,text:'95'},{value:260,text:'103'},{value:270,text:'107'}],
-                    bagHeightCm:[{value:60, text:'60'},{value:90,text:'90'},{value:120,text:'120'},{value:150,text:'150'},{value:180,text:'180'},{value:210,text:'210'},{value:225,text:'225'},{value:240,text:'240'},{value:260,text:'260'},{value:270,text:'270'}],
+                    bagHeightInch:[{value:60, text:'24',disabled: true},{value:90,text:'36',disabled: true},{value:120,text:'48',disabled: true},{value:150,text:'60',disabled: true},{value:180,text:'70',disabled: true},{value:210,text:'83',disabled: true},{value:225,text:'89',disabled: true},{value:240,text:'95',disabled: true},{value:260,text:'103',disabled: true},{value:270,text:'107',disabled: true}],
+                    bagHeightCm:[{value:60, text:'60',disabled: true},{value:90,text:'90',disabled: true},{value:120,text:'120',disabled: true},{value:150,text:'150',disabled: true},{value:180,text:'180',disabled: true},{value:210,text:'210',disabled: true},{value:225,text:'225',disabled: true},{value:240,text:'240',disabled: true},{value:260,text:'260',disabled: true},{value:270,text:'270',disabled: true}],
 
                 },
                 formulaGap: [{value:150, text:'150'},{value:200, text:'200'},{value:300,text:'300'},{value:400, text:'400'},{value:500, text:'500'},{value:600, text:'600'}],
@@ -137,14 +142,14 @@
                     this.inchToCmFactor = 1;
                     this.kgToPoundFactor = 1;
                     this.kgOrPound = 'kg';
-                    this.gapInputPlaceholder= 'Gap Width > 36 cm';
-                    this.phInputPlaceholder= 'Gap Height > 60 cm';
+                    this.gapInputPlaceholder= '15 cm < Gap Width <= 60 cm';
+                    this.phInputPlaceholder= '60 cm < Gap Height < 300 cm';
                 }else if(this.cmOrInch === "inch"){
                     this.inchToCmFactor = 2.54;
                     this.kgToPoundFactor = 2.20462442018;
                     this.kgOrPound = 'lbs';
-                    this.gapInputPlaceholder= 'Gap Width > 14 inch';
-                    this.phInputPlaceholder= 'Gap Height > 24 inch';
+                    this.gapInputPlaceholder= '6 inch <= Gap Width <= 23 inch ';
+                    this.phInputPlaceholder= '24 inch <= Gap Height <= 110 inch';
                 }
             },
             'selectedBagWidth': function(){
@@ -264,25 +269,50 @@
                     bagWithMetric = this.bagWidth['bagWidthInch'];
 
                 }
-                if (this.inputGap * this.inchToCmFactor){
-                    let gapTohWidth = 0;
-                    if(35.56<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=150){
-                        gapTohWidth=60;
-                        this.selectedGap = 150;
-                    } else if(151<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=300){
-                        gapTohWidth=60;
-                        this.selectedGap = 300;
-                    }else if(301<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=400){
-                        gapTohWidth=90;
-                        this.selectedGap = 400;
-                    }else if(401<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=500){
-                        gapTohWidth=120;
-                        this.selectedGap = 500;
-                    }else if(501<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=600){
-                        gapTohWidth=150;
-                        this.selectedGap = 600;
+                let inputGapIndex = this.inputGap * this.inchToCmFactor;
+                if (inputGapIndex){
+
+                    //reset all data to default
+                    let gapTohWidth = [];
+                    for(let i=0; i<bagWithMetric.length; i++){
+                        bagWithMetric[i].disabled = true;
                     }
-                    return bagWithMetric.filter(t => t.value >= gapTohWidth);
+                    if(0<=inputGapIndex && inputGapIndex<=15){
+                        gapTohWidth.push(60);
+                        gapTohWidth.push(90);
+                        this.selectedGap = 150;
+                    } else if(15<inputGapIndex && inputGapIndex<=20){
+                        gapTohWidth.push(60);
+                        gapTohWidth.push(90);
+                        this.selectedGap = 200;
+                    }else if(20<inputGapIndex && inputGapIndex<=30){
+                        gapTohWidth.push(90);
+                        gapTohWidth.push(120);
+                        this.selectedGap = 300;
+                    }else if(30<inputGapIndex && inputGapIndex<=40){
+                        gapTohWidth.push(90);
+                        gapTohWidth.push(120);
+                        gapTohWidth.push(150);
+                        this.selectedGap = 400;
+                    }else if(40<inputGapIndex && inputGapIndex<=50){
+                        gapTohWidth.push(120);
+                        gapTohWidth.push(150);
+                        this.selectedGap = 500;
+                    }else if(50<inputGapIndex && inputGapIndex<=60){
+                        gapTohWidth.push(150);
+                        this.selectedGap = 600;
+                    }else{
+                        return [{value: '', text: 'Sorry, No Available Bag for Your Gap'}];
+                    }
+                    for(let a=0; a< gapTohWidth.length; a++){
+                        for(let i=0; i<bagWithMetric.length; i++){
+                            if(gapTohWidth[a] === bagWithMetric[i].value){
+                                bagWithMetric[i].disabled = false;
+                            }
+                        }
+                    }
+                    // return bagWithMetric.filter(t => t.value <= gapTohWidth);
+                    return bagWithMetric;
                 }else {
                     return bagWithMetric
                 }
@@ -314,36 +344,49 @@
             //     }
             // },
             filterUserBagLengthOptions (){
+
                 let bagHeightMetric = this.bagHeight['bagHeightInch'];
+                let inputBagHeightIndex = this.inputGapHeight * this.inchToCmFactor;
                 if(this.cmOrInch === 'cm'){
                     bagHeightMetric = this.bagHeight['bagHeightCm'];
                 }else{
                     bagHeightMetric = this.bagHeight['bagHeightInch'];
                 }
-                if (this.inputGapHeight * this.inchToCmFactor){
+                for(let h=0; h<bagHeightMetric.length; h++){
+                    bagHeightMetric.disabled = true;
+                }
+                if (inputBagHeightIndex){
                     let selectableBagHeight = 0;
-                    if(0<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=89){
+                    if(0<=inputBagHeightIndex && inputBagHeightIndex<=90){
                         selectableBagHeight=60;
-                    }else if(90<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=119){
+                    }else if(90<inputBagHeightIndex && inputBagHeightIndex<=120){
                         selectableBagHeight=90;
-                    }else if(120<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=149){
+                    }else if(120<inputBagHeightIndex && inputBagHeightIndex<=150){
                         selectableBagHeight=120;
-                    }else if(150<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=179){
+                    }else if(150<inputBagHeightIndex && inputBagHeightIndex<=180){
                         selectableBagHeight=150;
-                    }else if(180<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=219){
+                    }else if(180<inputBagHeightIndex && inputBagHeightIndex<=210){
                         selectableBagHeight=180;
-                    }else if(210<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=224){
+                    }else if(210<inputBagHeightIndex && inputBagHeightIndex<=225){
                         selectableBagHeight=210;
-                    }else if(225<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=239){
+                    }else if(225<inputBagHeightIndex && inputBagHeightIndex<=240){
                         selectableBagHeight=225;
-                    }else if(240<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=259){
+                    }else if(240<inputBagHeightIndex && inputBagHeightIndex<=260){
                         selectableBagHeight=240;
-                    }else if(260<=this.inputGapHeight * this.inchToCmFactor && this.inputGapHeight * this.inchToCmFactor<=269){
+                    }else if(260<inputBagHeightIndex && inputBagHeightIndex<=270){
                         selectableBagHeight=260;
-                    }else if(this.inputGapHeight * this.inchToCmFactor>=270){
+                    }else if(inputBagHeightIndex <= 300){
                         selectableBagHeight=270;
+                    }else{
+                        return [{value: '', text: 'I do not recommend any bag for that Height'}];
                     }
-                    return bagHeightMetric.filter(t => t.value <= selectableBagHeight);
+                    for(let h=0; h<bagHeightMetric.length; h++){
+                        if(bagHeightMetric[h].value <= selectableBagHeight){
+                            bagHeightMetric[h].disabled = false;
+                        }
+                    }
+                    // return bagHeightMetric.filter(t => t.value <= selectableBagHeight);
+                    return bagHeightMetric;
                 }else {
                     return bagHeightMetric
                 }
@@ -372,7 +415,6 @@
                 return this.animateForceByFillingPressure.toFixed(1);
             },
         },
-
     }
 </script>
 
@@ -385,6 +427,9 @@
     .airtableFont{
         font-size: 3vw;
     }
+    .airtableResult{
+        font-size: 1.3vw;
+    }
 
     .showValue{
         display: inline;
@@ -393,7 +438,9 @@
     .disabledValue{
         display: none;
     }
-
+    .form_input_width{
+        width: 36%;
+    };
     /*vuejs animation for fade in and fade out*/
     .fade-enter-active, .fade-leave-active {
         transition: opacity .5s;
