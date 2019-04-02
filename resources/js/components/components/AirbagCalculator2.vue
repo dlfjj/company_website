@@ -169,9 +169,7 @@
                     this.showWidthOptions=false;
                     // this.showAirbagType = false;
                 }
-                // this.alterOptionColor();
-                //change option color
-                // console.log(optionElements);
+
             },
             'inputGapHeight':function(){
                 if(this.inputGapHeight * this.inchToCmFactor>20){
@@ -317,32 +315,7 @@
                     return bagWithMetric
                 }
             },
-            // filterUserSelectOptions (){
-            //     if (this.inputGap * this.inchToCmFactor){
-            //         let gapToWidth = 0;
-            //         // console.log( Math.round((this.inputGap * this.inchToCmFactor)/10)*10*10 );
-            //         if(30<this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=40){
-            //             gapToWidth=60;
-            //             this.selectedGap = 300;
-            //         }else if(14<=this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=30){
-            //             gapToWidth=60;
-            //             this.selectedGap = 150;
-            //         }else if(40<this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=50){
-            //             gapToWidth=90;
-            //             this.selectedGap = 400;
-            //         }else if(50<this.inputGap * this.inchToCmFactor && this.inputGap * this.inchToCmFactor<=60){
-            //             gapToWidth=120;
-            //             this.selectedGap = 500;
-            //         }else if(60<this.inputGap * this.inchToCmFactor){
-            //             gapToWidth=150;
-            //             this.selectedGap = 600;
-            //         }
-            //         console.log(this.selectedGap);
-            //         return this.bagWidth.filter(t => t.value <= gapToWidth);
-            //     }else {
-            //         return this.bagWidth
-            //     }
-            // },
+
             filterUserBagLengthOptions (){
 
                 let bagHeightMetric = this.bagHeight['bagHeightInch'];
@@ -352,11 +325,11 @@
                 }else{
                     bagHeightMetric = this.bagHeight['bagHeightInch'];
                 }
-                for(let h=0; h<bagHeightMetric.length; h++){
-                    bagHeightMetric.disabled = true;
-                }
+
+
                 if (inputBagHeightIndex){
                     let selectableBagHeight = 0;
+
                     if(0<=inputBagHeightIndex && inputBagHeightIndex<=90){
                         selectableBagHeight=60;
                     }else if(90<inputBagHeightIndex && inputBagHeightIndex<=120){
@@ -375,10 +348,14 @@
                         selectableBagHeight=240;
                     }else if(260<inputBagHeightIndex && inputBagHeightIndex<=270){
                         selectableBagHeight=260;
-                    }else if(inputBagHeightIndex <= 300){
+                    }else if(270< inputBagHeightIndex <= 300){
                         selectableBagHeight=270;
                     }else{
                         return [{value: '', text: 'I do not recommend any bag for that Height'}];
+                    }
+                    //reset options
+                    for(let h=0; h<bagHeightMetric.length; h++){
+                        bagHeightMetric[h].disabled = true;
                     }
                     for(let h=0; h<bagHeightMetric.length; h++){
                         if(bagHeightMetric[h].value <= selectableBagHeight){
