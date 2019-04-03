@@ -9,51 +9,65 @@
                 </select>
                 <h1 style="font-weight: 600; color: #112133">Airbag Calculator</h1>
                 <h4>we can recommend you the best dunnage airbag for your cargo security</h4>
-                <div inline class="mt-4">
-                    <div>
-                        <label for="inputGap" v-if="inputGap === null || inputGap === ''"><small class="text-danger">Put in the gap width between your pallet</small></label>
-                        <b-input  class="mb-2 mr-sm-2 mb-sm-0 form_input_width" type="number" v-model="inputGap"  :placeholder="gapInputPlaceholder" id="inputGap"></b-input>
-                    </div>
-                    <div class="mt-3">
-                        <label for="inputGap" v-if="inputGapHeight === null || inputGapHeight === ''" ><small class="text-danger">Type in your gap Height where your bag will be placed</small></label>
-                        <b-input class="mb-2 mr-sm-2 mb-sm-0 form_input_width" type="number" v-model="inputGapHeight" :placeholder="phInputPlaceholder" id="inputGapHeight"></b-input>
-                    </div>
-                </div>
-                <transition name="fade" mode="out-in" duration="1000">
-                    <b-form-group  label="Select the bag width"  v-if="showWidthOptions" class="mt-3">
-                        <b-form-select class="mb-2 mr-sm-2 mb-sm-0 form_input_width"
-                                       v-model="selectedBagWidth"
-                                       :options="filterUserSelectOptions"
-                        >
-                        </b-form-select>
-                    </b-form-group>
-                </transition>
-                <transition name="fade" mode="out-in" duration="1000">
-                    <b-form-group  label="Select the bag length"   v-if="showLengthOptions">
-                        <b-form-select class="mb-2 mr-sm-2 mb-sm-0 form_input_width"
-                                       v-model="selectedBagHeight"
-                                       :options="filterUserBagLengthOptions"
-                        >
-                        </b-form-select>
-                    </b-form-group>
-                </transition>
-                <transition name="fade" mode="out-in" duration="1000">
-                    <b-form-group  label="Select Dunnage Airbag Type"   v-if="showLengthOptions">
-                        <b-form-select class="mb-2 mr-sm-2 mb-sm-0 form_input_width"
-                                       v-model="selectedBagType"
-                                       :options="filterBagTypesOptions"
-                                       v-if="showAirbagType"
-                        >
-                        </b-form-select>
-                    </b-form-group>
-                </transition>
-                <b-jumbotron style="width: 300px; margin-top: 70px;" class="text-center">
-                    <div v-bind:class="{ 'airtableResult': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{ selectedBagType + " can withstand force up to" }}</div><br>
-                    <div v-bind:class="{ 'airtableFont': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{forceByFillingPressureAnimated + ' ' + kgOrPound }}</div>
-                    <div v-bind:class="{ 'showValue': isActive === false, 'disabledValue':isActive === true }">{{ forceByFillingPressure() }}</div>
-                </b-jumbotron>
-
-
+                <b-row>
+                    <b-col>
+                        <div inline class="mt-4">
+                            <div>
+                                <label for="inputGap" v-if="inputGap === null || inputGap === ''"><small class="text-danger">Please put in the gap width between your cargo</small></label>
+                                <b-input  class="mb-2 mr-sm-2 mb-sm-0 form_input_width" type="number" v-model="inputGap"  :placeholder="gapInputPlaceholder" id="inputGap" min="0"></b-input>
+                            </div>
+                            <div class="mt-3">
+                                <label for="inputGap" v-if="inputGapHeight === null || inputGapHeight === ''" ><small class="text-danger">Please type in your gap height of your cargo</small></label>
+                                <b-input class="mb-2 mr-sm-2 mb-sm-0 form_input_width" type="number" v-model="inputGapHeight" :placeholder="phInputPlaceholder" id="inputGapHeight" min="0"></b-input>
+                            </div>
+                        </div>
+                        <transition name="fade" mode="out-in" duration="1000">
+                            <b-form-group  label="Select the bag width"  v-if="showWidthOptions" class="mt-3">
+                                <b-form-select class="mt-1 form_input_width"
+                                               v-model="selectedBagWidth"
+                                               :options="filterUserSelectOptions"
+                                               :select-size="4"
+                                >
+                                </b-form-select>
+                            </b-form-group>
+                        </transition>
+                        <transition name="fade" mode="out-in" duration="1000">
+                            <b-form-group  label="Select the bag length"   v-if="showLengthOptions">
+                                <b-form-select class="mt-1 form_input_width"
+                                               v-model="selectedBagHeight"
+                                               :options="filterUserBagLengthOptions"
+                                               :select-size="6"
+                                >
+                                </b-form-select>
+                            </b-form-group>
+                        </transition>
+                        <transition name="fade" mode="out-in" duration="1000">
+                            <b-form-group  label="Select Dunnage Airbag Type"   v-if="showAirbagType">
+                                <b-form-select class="mt-1 form_input_width"
+                                               v-model="selectedBagType"
+                                               :options="filterBagTypesOptions"
+                                               :select-size="6"
+                                >
+                                </b-form-select>
+                            </b-form-group>
+                        </transition>
+                    </b-col>
+                    <b-col>
+                        <div v-if="showAirbagType">
+                        <!--<hr id="hr1">-->
+                        <!--<hr id="hr2">-->
+                        <!--<svg id="chart">-->
+                        <!--<line x1="20" y1="20" x2="20" y2="330"></line>-->
+                        <!--</svg>-->
+                            <img src="./images/dunnage_air_bag3.jpg" class="w-75 pl-5">
+                        </div>
+                        <b-jumbotron class="text-center mt-4 mr-3">
+                            <div v-bind:class="{ 'airtableResult': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{ selectedBagType + " can withstand force up to" }}</div><br>
+                            <div v-bind:class="{ 'airtableFont': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{forceByFillingPressureAnimated + ' ' + kgOrPound }}</div>
+                            <div v-bind:class="{ 'showValue': isActive === false, 'disabledValue':isActive === true }">{{ forceByFillingPressure() }}</div>
+                        </b-jumbotron>
+                    </b-col>
+                </b-row>
             </b-card>
 
         </div>
@@ -154,6 +168,7 @@
             },
             'selectedBagWidth': function(){
                 this.getSurfaceContactIndex;
+
             },
             'selectedGap': function(){
                 this.getSurfaceContactIndex;
@@ -309,6 +324,12 @@
                             }
                         }
                     }
+                    for(let p=0; p<bagWithMetric.length; p++){
+                        if(bagWithMetric[p].disabled === false){
+                            this.selectedBagWidth = bagWithMetric[p].value;
+                            break;
+                        }
+                    }
                     // return bagWithMetric.filter(t => t.value <= gapTohWidth);
                     return bagWithMetric;
                 }else {
@@ -360,6 +381,12 @@
                     for(let h=0; h<bagHeightMetric.length; h++){
                         if(bagHeightMetric[h].value <= selectableBagHeight){
                             bagHeightMetric[h].disabled = false;
+                        }
+                    }
+                    for(let p=0; p<bagHeightMetric.length; p++){
+                        if(bagHeightMetric[p].disabled === false){
+                            this.selectedBagHeight = bagHeightMetric[p].value;
+                            break;
                         }
                     }
                     // return bagHeightMetric.filter(t => t.value <= selectableBagHeight);
@@ -416,7 +443,7 @@
         display: none;
     }
     .form_input_width{
-        width: 36%;
+        width: 60%;
     };
     /*vuejs animation for fade in and fade out*/
     .fade-enter-active, .fade-leave-active {
@@ -425,4 +452,30 @@
     .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
         opacity: 0;
     }
+    #hr1 {
+        display: block;
+        height: 0px;
+        border: black;
+        border-top: 1px solid #ccc;
+        margin: 0.5em 0;
+        padding: 0;
+    }
+    #hr2 {
+        background-color: #112133;
+        color:#C80000;
+        -webkit-transform:rotate(90deg);
+        position:absolute;
+        width:300px;
+        height:1px;
+        left:-40px;
+        top:180px;
+        border:10px;
+
+    }
+    svg#chart {
+        /*background: lightgray;*/
+        position: absolute;
+        height: 600px;
+    }
+    #chart line {stroke: #555555; stroke-width:2}
 </style>
