@@ -90294,7 +90294,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.dunnage-airbag[data-v-71fe4e84]{\n    text-align: left;\n    padding: 8.5rem;\n    background-color: #fdffff;\n}\n.airtableFont[data-v-71fe4e84]{\n    font-size: 3vw;\n}\n.airtableResult[data-v-71fe4e84]{\n    font-size: 1.3vw;\n}\n.showValue[data-v-71fe4e84]{\n    display: inline;\n    text-align: center;\n}\n.disabledValue[data-v-71fe4e84]{\n    display: none;\n}\n.form_input_width[data-v-71fe4e84]{\n    width: 60%;\n};\n/*vuejs animation for fade in and fade out*/\n.fade-enter-active[data-v-71fe4e84], .fade-leave-active[data-v-71fe4e84] {\n    -webkit-transition: opacity .5s;\n    transition: opacity .5s;\n}\n.fade-enter[data-v-71fe4e84], .fade-leave-to[data-v-71fe4e84] /* .fade-leave-active below version 2.1.8 */ {\n    opacity: 0;\n}\n#hr1[data-v-71fe4e84] {\n    display: block;\n    height: 0px;\n    border: black;\n    border-top: 1px solid #ccc;\n    margin: 0.5em 0;\n    padding: 0;\n}\n#hr2[data-v-71fe4e84] {\n    background-color: #112133;\n    color:#C80000;\n    -webkit-transform:rotate(90deg);\n    position:absolute;\n    width:300px;\n    height:1px;\n    left:-40px;\n    top:180px;\n    border:10px;\n}\nsvg#chart[data-v-71fe4e84] {\n    /*background: lightgray;*/\n    position: absolute;\n    height: 600px;\n}\n#chart line[data-v-71fe4e84] {stroke: #555555; stroke-width:2\n}\n", ""]);
+exports.push([module.i, "\n.dunnage-airbag[data-v-71fe4e84]{\n    text-align: left;\n    padding: 8.5rem;\n    background-color: #fdffff;\n}\n.airtableFont[data-v-71fe4e84]{\n    font-size: 3vw;\n}\n.airtableResult[data-v-71fe4e84]{\n    font-size: 1.3vw;\n}\n.showValue[data-v-71fe4e84]{\n    display: inline;\n    text-align: center;\n}\n.disabledValue[data-v-71fe4e84]{\n    display: none;\n}\n.form_input_width[data-v-71fe4e84]{\n    width: 70%;\n};\n/*vuejs animation for fade in and fade out*/\n.fade-enter-active[data-v-71fe4e84], .fade-leave-active[data-v-71fe4e84] {\n    -webkit-transition: opacity .5s;\n    transition: opacity .5s;\n}\n.fade-enter[data-v-71fe4e84], .fade-leave-to[data-v-71fe4e84] /* .fade-leave-active below version 2.1.8 */ {\n    opacity: 0;\n}\n#hr1[data-v-71fe4e84] {\n    display: block;\n    height: 0px;\n    border: black;\n    border-top: 1px solid #ccc;\n    margin: 0.5em 0;\n    padding: 0;\n}\n#hr2[data-v-71fe4e84] {\n    background-color: #112133;\n    color:#C80000;\n    -webkit-transform:rotate(90deg);\n    position:absolute;\n    width:300px;\n    height:1px;\n    left:-40px;\n    top:180px;\n    border:10px;\n}\nsvg#chart[data-v-71fe4e84] {\n    /*background: lightgray;*/\n    position: absolute;\n    height: 600px;\n}\n#chart line[data-v-71fe4e84] {stroke: #555555; stroke-width:2\n}\n", ""]);
 
 // exports
 
@@ -90416,6 +90416,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             cmOrInch: 'inch',
             kgOrPound: 'lbs',
             metricOptions: [{ text: 'cm', value: 'cm' }, { text: 'inch', value: 'inch' }],
+            bagWidthSelectLabel: 'Select the bag width (inch)',
+            bagHeightSelectLabel: 'Select the bag height (inch)',
             gapInputPlaceholder: '6 inch <= Gap Width <= 23 inch',
             phInputPlaceholder: '24 inch <= Gap Height <= 110 inch',
             surface_contact: 0,
@@ -90462,12 +90464,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 this.kgOrPound = 'kg';
                 this.gapInputPlaceholder = '15 cm < Gap Width <= 60 cm';
                 this.phInputPlaceholder = '60 cm < Gap Height < 300 cm';
+                this.bagWidthSelectLabel = 'Select the bag width (cm)';
+                this.bagHeightSelectLabel = 'Select the bag height (cm)';
             } else if (this.cmOrInch === "inch") {
                 this.inchToCmFactor = 2.54;
                 this.kgToPoundFactor = 2.20462442018;
                 this.kgOrPound = 'lbs';
                 this.gapInputPlaceholder = '6 inch <= Gap Width <= 23 inch ';
                 this.phInputPlaceholder = '24 inch <= Gap Height <= 110 inch';
+                this.bagWidthSelectLabel = 'Select the bag width (inch)';
+                this.bagHeightSelectLabel = 'Select the bag height (inch)';
             }
         },
         'selectedBagWidth': function selectedBagWidth() {
@@ -90618,6 +90624,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 } else {
                     return [{ value: '', text: 'Sorry, No Available Bag for Your Gap' }];
                 }
+
                 for (var a = 0; a < gapTohWidth.length; a++) {
                     for (var _i = 0; _i < bagWithMetric.length; _i++) {
                         if (gapTohWidth[a] === bagWithMetric[_i].value) {
@@ -90625,13 +90632,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     }
                 }
-                for (var p = 0; p < bagWithMetric.length; p++) {
-                    if (bagWithMetric[p].disabled === false) {
-                        this.selectedBagWidth = bagWithMetric[p].value;
-                        break;
-                    }
+
+                //pre-select the one
+                if (gapTohWidth.length > 2) {
+                    this.selectedBagWidth = gapTohWidth[1];
+                } else {
+                    this.selectedBagWidth = gapTohWidth[0];
                 }
-                // return bagWithMetric.filter(t => t.value <= gapTohWidth);
+
                 return bagWithMetric;
             } else {
                 return bagWithMetric;
@@ -90787,7 +90795,7 @@ var render = function() {
               [_vm._v("Airbag Calculator")]
             ),
             _vm._v(" "),
-            _c("h4", [
+            _c("p", [
               _vm._v(
                 "we can recommend you the best dunnage airbag for your cargo security"
               )
@@ -90886,14 +90894,14 @@ var render = function() {
                               "b-form-group",
                               {
                                 staticClass: "mt-3",
-                                attrs: { label: "Select the bag width" }
+                                attrs: { label: _vm.bagWidthSelectLabel }
                               },
                               [
                                 _c("b-form-select", {
                                   staticClass: "mt-1 form_input_width",
                                   attrs: {
                                     options: _vm.filterUserSelectOptions,
-                                    "select-size": 4
+                                    "select-size": 3
                                   },
                                   model: {
                                     value: _vm.selectedBagWidth,
@@ -90924,7 +90932,7 @@ var render = function() {
                         _vm.showLengthOptions
                           ? _c(
                               "b-form-group",
-                              { attrs: { label: "Select the bag length" } },
+                              { attrs: { label: _vm.bagHeightSelectLabel } },
                               [
                                 _c("b-form-select", {
                                   staticClass: "mt-1 form_input_width",
@@ -90969,7 +90977,7 @@ var render = function() {
                                   staticClass: "mt-1 form_input_width",
                                   attrs: {
                                     options: _vm.filterBagTypesOptions,
-                                    "select-size": 6
+                                    "select-size": 9
                                   },
                                   model: {
                                     value: _vm.selectedBagType,
