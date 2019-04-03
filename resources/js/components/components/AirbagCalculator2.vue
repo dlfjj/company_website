@@ -8,7 +8,7 @@
                     </option>
                 </select>
                 <h1 style="font-weight: 600; color: #112133">Airbag Calculator</h1>
-                <h4>we can recommend you the best dunnage airbag for your cargo security</h4>
+                <p>we can recommend you the best dunnage airbag for your cargo security</p>
                 <b-row>
                     <b-col>
                         <div inline class="mt-4">
@@ -22,17 +22,17 @@
                             </div>
                         </div>
                         <transition name="fade" mode="out-in" duration="1000">
-                            <b-form-group  label="Select the bag width"  v-if="showWidthOptions" class="mt-3">
+                            <b-form-group  :label="bagWidthSelectLabel"  v-if="showWidthOptions" class="mt-3">
                                 <b-form-select class="mt-1 form_input_width"
                                                v-model="selectedBagWidth"
                                                :options="filterUserSelectOptions"
-                                               :select-size="4"
+                                               :select-size="3"
                                 >
                                 </b-form-select>
                             </b-form-group>
                         </transition>
                         <transition name="fade" mode="out-in" duration="1000">
-                            <b-form-group  label="Select the bag length"   v-if="showLengthOptions">
+                            <b-form-group  :label="bagHeightSelectLabel"   v-if="showLengthOptions">
                                 <b-form-select class="mt-1 form_input_width"
                                                v-model="selectedBagHeight"
                                                :options="filterUserBagLengthOptions"
@@ -46,7 +46,7 @@
                                 <b-form-select class="mt-1 form_input_width"
                                                v-model="selectedBagType"
                                                :options="filterBagTypesOptions"
-                                               :select-size="6"
+                                               :select-size="9"
                                 >
                                 </b-form-select>
                             </b-form-group>
@@ -54,11 +54,11 @@
                     </b-col>
                     <b-col>
                         <div v-if="showAirbagType">
-                        <!--<hr id="hr1">-->
-                        <!--<hr id="hr2">-->
-                        <!--<svg id="chart">-->
-                        <!--<line x1="20" y1="20" x2="20" y2="330"></line>-->
-                        <!--</svg>-->
+                            <!--<hr id="hr1">-->
+                            <!--<hr id="hr2">-->
+                            <!--<svg id="chart">-->
+                            <!--<line x1="20" y1="20" x2="20" y2="330"></line>-->
+                            <!--</svg>-->
                             <img src="./images/dunnage_air_bag3.jpg" class="w-75 pl-5">
                         </div>
                         <b-jumbotron class="text-center mt-4 mr-3">
@@ -109,6 +109,8 @@
                     { text: 'cm', value: 'cm' },
                     { text: 'inch', value: 'inch' },
                 ],
+                bagWidthSelectLabel: 'Select the bag width (inch)',
+                bagHeightSelectLabel: 'Select the bag height (inch)',
                 gapInputPlaceholder: '6 inch <= Gap Width <= 23 inch',
                 phInputPlaceholder: '24 inch <= Gap Height <= 110 inch',
                 surface_contact: 0,
@@ -158,12 +160,16 @@
                     this.kgOrPound = 'kg';
                     this.gapInputPlaceholder= '15 cm < Gap Width <= 60 cm';
                     this.phInputPlaceholder= '60 cm < Gap Height < 300 cm';
+                    this.bagWidthSelectLabel = 'Select the bag width (cm)';
+                    this.bagHeightSelectLabel = 'Select the bag height (cm)';
                 }else if(this.cmOrInch === "inch"){
                     this.inchToCmFactor = 2.54;
                     this.kgToPoundFactor = 2.20462442018;
                     this.kgOrPound = 'lbs';
                     this.gapInputPlaceholder= '6 inch <= Gap Width <= 23 inch ';
                     this.phInputPlaceholder= '24 inch <= Gap Height <= 110 inch';
+                    this.bagWidthSelectLabel = 'Select the bag width (inch)';
+                    this.bagHeightSelectLabel = 'Select the bag height (inch)';
                 }
             },
             'selectedBagWidth': function(){
@@ -317,6 +323,7 @@
                     }else{
                         return [{value: '', text: 'Sorry, No Available Bag for Your Gap'}];
                     }
+
                     for(let a=0; a< gapTohWidth.length; a++){
                         for(let i=0; i<bagWithMetric.length; i++){
                             if(gapTohWidth[a] === bagWithMetric[i].value){
@@ -324,13 +331,14 @@
                             }
                         }
                     }
-                    for(let p=0; p<bagWithMetric.length; p++){
-                        if(bagWithMetric[p].disabled === false){
-                            this.selectedBagWidth = bagWithMetric[p].value;
-                            break;
-                        }
+
+                    //pre-select the one
+                    if(gapTohWidth.length > 2){
+                        this.selectedBagWidth = gapTohWidth[1];
+                    }else{
+                        this.selectedBagWidth = gapTohWidth[0];
                     }
-                    // return bagWithMetric.filter(t => t.value <= gapTohWidth);
+
                     return bagWithMetric;
                 }else {
                     return bagWithMetric
@@ -443,7 +451,7 @@
         display: none;
     }
     .form_input_width{
-        width: 60%;
+        width: 70%;
     };
     /*vuejs animation for fade in and fade out*/
     .fade-enter-active, .fade-leave-active {
