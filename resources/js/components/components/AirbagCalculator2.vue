@@ -8,7 +8,7 @@
                     </option>
                 </select>
                 <h1 style="font-weight: 600; color: #112133">Airbag Calculator</h1>
-                <p>we can recommend you the best dunnage airbag for your cargo security</p>
+                <p>We can help you to find the right dunnage airbag for your cargo security</p>
                 <b-row>
                     <b-col>
                         <div inline class="mt-4">
@@ -17,7 +17,7 @@
                                 <b-input  class="mb-2 mr-sm-2 mb-sm-0 form_input_width" type="number" v-model="inputGap"  :placeholder="gapInputPlaceholder" id="inputGap" min="0"></b-input>
                             </div>
                             <div class="mt-3">
-                                <label for="inputGap" v-if="inputGapHeight === null || inputGapHeight === ''" ><small class="text-danger">Please type in your gap height of your cargo</small></label>
+                                <label for="inputGapHeight" v-if="inputGapHeight === null || inputGapHeight === ''" ><small class="text-danger">Please type in your gap height of your cargo</small></label>
                                 <b-input class="mb-2 mr-sm-2 mb-sm-0 form_input_width" type="number" v-model="inputGapHeight" :placeholder="phInputPlaceholder" id="inputGapHeight" min="0"></b-input>
                             </div>
                         </div>
@@ -53,13 +53,18 @@
                         </transition>
                     </b-col>
                     <b-col>
-                        <div v-if="showAirbagType">
+                        <div class="row" v-if="showAirbagType">
                             <!--<hr id="hr1">-->
                             <!--<hr id="hr2">-->
                             <!--<svg id="chart">-->
                             <!--<line x1="20" y1="20" x2="20" y2="330"></line>-->
                             <!--</svg>-->
-                            <img src="./images/dunnage_air_bag3.jpg" class="w-75 pl-5">
+                            <div class="col-sm-6">
+                                <img src="./images/polywovenbag.png" class="w-75 ml-lg-5 ml-md-5">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="./images/kraftdunnagebag.png" class="w-75">
+                            </div>
                         </div>
                         <b-jumbotron class="text-center mt-4 mr-3">
                             <div v-bind:class="{ 'airtableResult': isActive === true, 'showValue': isActive === true, 'disabledValue':isActive === false }">{{ selectedBagType + " can withstand force up to" }}</div><br>
@@ -174,6 +179,7 @@
             },
             'selectedBagWidth': function(){
                 this.getSurfaceContactIndex;
+                this.bagWidthSelectLabel = 'Select the bag width ' + this.selectedBagWidth + '&nbsp;'+ this.cmOrInch;
 
             },
             'selectedGap': function(){
@@ -213,6 +219,7 @@
                 }else{
                     this.showAirbagType = false;
                 }
+                this.bagHeightSelectLabel = 'Select the bag height ' +this.selectedBagHeight + '&nbsp;' + this.cmOrInch;
             },
             'forceByMaxFillingPressure':function(newValue){
                 // animated number presentation when it change value
@@ -486,4 +493,12 @@
         height: 600px;
     }
     #chart line {stroke: #555555; stroke-width:2}
+
+    .vertical-center {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
 </style>
