@@ -219,7 +219,7 @@
                 }else{
                     this.showAirbagType = false;
                 }
-                this.bagHeightSelectLabel = 'Select the bag height ' +this.selectedBagHeight + '&nbsp;' + this.cmOrInch;
+                this.bagHeightSelectLabel = 'Select the bag height ' + this.selectedBagHeight + '&nbsp;' + this.cmOrInch;
             },
             'forceByMaxFillingPressure':function(newValue){
                 // animated number presentation when it change value
