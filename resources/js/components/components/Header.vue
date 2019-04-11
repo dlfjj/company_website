@@ -22,11 +22,18 @@
                 </b-row>
                 <b-row>
                     <b-col>
-                        <nav class="nav mb-3 text-center">
-                            <router-link to="/" tag="li" class="nav-item w-25" exact><a class="nav-link border-3 border-bottom border-top border-left py-1">Home</a></router-link>
-                            <router-link to="/Product" tag="li" class="nav-item w-25"><a class="nav-link border-bottom border-top py-1">Product</a></router-link>
-                            <router-link to="/Contact" tag="li" class="nav-item w-25"><a class="nav-link border-bottom border-top py-1">Contact</a></router-link>
-                            <router-link to="/Login" tag="li" class="nav-item w-25"><a class="nav-link border-bottom border-top border-right py-1">Login</a></router-link>
+                        <!--<nav class="nav mb-3 text-center">-->
+                            <!--<router-link to="/" tag="li" class="nav-item w-25" exact><a class="nav-link border-3 border-bottom border-top border-left py-1">Home</a></router-link>-->
+                            <!--<router-link to="/Product" tag="li" class="nav-item w-25"><a class="nav-link border-bottom border-top py-1">Product</a></router-link>-->
+                            <!--<router-link to="/Contact" tag="li" class="nav-item w-25"><a class="nav-link border-bottom border-top py-1">Contact</a></router-link>-->
+                            <!--<router-link to="/Login" tag="li" class="nav-item w-25"><a class="nav-link border-bottom border-top border-right py-1">Login</a></router-link>-->
+                        <!--</nav>-->
+                        <nav class="nav mb-3 text-center border">
+                            <router-link to="/" tag="li" class="nav-item nav-item-width" exact><a class="nav-link py-1">Home</a></router-link>
+                            <router-link to="/Product" tag="li" class="nav-item nav-item-width"><a class="nav-link  py-1">Product</a></router-link>
+                            <router-link to="/Contact" tag="li" class="nav-item nav-item-width"><a class="nav-link py-1">Contact</a></router-link>
+                            <router-link to="/Blog" tag="li" class="nav-item nav-item-width"><a class="nav-link py-1">Blog</a></router-link>
+                            <router-link to="/Login" tag="li" class="nav-item nav-item-width"><a class="nav-link py-1">Login</a></router-link>
                         </nav>
                     </b-col>
                 </b-row>
@@ -76,17 +83,17 @@
 </script>
 
 <style scoped>
+    .nav-item-width{
+        width: 20%;
+    }
     li.router-link-active a {
         color: black;
         background-color: #ffffff;
     }
-
     nav li:hover{
         color: palevioletred;
         background-color: #192b71;
     }
-
-
     .logo_title{
         color:white;
         font-size: 4.3vw;

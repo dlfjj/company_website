@@ -12,6 +12,8 @@ import Login from '../components/components/Login';
 import Career from '../components/components/Career';
 import Event from '../components/components/Events';
 import Kraftbag from '../components/components/Kraftairbag';
+import BlogPage from '../components/components/BlogPage';
+
 //
 import PPairbag from '../components/components/Ppairbag';
 import Inflater from '../components/components/Inflater';
@@ -76,6 +78,11 @@ export default new Router({
             path: '/airbagCalculator',
             name: 'airbagCalculator',
             component: AirbagCalculator
+        },
+        {
+            path: '/Blog',
+            name: 'Blog',
+            component: BlogPage
         },
 
 
