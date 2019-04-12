@@ -16,7 +16,7 @@
                             </a>
                             <div class="logo_title" data-aos="fade-left">American Dunnage Inc.</div>
                             <div class="d-block d-sm-none col-3">
-                                <img src="./images/5starlogo_origin2.png" alt="5 star logo" class="img-fluid float-left pt-2 pb-2" style="width:40%">
+                                <img src="./images/5starlogo_origin2.png" alt="5 star logo" class="img-fluid float-left pt-2 pb-2" style="width:35%">
                             </div>
                         </b-row>
                     </b-col>
