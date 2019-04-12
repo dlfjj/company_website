@@ -32,18 +32,20 @@
                 Blog1:{
                     title: 'American Dunnage Inc is officially open',
                     context: 'American Dunnage Reno factory is in the final stage of setup. ' +
-                    'After long time of research and development for our products, ' +
-                    'we made our first ever kraft paper bag today in the american soil. ' +
+                    'After six months of research and development for our products, ' +
+                    'we made our first ever kraft paper bag today in american soil. ' +
                     'Mass production phase is not far away. Customers will not wait for long to have our products to secure their cargo',
                     publish_date: 'March 26, 2019',
-                    imageName: 'blog_images1',
+                    imageName: 'blogimage2',
                     views: '66'
                 },
                 Blog2:{
                     title: 'What is Dunnage Airbag?',
-                    context: 'The purpose of a dunnage air bag is to secure the cargo and create a build head during transit.',
+                    context: 'The purpose of a dunnage air bag is to secure the cargo and create a build head during transit. That can be a sea container, a rail car, a truck, a vessel or inter modal.' +
+                    ' The dunnage air bags will be fitted into the gaps or void between the cargo and then carefully filled with compressed air. ' +
+                    'The air bag will safely secure your cargo during transit, by preventing movement and absorbing impacts',
                     publish_date: 'March 13, 2019',
-                    imageName: 'banner1',
+                    imageName: 'blogimage1',
                     views: '24'
                 },
             }

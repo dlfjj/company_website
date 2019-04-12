@@ -7,8 +7,8 @@
                 <ul class="list-unstyled" id="items" style="padding:0; margin-bottom: 1rem;">
                     <!--<li><i class="fa fa fa-calendar"></i> <a href="#">Jully 17, 2020</a></li>-->
                     <li><i class="fa fa fa-calendar"></i> <a href="#">{{ publish_date }}</a></li>
-                    <li><i class="fa fa-user"></i><a>Jacky</a></li>
-                    <li><i class="fa fa-pencil"></i><a>Business</a></li>
+                    <li><i class="fa fa-user"></i><a> Jacky</a></li>
+                    <li><i class="fa fa-pencil-ruler"></i><a> Business</a></li>
                     <li><i class="fa fa-eye"></i><a>{{ views }} views</a></li>
                 </ul>
             </div>
@@ -19,7 +19,6 @@
                 <img :src="imageUrl" class="w-100">
             </a>
         </section>
-
 
         <section class="blog-post-content">
             <div class="blog-post">
@@ -60,7 +59,7 @@
         },
         computed:{
             imageUrl: function () {
-                return require('./images/'+ this.imgName + '.jpg');
+                return require('./images/blog/'+ this.imgName + '.jpg');
             }
         },
         methods: {
@@ -75,7 +74,6 @@
     .blog-post-wrapper {
         margin-bottom: 50px;
     }
-
     .blog-post-title {
         font-size: 26px;
         font-weight: 600;
@@ -124,14 +122,10 @@
         padding: 6px 0;
         font-weight: 600;
     }
-
-
-
     .blog-post-footer {
         margin-bottom: 10px;
         /*background-color: #fff;*/
     }
-
     article{
         padding-bottom: 30px;
         border-bottom: 1px solid #eee;
