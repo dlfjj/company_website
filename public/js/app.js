@@ -86382,7 +86382,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -86426,8 +86426,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             paragraph: 'A desire to help our clients in cargo safety.',
             Blog1: {
                 title: 'American Dunnage Inc is officially open',
-                context: 'The factory is in the final stage of setup. The Machine are ready for production.',
-                publish_date: 'October 13, 2018',
+                context: 'American Dunnage Reno factory is in the final stage of setup. ' + 'After long time of research and development for our products, ' + 'we made our first ever kraft paper bag today in the american soil. ' + 'Mass production phase is not far away. Customers will not wait for long to have our products to secure their cargo',
+                publish_date: 'March 26, 2019',
                 imageName: 'blog_images1',
                 views: '66'
             },
@@ -86779,7 +86779,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("li", [
       _c("i", { staticClass: "fa fa-user" }),
-      _c("a", [_vm._v("Admin")])
+      _c("a", [_vm._v("Jacky")])
     ])
   },
   function() {
@@ -86788,7 +86788,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("li", [
       _c("i", { staticClass: "fa fa-pencil" }),
-      _vm._v(" "),
       _c("a", [_vm._v("Business")])
     ])
   }
@@ -92488,7 +92487,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.nav-link[data-v-ef3e5bea]{\n    font-size: 1.9vh !important;\n}\n.nav-item-width[data-v-ef3e5bea]{\n    width: 20%;\n}\nli.router-link-active a[data-v-ef3e5bea] {\n    color: black;\n    background-color: #ffffff;\n}\nnav li[data-v-ef3e5bea]:hover{\n    color: palevioletred;\n    background-color: #192b71;\n}\n.logo_title[data-v-ef3e5bea]{\n    color:white;\n    font-size: 4.3vw;\n    font-weight: 600;\n    font-family: Arial;\n    text-align: center;\n    /*padding-top: 2px;*/\n}\n.nav-link[data-v-ef3e5bea]{\n    color:white;\n    font-size: larger;\n}\n.logo2 img[data-v-ef3e5bea]{\n    width: 35%;\n}\n@media only screen and (min-width: 1408px){\nnav[data-v-ef3e5bea] {\n        /*padding-left: 20%;*/\n        /*padding-right: 5%;*/\n        width: 42.5rem;\n        margin: 0 auto;\n}\n.logo_title[data-v-ef3e5bea]{\n        font-size:3.87rem;\n}\n.logo2 img[data-v-ef3e5bea]{\n        width: 120px;\n}\n}\n@media only screen and (min-width: 1281px) and (max-width:1380px){\nnav[data-v-ef3e5bea] {\n        /*padding-left: 20%;*/\n        /*padding-right: 5%;*/\n        width: 35rem;\n        margin: 0 auto;\n}\n.logo_title[data-v-ef3e5bea]{\n        font-size: 50px;\n}\n.nav-link[data-v-ef3e5bea]{\n        font-size:15px;\n}\n.logo img[data-v-ef3e5bea]{\n        width: 70%;\n        padding-bottom: 10px;\n}\n.logo2 img[data-v-ef3e5bea]{\n        width: 35%;\n}\n}\n@media only screen and (min-width: 1153px) and (max-width:1280px){\nnav[data-v-ef3e5bea] {\n        /*padding-left: 20%;*/\n        /*padding-right: 5%;*/\n        /*width: 38rem;*/\n        margin: 0 auto;\n}\n\n    /*.logo_title{*/\n    /*font-size: 28px;*/\n    /*}*/\n.nav-link[data-v-ef3e5bea]{\n        font-size:20px;\n}\n.logo img[data-v-ef3e5bea]{\n        width: 80%;\n        padding-bottom: 10px;\n}\n.logo2 img[data-v-ef3e5bea]{\n        width: 41%;\n}\n}\n@media only screen and (min-width: 881px) and (max-width:1152px){\n.logo2 img[data-v-ef3e5bea]{\n        width: 55%;\n}\n}\n@media(max-width:880px){\n.logo_title[data-v-ef3e5bea]{\n        /*font-size: 4vw;*/\n}\n.logo img[data-v-ef3e5bea]{\n        width: 70%;\n}\n.logo2 img[data-v-ef3e5bea]{\n        width: 35%;\n}\n.nav-link[data-v-ef3e5bea]{\n        font-size:13px;\n}\n}\n@media(max-width:780px){\n.logo_title[data-v-ef3e5bea]{\n        padding-left:30px;\n        font-size: 4vw;\n}\n.logo img[data-v-ef3e5bea]{\n        width: 55%;\n}\n.logo2 img[data-v-ef3e5bea]{\n        width: 39%;\n}\n.nav-link[data-v-ef3e5bea]{\n        font-size:10px;\n}\n}\n@media(max-width:680px){\n.logo_title[data-v-ef3e5bea]{\n        padding-bottom: 10px;\n        padding-top: 7px;\n        padding-left:11px;\n}\n}\n\n\n", ""]);
+exports.push([module.i, "\n.nav-link[data-v-ef3e5bea]{\n    font-size: 1.9vh !important;\n}\n.nav-item-width[data-v-ef3e5bea]{\n    width: 20%;\n}\nli.router-link-active a[data-v-ef3e5bea] {\n    color: black;\n    background-color: #ffffff;\n}\nnav li[data-v-ef3e5bea]:hover{\n    color: palevioletred;\n    background-color: #192b71;\n}\n.logo_title[data-v-ef3e5bea]{\n    color:white;\n    font-size: 4.3vw;\n    font-weight: 600;\n    font-family: Arial;\n    text-align: center;\n    /*padding-top: 2px;*/\n}\n.nav-link[data-v-ef3e5bea]{\n    color:white;\n    font-size: larger;\n}\n.logo2 img[data-v-ef3e5bea]{\n    width: 36%;\n}\n.logo img[data-v-ef3e5bea]{\n    width: 60%;\n}\n@media only screen and (min-width: 1500px){\nnav[data-v-ef3e5bea] {\n        /*padding-left: 20%;*/\n        /*padding-right: 5%;*/\n        /*width: 42.5rem;*/\n        /*margin: 0 auto;*/\n}\n.logo_title[data-v-ef3e5bea]{\n        /*font-size:3.87rem;*/\n}\n    /*.logo2 img{*/\n    /*width: 120px;*/\n\n    /*}*/\n}\n@media only screen and (min-width: 1281px) and (max-width:1380px){\nnav[data-v-ef3e5bea] {\n        /*padding-left: 20%;*/\n        /*padding-right: 5%;*/\n        width: 35rem;\n        margin: 0 auto;\n}\n.logo_title[data-v-ef3e5bea]{\n        font-size: 50px;\n}\n.nav-link[data-v-ef3e5bea]{\n        font-size:15px;\n}\n.logo img[data-v-ef3e5bea]{\n        width: 50%;\n        /*padding-bottom: 10px;*/\n}\n.logo2 img[data-v-ef3e5bea]{\n        width: 33%;\n}\n}\n@media only screen and (min-width: 1153px) and (max-width:1280px){\nnav[data-v-ef3e5bea] {\n        /*padding-left: 20%;*/\n        /*padding-right: 5%;*/\n        /*width: 38rem;*/\n        margin: 0 auto;\n}\n\n    /*.logo_title{*/\n    /*font-size: 28px;*/\n    /*}*/\n.nav-link[data-v-ef3e5bea]{\n        font-size:20px;\n}\n    /*.logo img{*/\n    /*width: 80%;*/\n    /*padding-bottom: 10px;*/\n\n    /*}*/\n    /*.logo2 img{*/\n    /*width: 41%;*/\n    /*}*/\n}\n@media only screen and (min-width: 881px) and (max-width:1152px){\n    /*.logo2 img{*/\n    /*width: 55%;*/\n    /*}*/\n}\n@media(max-width:880px){\n.logo_title[data-v-ef3e5bea]{\n        /*font-size: 4vw;*/\n}\n    /*.logo img{*/\n    /*width: 70%;*/\n\n    /*}*/\n    /*.logo2 img{*/\n    /*width: 35%;*/\n    /*}*/\n.nav-link[data-v-ef3e5bea]{\n        font-size:13px;\n}\n}\n@media(max-width:780px){\n.logo_title[data-v-ef3e5bea]{\n        padding-left:30px;\n        font-size: 4vw;\n}\n    /*.logo img{*/\n    /*width: 55%;*/\n\n    /*}*/\n    /*.logo2 img{*/\n    /*width: 39%;*/\n\n    /*}*/\n.nav-link[data-v-ef3e5bea]{\n        font-size:10px;\n}\n}\n@media(max-width:680px){\n.logo_title[data-v-ef3e5bea]{\n        padding-bottom: 10px;\n        padding-top: 7px;\n        padding-left:11px;\n}\n}\n\n\n", ""]);
 
 // exports
 
@@ -92551,13 +92550,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "Header",
     data: function data() {
         return {
-            navbarwidth: 650,
-            logotitlewidth: 100,
+            navbarWidth: 650,
+            logotitleWidth: 100,
             colSize1: 3,
             colSize2: 6
         };
@@ -92605,7 +92606,7 @@ var render = function() {
               { staticClass: "logo overflow-hidden d-none d-sm-block" },
               [
                 _c("img", {
-                  staticClass: "img-fluid float-right p-lg-3 p-md-4 pt-sm-3",
+                  staticClass: "float-right mt-4",
                   attrs: {
                     src: __webpack_require__(133),
                     alt: "american dunnage logo"
@@ -92630,7 +92631,7 @@ var render = function() {
                       _c("b-row", [
                         _c("a", { staticClass: "d-block d-sm-none col-3" }, [
                           _c("img", {
-                            staticClass: "img-fluid float-right pt-2 ",
+                            staticClass: "img-fluid float-right mt-2 ",
                             staticStyle: { width: "65%" },
                             attrs: {
                               src: __webpack_require__(133),
@@ -92672,7 +92673,7 @@ var render = function() {
                   _c("b-col", [
                     _c(
                       "nav",
-                      { staticClass: "nav mb-3 text-center border" },
+                      { staticClass: "nav mb-4 text-center border" },
                       [
                         _c(
                           "router-link",
@@ -92755,8 +92756,7 @@ var render = function() {
               { staticClass: "logo2 overflow-hidden d-none d-sm-block" },
               [
                 _c("img", {
-                  staticClass:
-                    "img-fluid float-left five_star_lgo p-lg-2 p-md-3 mt-md-2 pt-sm-2 p-xl-0 mt-xl-3",
+                  staticClass: "float-left mt-3",
                   attrs: {
                     src: __webpack_require__(134),
                     alt: "5 star logo"

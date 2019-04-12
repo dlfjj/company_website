@@ -31,8 +31,11 @@
                 paragraph: 'A desire to help our clients in cargo safety.',
                 Blog1:{
                     title: 'American Dunnage Inc is officially open',
-                    context: 'The factory is in the final stage of setup. The Machine are ready for production.',
-                    publish_date: 'October 13, 2018',
+                    context: 'American Dunnage Reno factory is in the final stage of setup. ' +
+                    'After long time of research and development for our products, ' +
+                    'we made our first ever kraft paper bag today in the american soil. ' +
+                    'Mass production phase is not far away. Customers will not wait for long to have our products to secure their cargo',
+                    publish_date: 'March 26, 2019',
                     imageName: 'blog_images1',
                     views: '66'
                 },
