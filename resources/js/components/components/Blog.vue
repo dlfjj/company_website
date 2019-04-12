@@ -7,8 +7,8 @@
                 <ul class="list-unstyled" id="items" style="padding:0; margin-bottom: 1rem;">
                     <!--<li><i class="fa fa fa-calendar"></i> <a href="#">Jully 17, 2020</a></li>-->
                     <li><i class="fa fa fa-calendar"></i> <a href="#">{{ publish_date }}</a></li>
-                    <li><i class="fa fa-user"></i><a>Admin</a></li>
-                    <li><i class="fa fa-pencil"></i> <a>Business</a></li>
+                    <li><i class="fa fa-user"></i><a>Jacky</a></li>
+                    <li><i class="fa fa-pencil"></i><a>Business</a></li>
                     <li><i class="fa fa-eye"></i><a>{{ views }} views</a></li>
                 </ul>
             </div>
