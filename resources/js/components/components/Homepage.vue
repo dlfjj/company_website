@@ -32,15 +32,18 @@
                     </b-carousel>
                     <div class="mask" v-if="slide === 0">
                         <div class="carousel-caption">
-                            <div  class="rgba-blue-grey-strong container"  data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">
-                                <p>You don’t like surprises opening <br>containers or truck doors ?</p>
-                            </div>
-                            <div class="container rgba-red-strong" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2000">
-                                <p >We don’t like it at all !</p>
-                            </div>
-                            <div class="blue-grey container" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="3000">
-                                <p>American Dunnage Air Bags will <br> keep your cargo safe and in place.</p>
-                            </div>
+                            <!--<div  class="rgba-blue-grey-strong container"  data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1000">-->
+                                <!--<p>You don’t like surprises opening <br>containers or truck doors ?</p>-->
+                            <!--</div>-->
+                            <!--<div class="container rgba-red-strong" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2000">-->
+                                <!--<p >We don’t like it at all !</p>-->
+                            <!--</div>-->
+                            <!--<div class="blue-grey container" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="3000">-->
+                                <!--<p>American Dunnage Air Bags will <br> keep your cargo safe and in place.</p>-->
+                            <!--</div>-->
+                            <vue-typed-js :strings="['You don’t like surprises opening <br> containers or truck doors ?', 'We don’t like it at all !','American Dunnage Air Bags will <br> keep your cargo safe and in place.']">
+                                <p><span class="typing"></span></p>
+                            </vue-typed-js>
                         </div>
                     </div>
                 </div>
@@ -296,8 +299,8 @@
         computed:{
             sliderPacechange: function(){
                 // change the carousel pace for each picture
-                if (this.slide < 3){
-                    this.carouselTime = 6000;
+                if (this.slide === 0){
+                    this.carouselTime = 15000;
                 }else{
                     this.carouselTime = 3000;
                 }

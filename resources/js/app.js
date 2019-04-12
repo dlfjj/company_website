@@ -20,8 +20,10 @@ import 'aos/dist/aos.css';
 import "vue-material-design-icons/styles.css";
 import VueAnalytics from 'vue-analytics';
 import vSelect from 'vue-select';
+import VueTypedJs from 'vue-typed-js';
 
 
+Vue.use(VueTypedJs);
 Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
 Vue.config.silent = true;

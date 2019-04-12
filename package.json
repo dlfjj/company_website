@@ -39,6 +39,7 @@
         "vue-material-design-icons": "^2.0.0",
         "vue-meta": "^1.5.3",
         "vue-router": "^3.0.2",
-        "vue-select": "^2.5.1"
+        "vue-select": "^2.5.1",
+        "vue-typed-js": "^0.1.2"
     }
 }
