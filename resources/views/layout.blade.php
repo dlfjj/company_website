@@ -47,7 +47,6 @@
         .title {
             font-size: 84px;
         }
-
         .links > a {
             color: #636b6f;
             padding: 0 25px;
@@ -57,7 +56,6 @@
             text-decoration: none;
             text-transform: uppercase;
         }
-
         .m-b-md {
             margin-bottom: 30px;
         }

@@ -25,6 +25,8 @@ import AirbagCalculator from '../components/components/AirbagCalculator2';
 
 //
 // import About_us from '../components/About_us'
+import KraftMoreDetail from '../components/components/KraftMoreDetail';
+
 
 Vue.use(Router);
 Vue.use(Meta);
@@ -33,11 +35,6 @@ Vue.use(Meta);
 export default new Router({
     // mode: 'history',
     routes: [
-        // {
-        //     path: '/',
-        //     name: 'Home',
-        //     component: HomePage
-        // },
         {
             path: '/',
             name: 'Home',
@@ -122,7 +119,11 @@ export default new Router({
             name: 'Barrelsecuring',
             component: Barrelsecuring
         },
-
+        {
+            path: '/Product/kraftbag/moredetail',
+            name:'KraftMoreDetail',
+            component: KraftMoreDetail
+        }
 
 
 
