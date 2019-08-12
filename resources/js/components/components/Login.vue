@@ -15,7 +15,7 @@
                         <b-button variant="primary" class="rounded-0">Login Here</b-button>
                     </a>
                     <a  @click="popupWindow">
-                        <b-button v-b-popover.hover.top="'If you are a new customer please contact us for the webshop'" variant="dark" class="rounded-0">Request Login</b-button>
+                        <b-button v-b-popover.hover.top="'If you are a new customer please contact us for the webshop'" variant="primary" class="rounded-0">Register</b-button>
                     </a>
                 </b-button-group>
         </div>
@@ -38,7 +38,7 @@
         data() {
             return{
                 title: 'Webshop Entry',
-                paragraph: 'Welcome to our online information system. Here, you can find out more detail about our products.',
+                paragraph: 'Welcome to our online information system. For our old customer, you can check our latest price and special offer.',
                 oemservLoginlink: 'http://shop.oemserv.com/auth/login/8',
             }
         },

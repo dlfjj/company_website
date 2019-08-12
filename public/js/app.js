@@ -96582,7 +96582,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             title: 'Webshop Entry',
-            paragraph: 'Welcome to our online information system. Here, you can find out more detail about our products.',
+            paragraph: 'Welcome to our online information system. For our old customer, you can check our latest price and special offer.',
             oemservLoginlink: 'http://shop.oemserv.com/auth/login/8'
         };
     },
@@ -96655,9 +96655,9 @@ var render = function() {
                       }
                     ],
                     staticClass: "rounded-0",
-                    attrs: { variant: "dark" }
+                    attrs: { variant: "primary" }
                   },
-                  [_vm._v("Request Login")]
+                  [_vm._v("Register")]
                 )
               ],
               1
@@ -106146,13 +106146,6 @@ exports.push([module.i, "\n.nav-link[data-v-ef3e5bea]{\n    font-size: 1.9vh !im
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
