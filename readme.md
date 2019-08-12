@@ -13,7 +13,6 @@ npm run dev
 
 php artisan migrate
 php artisan key:generate
-php artisan passport:install
 
 php artisan serve    <- see 'Worth noting' below
 ```
@@ -26,4 +25,4 @@ php artisan serve    <- see 'Worth noting' below
 ## Worth noting
 - User IDs are UUIDs instead of integers
 - Laravel is configured so that web server accesses base directory, not `/public`. To run it locally with `php artisan serve`, copy `index.php` in base directory and rename it to `server.php`.
-- Frontend can be accessed at `localhost:8000/app`
+- Frontend can be accessed at `localhost:8000`
